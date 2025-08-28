@@ -1,0 +1,38 @@
+```json
+{
+    "value": "High",
+    "why": "The paper demonstrates robustness against a diverse set of active attacks relevant to its vision-based and dynamic analysis modalities. The authors explicitly define a threat model that includes HTML obfuscation and adversarial attacks on deep learning models. They conduct dedicated experiments (RQ4) to validate their system's resilience. The results show that PhishIntention is largely unaffected by HTML obfuscation, unlike purely HTML-based methods. It also incorporates a gradient-masking defense against multiple common adversarial attacks, showing high effectiveness for its classifier models. Furthermore, the system's core dynamic analysis, which involves emulating clicks to find credential-requiring pages (CRPs), is inherently designed to counter deferred execution attacks where the phishing form is not on the initial landing page. Finally, the authors show awareness of cloaking by implementing countermeasures (multiple VPNs) in their real-world field study. This comprehensive evaluation against multiple, relevant attack vectors justifies a 'High' rating.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "2 Threat Model",
+            "quote": "HTML Obfuscation. Targeting the solutions that use various HTML analysis techniques for detecting credential-taking intention, an attacker modifies the HTML code of the phishing webpages, while preserving the same appearance and dynamics to interact with the users... PhishIntention... addresses the second by analyzing webpage screenshots, with the least dependence on HTML analysis..."
+        },
+        {
+            "page": 4,
+            "section": "2 Threat Model",
+            "quote": "Adversarial Attack against Deep Learning Models. Targeting any deep-learning based solutions, an attacker can generate adversarial samples to misguide the models to make wrong predictions... PhishIntention... addresses the third by adopting a model gradient-masking technique to nullify the popular gradient-based adversarial attacks."
+        },
+        {
+            "page": 13,
+            "section": "9.2 Results",
+            "quote": "Table 6 presents accuracy of CRP classification and CRP location before and after HTML obfuscation... In contrast, PhishIntention largely preserves its classification and location accuracy even when its HTML heuristics are bypassed, thanks to the computer vision solution."
+        },
+        {
+            "page": 13,
+            "section": "9.2 Results",
+            "quote": "iii) Deep Model Adversary. Our experimental results show that all models of PhishIntention are robust against I-FGSM, I-StepLL, C&W L2, DeepFool, and DAG. Table 7 and Table 8 shows that the accuracy loss under attacks is much lower after the defense."
+        },
+        {
+            "page": 8,
+            "section": "4.4 CRP-Transition Location",
+            "quote": "The landing phishing webpage may not always be a CRP. Sometimes, attackers provide a link or show a button to lure the victims to visit another CRP (see Table 1). We call such a link or button as a CRP transition."
+        },
+        {
+            "page": 14,
+            "section": "10.1.3 System Design",
+            "quote": "Moreover, we use multiple VPNs to access the same URL to mitigate the effect of cloaking techniques [31, 72]."
+        }
+    ]
+}
+```

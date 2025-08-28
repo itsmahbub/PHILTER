@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper only evaluates on a static clean URL dataset (ISCXURL-2016) without any testing of deliberate evasive or adversarial manipulations (e.g. injected junk characters, encoding tricks, homograph TLDs, query‐parameter obfuscation) within its URL‐only input modality. There is no experiment demonstrating resilience against any active attacks.",
+  "evidence": "Page 52, Section 4.3: “To evaluate our proposed approach, we have used a dataset ‘ISCXURL-2016’ … We have extracted 10 000 benign and 9 964 phishing URLs from the repository.”\n\nNowhere in Sections 3 or 4 do the authors inject or simulate evasive URL manipulations or adversarial perturbations to test robustness."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a robust evaluation that meets the 'High' criteria by reporting both class-sensitive and summary metrics suitable for assessing performance under class imbalance. The authors report Precision and F1-score, which are critical for understanding the trade-offs between false positives and false negatives in a phishing context. Additionally, they report the Area Under the Receiver Operating Characteristic Curve (AUC-ROC), a required summary metric that evaluates the model's ability to discriminate between classes across various thresholds. This comprehensive set of metrics demonstrates a high-quality evaluation methodology.",
+    "evidence": "Page 7, Section 4.4, Classification performance: \"Table 5 reports accuracy (Acc.), precision (Prec.), f₁-score and AUC for the different visual similarity-based approaches when visual and textual features are used.\"\nPage 8, Table 5: The table titled \"Performance of Earth Movers Distance (EMD)...\" clearly presents columns for \"Acc.\", \"Prec.\", \"f1\", and \"AUC\", providing numerical results for each metric across several classifiers."
+}
+```

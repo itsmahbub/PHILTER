@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method uses a Support Vector Machine (SVM) as its classifier, which is generally considered a black-box model, especially when non-linear kernels are used. The paper details the process of extracting 12 features from a webpage and feeding them into the SVM to get a binary classification (phishing or legitimate). However, it provides no mechanism to explain or audit the model's decisions. There is no mention of post-hoc explanation techniques (like SHAP or LIME), methods for deriving feature importance from the trained SVM, or any other means to understand why a specific webpage was flagged. The system simply outputs a label without any justification, making it a pure black-box approach.",
+    "evidence": "Page 8, Section 4.15, 'SVM classifier': \"We apply support vector machine (SVM) Vapnik, 1995, a well known data classification technique, to classify webpages features... The SVM classifier input in our method is a 12-dimension feature vector produced from the feature generation step (Vp = <F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12>). Since a webpage is only considered as a legitimate or a phishing, it is naturally a binary classification problem. The SVM would produce output in two classes: +1 means phishing, and -1 means legitimate.\""
+}
+```

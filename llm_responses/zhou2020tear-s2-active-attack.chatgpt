@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper does not include any evaluation of PhishFencing against active evasion or manipulation attacks (e.g., obfuscated JavaScript, junk HTML, invisible elements, deferred execution, cloaking, or adversarial perturbations). All experiments are conducted on a standard phishing-versus-benign dataset collected from PhishTank and Alexa without testing resilience to deliberate evasions.",
+  "evidence": "Section 5.3 (Performance Evaluation): “We use PhishTank as the source of phishing pages… used as positive (phishing) samples. Similarly, we visited the corresponding legitimate websites to generate negative (non-phishing) samples.” No further experiments against active or adversarial manipulations are described."
+}
+```

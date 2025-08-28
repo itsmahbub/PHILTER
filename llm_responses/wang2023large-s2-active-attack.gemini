@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a URL-only phishing detection model. While the authors claim the model is robust and use a technique called 'smoothness inductive adversarial regularization' during fine-tuning to improve robustness, the paper provides no experimental evaluation to substantiate this claim against active attacks. The entire evaluation section focuses on performance under data scarcity (few-shot learning) and training efficiency (few epochs), using standard, non-manipulated datasets. There is no test against obfuscated URLs, adversarial perturbations, or any other form of evasion technique relevant to the URL modality. The benchmark is limited to clean phishing vs. benign examples.",
+    "evidence": "page 3, section 4, 'Experiment Scenario': 'We evaluate the proposed method in an unbalanced experimental scenario, where we also have some challenging settings by reducing the training set size and training epoch, in order to evaluate the model’s few-samples learning ability and restart speed.' This section, which describes the entire evaluation setup, makes no mention of testing against manipulated or adversarial inputs. The evaluation is solely focused on performance with limited data, not resilience to active attacks."
+}
+```

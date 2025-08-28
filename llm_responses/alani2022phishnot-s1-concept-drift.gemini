@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static machine learning model that is trained offline and then deployed. There is no mechanism described for adapting to concept drift, such as online learning or automated periodic retraining. The features used are primarily lexical (e.g., character counts in URL components) and network-based (e.g., domain age), which are known to be susceptible to evolving attacker tactics. Crucially, the evaluation methodology does not account for temporal dynamics. The paper explicitly states that the dataset is split randomly for both the initial training/testing and the 10-fold cross-validation. This approach mixes older and newer data, failing to simulate a real-world scenario where a model trained on past data must detect future, potentially different, phishing attacks. While the authors mention that the cloud deployment facilitates future updates, this is a manual process and not an inherent adaptive capability of the proposed method.",
+    "evidence": [
+        {
+            "page": 6,
+            "section": "5.4. Initial model training",
+            "quote": "The data was split into two parts; 75% used for training and 25% used for testing. This random split considers the balance of the two classes when creating the two subsets."
+        },
+        {
+            "page": 6,
+            "section": "5.6. Validation with 10-fold cross-validation",
+            "quote": "To assure that the high accuracy measured earlier was not due to overfitting, we used 10-fold cross-validation on the reduced-feature data, shown in algorithm 4."
+        },
+        {
+            "page": 7,
+            "section": "Algorithm 4: 10-Fold Cross-Validation",
+            "quote": "Split Array into 10-folds randomly to produce fold(1to10)"
+        },
+        {
+            "page": 10,
+            "section": "6.3. Comparative analysis of results",
+            "quote": "The cloud also provides the basis for easier future updates in that new datasets are available. A newer trained ML classification model can be deployed centrally into the cloud infrastructure, eliminating the need for distributed updates."
+        }
+    ]
+}
+```

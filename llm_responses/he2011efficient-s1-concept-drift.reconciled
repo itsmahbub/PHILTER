@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed detector is built on inherently stable, identity‐based features (semantic content vs. syntactic URL patterns) and is evaluated in a time‐forward manner—training on older, shutdown phishing pages and testing on newly collected live pages—thus satisfying both criteria for high adaptation to concept drift.",
+    "evidence": "Page 2, Introduction: “The basic idea of the proposed method is that every website claims a certain identity, and its behavior corresponds to the identity. If a website claims a fake identity then it would be abnormal, compared to a legitimate site.”; Page 9, Section 5.2: “Using the same training set from the first experiment, we test the proposed detector with a different testing set…100 phishing pages are taken from new and live phishing pages listed in PhishTank for continuously 4 days. All pages are still alive by the time of the testing…”"
+}
+```

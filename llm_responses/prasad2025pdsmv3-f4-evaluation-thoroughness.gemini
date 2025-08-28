@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a robust evaluation by reporting all required class-sensitive metrics (Precision, Recall, F1-score) and an acceptable summary metric (AUC), which are essential for assessing performance on class-imbalanced phishing datasets. Section 4.3 explicitly defines these metrics, and they are used consistently throughout the results section (e.g., Tables 3, 5, 7, 8) to compare the proposed model against various baselines. The inclusion of AUC in Table 6 satisfies the requirement for a summary metric that reflects overall classification quality.",
+    "evidence": "Page 9, Section 4.3, Evaluation metrics: \"A variety of evaluation metrics, including false positive rate (FPR), accuracy (A), recall (R), F1 score and precision (P), were introduced to assess the effectiveness of the model that was suggested.\" This section is followed by the formal equations for Accuracy, Precision, Recall, FPR, and F1-score.\n\nPage 12, Table 6, Deep learning-based methods Performances comparison on the Dataset 2.: This table reports performance metrics for several models, including the proposed one, under the columns \"Accuracy (%)\", \"AUC\", and \"F1-Score (%)\". The inclusion of AUC fulfills the summary metric requirement.\n\nPage 11, Table 3, Detection performance of different feature extraction models.: This table presents a comparison using \"Accuracy (%)\", \"Precision (%)\", \"TPR (%)\" (which is Recall), and \"F1- Score (%)\", demonstrating the consistent use of the required class-sensitive metrics."
+}
+```

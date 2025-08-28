@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "Although the paper does not provide a quantitative breakdown of evasive tactics in its evaluation (ruling out “High”), it does incorporate explicit defenses against several manipulation and obfuscation techniques within its HTML/URL input modality. For example, it renders JavaScript and frames to capture dynamic content, and includes features to detect IP‐based URLs, ‘@’ user‐info tricks, excessive dots in URLs, nil anchors, foreign anchors/requests, and more. These defenses against URL‐ and structure‐based obfuscations meet the “Medium” criteria.",
+    "evidence": "Page 2, Sec. 2: “JavaScript should be rendered, and frames should also be parsed… the more robust our method is to prevent the attacker tricks.”; Page 5, Sec. 4.1: “Besides the IP form URL, we also check whether a URL contains the ‘@’ character…”; Page 6, Sec. 4.10: “The URL address of a phishing page may have many dots to confuse users…”; Page 6, Secs. 4.3–4.7: features for nil anchors, foreign anchors and requests; Page 9, Sec. 6: acknowledges attacks on tf-idf but notes “there are several features not related to identity…we still have probability to detect the phishing page.”"
+}
+```

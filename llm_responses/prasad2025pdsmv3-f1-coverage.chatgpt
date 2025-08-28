@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed PDSMV3-DCRNN method incorporates a wide range of URL-based tactics (e.g. IP‐address URLs, use of “@”, subdomain count, URL length/depth, DNS/WHOIS features, HTTPS misuse, domain age, script‐based evasion techniques) demonstrating awareness of multiple real‐world phishing strategies. However, the paper does not provide a quantitative breakdown of the evaluation dataset by tactic nor report per‐tactic detection performance.",
+  "evidence": "Section 3.5 (URL feature extraction): “In this phase, we take features out of the URL data. A total of fifteen characteristics are considered … Address Bar and Domain-based characteristics (e.g. is_ip_address, have_@, length>30, subdomains>5, Domain_age>average, DNS record)….”; Section 4 (Results): overall performance tables (e.g. Tables 3–9) report aggregate metrics only, with no per-tactic breakdown."
+}
+```

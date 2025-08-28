@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static machine learning model (a hybrid of Logistic Regression, Support Vector Machine, and Decision Tree) that is trained and evaluated in a single batch process. The methodology does not include any adaptive strategies like periodic retraining, online learning, or time-aware feature engineering to account for the evolution of phishing tactics. The features used are standard URL-based attributes (e.g., `LongURL`, `PrefixSuffix-`, `HTTPSDomainURL`), which are susceptible to concept drift as attackers change their methods. Crucially, the evaluation protocol does not assess the model's robustness over time. It uses a standard random 70/30 split on a static dataset from Kaggle, which assumes that the data distribution is stationary and does not simulate a real-world scenario where a model encounters new, evolved attacks after deployment.",
+    "evidence": "Page 7, Section III.A. URL BASED PHISHING DATASET: \"The dataset was collected in a CSV file from the well-known dataset repository called Kaggle... The complete corpus was divided into two partitions, 70% for training and 30% for testing the 70% training data were used to train the machine learning model, preserve 30% of the data for the predictions, and evaluate the performance of the proposed approach.\" This confirms the use of a static, benchmark dataset and a random, non-temporal train-test split, which is inadequate for evaluating adaptation to concept drift."
+}
+```

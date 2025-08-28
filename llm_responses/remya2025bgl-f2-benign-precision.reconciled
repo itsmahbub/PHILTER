@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper’s evaluation includes a dedicated real-time case study on agricultural websites—an example of low-reputation or long-tail domains—demonstrating robustness on non-mainstream benign sites. However, it does not include any benign pages featuring legitimate brand elements (e.g., PayPal/OAuth widgets or embedded logos). Therefore, only one of the two required diversity subsets is addressed, corresponding to ‘Medium.’",
+  "evidence": "Page 16, Section XI: “In our study on phishing detection for agricultural websites, we analyzed a real-time dataset… This dataset includes both legitimate and phishing websites related to agriculture.”\nPage 17, Table 7: Sample entries of agricultural domains with varying domain ages, e.g., “www.agrishop.com (365 days)” and “www.cropinfoportal.com (730 days),” illustrating long-tail benign sites."
+}
+```

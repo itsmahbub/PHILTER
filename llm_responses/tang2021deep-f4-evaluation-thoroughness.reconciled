@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While the paper reports the F1-score and false-positive/false-negative rates and even includes mean average precision (mAP), it does not present standalone precision and recall values nor one of the standard summary metrics stipulated in the codebook (AUC-PRC, AUC-ROC, or MCC). Therefore it lacks the full set of class-sensitive metrics and a conventional summary measure required for a “High” rating.",
+  "evidence": "Page 1516, Section V (Evaluation Results): “we use accuracy, F1, false-positive rate, false-negative rate to measure the efficiency of models.”\nPage 1518, Table 3: Columns are accuracy, F1, false-positive rate, false-negative rate, and mAP – no explicit precision or recall values and no AUC-PRC/AUC-ROC/MCC."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method is explicitly designed to handle concept drift through a core adaptive strategy: daily retraining. The classifier is updated daily using a sliding window of data from the past three months, allowing it to continuously learn and adapt to new phishing trends. Furthermore, the evaluation protocol is temporally sound and specifically designed to measure the model's robustness against drift. The authors train their model on data from one time period (April-July) and then test it on a completely separate, chronologically later dataset (August), demonstrating that the model's performance remains high on future, unseen data.",
+    "evidence": "Page 6, Section 3.3, \"Training the classifier is an offline process that runs once per day to pick up new phishing trends. As a training dataset, we use a sample of roughly ten million URLs analyzed by the classification workflow over the past three months along with the features obtained at the time.\"\nPage 8, Section 4.1, \"In our evaluation, we use two sets of data. The first set, a copy of a training set used by our system, contains data collected between April 16, 2009 and July 14, 2009 with labels from July 15, 2009... We use the second set, collected during the first two weeks of August, 2009, as a validation dataset.\""
+}
+```

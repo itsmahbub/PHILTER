@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's evaluation relies on precision and recall, which are appropriate class-sensitive metrics for assessing phishing detection performance under class imbalance. These metrics are used consistently across different experiments, including the main effectiveness studies (RQ1, RQ2) and the in-the-wild study (RQ5). However, the evaluation lacks full metric coverage according to the codebook. It does not report the F1-score, which balances precision and recall into a single measure. Furthermore, it omits any summary metrics like AUC-PRC, AUC-ROC, or MCC, which are crucial for evaluating the overall quality of a classifier, especially in imbalanced scenarios. By providing some, but not all, of the required metrics, the evaluation quality is rated as Medium.",
+    "evidence": "Page 9, Section 4.3, \"The effectiveness of phishing detection is evaluated in RQ1 and RQ2 using precision and recall metrics. Given n ground-truth phishing webpages, a phishing detector reports m webpages as phishing, out of which k are true phishing webpages. We calculate recall as k/n and precision as k/m.\"\nPage 11, Table 2, The primary results for the closed-world experiment are presented with columns for \"Precision\" and \"Recall\".\nPage 14, Table 6, The results for the in-the-wild study are presented with columns for \"Precision\" and \"Recall\"."
+}
+```

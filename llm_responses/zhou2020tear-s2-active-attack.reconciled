@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "PhishFencing explicitly builds in defenses against a subset of visual evasion techniques within its screenshot-based modality—handling logo scaling via SIFT, splitting or overlay of logo fragments by matching against full page renderings, and color inversion by matching both original and inverted logos. However, it does not evaluate or defend against other relevant active attacks in its scope, such as deferred execution, cloaking, or adversarial perturbations of the rendered page.",
+  "evidence": "Page 5, Section 3.1: “adversaries may use tricks to avoid using full/original logo images to avoid detection, e.g., splitting the logo into small images, or overlay layers of images. … we render the full pages and utilize sub-image matching to compare them with logo fingerprints.”; Page 6, Section 3.2: “attackers can use different scales of logo images … So we applied Scale Invariant Feature Transform (SIFT) …”; Page 6, Section 3.2: “When color inverted … we use both original image and color inverted image for matching.”"
+}
+```

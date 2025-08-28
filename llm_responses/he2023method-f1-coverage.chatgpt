@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper evaluates the detector on a generic URL classification dataset without any consideration or annotation of different phishing tactics, and it does not provide any per-tactic performance breakdown or discussion of tactic coverage.",
+  "evidence": "Page 2240, Section IV.A.1: “Our data set is from Kaggle [28], which provides public data sets. The data set contains a total of 549 346 URLs (72% for legal URL samples and 28% for phishing URL samples). … we divided the data set into training set and test set at a ratio of 8:2.”"
+}
+```

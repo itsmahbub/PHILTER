@@ -1,0 +1,28 @@
+```json
+{
+    "value": "High",
+    "why": "The paper explicitly designs its method to be self-contained and operate without external dependencies, which is a key characteristic of a high privacy-preserving approach. The detection relies solely on nine lexical features extracted directly from the URL string. The authors repeatedly emphasize that their approach is 'third-party independent' and does not require network-based lookups like WHOIS or DNS. Crucially, they state the method can function 'even without an Internet connection within milliseconds,' confirming that the feature extraction and classification process runs entirely locally. The paper also highlights its suitability for client-side deployment in browsers, mobile apps, and even resource-constrained IoT devices. This local processing model ensures that full URLs or other potentially sensitive user data are not transmitted to external servers for inference.",
+    "evidence": [
+        {
+            "page": "10",
+            "section": "4.5. Novelty and discussions",
+            "quote": "Third-party independency: ... Our approach detects the phishing URL only by looking at the lexical properties of the URL. Our anti-phishing approach detects the phishing attack even without an Internet connection within milliseconds."
+        },
+        {
+            "page": "4",
+            "section": "3.1. Design objectives",
+            "quote": "Scalability: We aim at developing a phishing detection approach that can be embedded in a device with constrained resources, i.e., IoT, to the devices powered up by multiple CPUs and GPUs."
+        },
+        {
+            "page": "10",
+            "section": "4.5. Novelty and discussions",
+            "quote": "Since our approach does not need any third-party information, it will consume less bandwidth, and the use of limited features will decrease the overall resources utilization while performing feature extraction from URLs."
+        },
+        {
+            "page": "10",
+            "section": "4.5. Novelty and discussions",
+            "quote": "Real-time detection: ...our proposed model can also be integrated with different applications that clients use regularly. For example, android applications, desktop applications, and chrome extensions to detect phishing URLs in a real-time environment."
+        }
+    ]
+}
+```

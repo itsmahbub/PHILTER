@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed method avoids drift-prone textual signals by design—relying on inherently more stable visual features extracted from page screenshots— but does not employ any adaptive strategies (e.g. continual learning or periodic retraining) nor evaluate performance in a time-forward (temporal) setup to explicitly measure resilience to concept drift.",
+  "evidence": "Section 2.1 & 3.1: “Visual features, extracted from the rendered web page, can provide a more reliable means for cloned page recognition and be more resistant against evasion techniques.” / “By relying on a screenshot of the web page (rather than relying only on features extracted from the web page), our approach is robust against resource evasion techniques, such as image splitting (Fig. 2).”; Section 4.3.1: “Of the 2,000 websites ... we used 70% for training and optimal filter parameters setup and the remaining 30% to validate the results.” (no temporal split)"
+}
+```

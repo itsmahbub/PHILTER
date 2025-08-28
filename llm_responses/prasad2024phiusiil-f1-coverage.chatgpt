@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The PhiUSIIL framework explicitly targets multiple phishing tactics—particularly a variety of visual similarity–based attacks (zero-width characters, homograph, punycode, homophone, bit-squatting, combosquatting)—and also uses domain-independent URL and HTML features for broader coverage. However, the paper does not provide a per-tactic breakdown of the evaluation dataset nor report detection performance for each individual tactic.",
+  "evidence": "Page 1 (Abstract): “The similarity index helps effectively identify visual similarity-based attacks such as zero-width characters, homograph, punycode, homophone, bit squatting, and combosquatting attacks.”; Page 15 (Table 5): overall accuracy, precision, recall, F1-score, and MCC are reported for security profiles but no per-tactic performance is given."
+}
+```

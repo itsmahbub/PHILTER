@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports class-sensitive metrics beyond simple accuracy, specifically 'Missing rate' (which is the False Negative Rate, or 1-Recall) and 'False alarm rate' (False Positive Rate). This shows an understanding of the need to evaluate performance separately on the phishing and legitimate classes. However, the evaluation is incomplete according to the codebook's criteria for a 'High' rating. It omits other crucial class-sensitive metrics like Precision and F1-score. More importantly, it lacks any of the specified summary metrics (AUC-PRC, AUC-ROC, or MCC) that are robust to class imbalance, relying instead on overall accuracy as its primary summary measure. This partial reporting of relevant metrics, while missing the full required suite, fits the 'Medium' category.",
+    "evidence": "Page 5, Section 4.2, Performance metrics:\n\"In the context of phishing webpage detection, we use accuracy rate, missing rate, and false alarm rate as performance metrics. Let P denote the truth number of phishing webpages in test set, L denote the truth number of legitimate ones, α denote the correct predicting number of phishing webpages, and β denote the correct predicting number of legitimate webpage. The three metrics are defined as follows:\nAccuracy = (α + β) / (P + L) * 100%\nMissing rate = (1 - α/P) * 100%\nFalse alarm rate = (1 - β/L) * 100%\""
+}
+```

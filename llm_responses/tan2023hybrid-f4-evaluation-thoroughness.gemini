@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper evaluates the proposed method using True Positive Rate (TPR), True Negative Rate (TNR), and Accuracy. TPR is equivalent to Recall, which is a class-sensitive metric required by the codebook. However, the evaluation is incomplete as it omits other crucial class-sensitive metrics like Precision and F1-score. More importantly, it fails to report any of the required summary metrics suitable for imbalanced data, such as AUC-PRC, AUC-ROC, or MCC. The inclusion of Recall (TPR) and TNR prevents a 'Low' rating, but the absence of a comprehensive set of metrics as defined by the criteria results in a 'Medium' rating.",
+    "evidence": "Page 11, Section 4.2, Experimental setup: \"We evaluated the performance of the proposed technique using true positive rate (TPR), true negative rate (TNR), and accuracy, which are computed as follows: \nTPR = |Samples correctly classified as phishing| / |Actual phishing samples| x 100, (15)\nTNR = |Samples correctly classified as legitimate| / |Actual legitimate samples| x 100, (16)\nAccuracy = |Samples correctly classified| / |Actual phishing and legitimate samples| x 100. (17)\" \nThe results tables (Table 4, 5, 6) subsequently report performance using only these three metrics."
+}
+```

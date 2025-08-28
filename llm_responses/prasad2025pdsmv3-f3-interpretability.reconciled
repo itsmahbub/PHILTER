@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While the proposed ensemble of PDSMV3-DCRNN and Boosted ConvNeXt lacks per-decision explanations via XAI techniques (ruling out ‘High’), it does provide global insight into its decision-making by explicitly selecting and listing 15 human-understandable URL features through the Binary Grey Goose Optimization Algorithm. This global feature selection aligns with the ‘Medium’ interpretability criterion, which calls for feature importances or inherently interpretable models without per-decision traceability.",
+  "evidence": "• Section 3.3 (pages 4–6): Describes the Binary Grey Goose Optimization Algorithm (BGGOA) for feature selection, noting “Phishing detection demands a distinctive characteristic selection approach to extract the most relevant and discriminative characteristics… The BGGOA can focus on distinguishing elements by choosing the most informative data.”\n• Section 4.3.1 & Table 2 (page 10): Lists the 15 ‘Selected URL features’ (e.g., is_ip_address, length>30, dots>5, Domain_age>average_domain_age, is_https), providing a clear, globally understandable feature set used by the model."
+}
+```

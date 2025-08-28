@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static deep learning model (BiLSTM) trained on a fixed dataset. There is no mechanism described for adapting to new or evolving phishing attacks, such as online learning or periodic retraining. The features used, which are character-level sequences from URLs, are susceptible to concept drift as attackers continuously devise new obfuscation techniques. Most critically, the evaluation methodology does not account for temporal changes. The paper explicitly states that the dataset was split randomly for training and testing. This method fails to simulate a real-world scenario where a model trained on historical data is deployed to detect future, unseen attacks. A random split assumes that the statistical properties of phishing attacks are static and equally distributed across the entire dataset, which is not a valid assumption for evaluating resilience to concept drift.",
+    "evidence": "Page 7, Section 4.1, Data collection: 'Finally, we split the dataset randomly into a 60% training set, 20% test set, and 12% validation set. As a result, the training set is 10,488 URLs, the testing set is 35,656 URLs, and the validation set is 6,293 URLs.'"
+}
+```

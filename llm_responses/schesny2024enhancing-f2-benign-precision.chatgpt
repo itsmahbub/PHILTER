@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper’s evaluation focuses exclusively on previously undetected phishing websites and does not describe any benign dataset—let alone one encompassing low‐reputation domains or legitimate brand‐element pages. Without any benign page diversity, there is no assessment of false positives on ‘hard’ benign cases.",
+  "evidence": "Page 2, Section III: “In our investigation, we analyzed the JSON files from the previous study [6] to examine phishing websites that had not been identified. … In the end, 11 websites were considered for further analysis.” No benign pages or their provenance are mentioned."
+}

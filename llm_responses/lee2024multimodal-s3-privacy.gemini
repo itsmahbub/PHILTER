@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed phishing detection method relies on sending sensitive webpage data to external, third-party commercial LLM services for inference. Specifically, the system's first phase sends a screenshot and/or extracted HTML content of the webpage to an LLM for brand identification. The second phase sends the identified brand and the page's URL to another LLM for domain verification. This process involves transmitting the full content and URL of a user's visited page to external servers (e.g., Google, OpenAI, Anthropic) without any mention of privacy-preserving mechanisms such as on-device processing, hashing, or data anonymization. This approach directly matches the criteria for a low privacy preservation rating.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "III-A. System design",
+            "quote": "These two outputs, the visual representation via the screenshot and the textual data extracted from the HTML, are subsequently provided to a multimodal LLM. Using an engineered prompt, the LLM is instructed to process these inputs to identify the brand..."
+        },
+        {
+            "page": 4,
+            "section": "III-A. System design",
+            "quote": "b) Phishing webpage classification: Once the brand is recognized, the identified brand information is passed through to another LLM. This additional layer of LLM is instructed to compare the identified brand and the domain name in the given URL to carry out domain verification."
+        },
+        {
+            "page": 6,
+            "section": "V. EVALUATION: BRAND IDENTIFICATION USING LLM",
+            "quote": "We experiment with three commercial LLMs—Google Gemini Pro-Vision 1.0, OpenAI GPT-4-turbo, and Anthropic Claude3 Opus, as the first and second-phase LLM models in our detection system."
+        }
+    ]
+}
+```

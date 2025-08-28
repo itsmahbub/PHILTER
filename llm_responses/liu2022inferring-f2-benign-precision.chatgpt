@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper’s benign evaluation includes pages with legitimate brand‐element usage (the “misleading legitimacies” with social‐media buttons, OAuth widgets, embedded logos), but its main benign dataset is restricted to homepages of well-known, high-reputation sites and does not include low-reputation or long-tail domains.",
+  "evidence": "Page 12, Section 5.1: “For CRP-Transition Location … we use … 1,003 non-CRP legitimate [screenshots] … collected from the homepages of well-known websites.”; Page 13, Section 9.1: “We collect and verify 3,049 misleading legitimate websites … media/news/blog sites with links to Facebook, Twitter, YouTube; websites allowing sign-in or registration via Facebook, Google … websites with advertisement of companies such as Amazon, Microsoft.”"
+}
+```

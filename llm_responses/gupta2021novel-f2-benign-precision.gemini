@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper states that it uses the 'ISCXURL-2016' dataset, from which 10,000 benign URLs were extracted. However, the paper provides no description of the composition of these benign URLs. There is no information to confirm whether the dataset includes low-reputation or long-tail domains, nor is there any discussion about the inclusion of benign pages that make legitimate use of third-party brand elements (e.g., social media logins, payment widgets). The evaluation is based on a standard, pre-existing dataset without any analysis or description of its diversity, thus failing to meet the criteria for a Medium or High rating.",
+    "evidence": "page 7, section 4.3, 'To evaluate our proposed approach, we have used a dataset “ISCXURL-2016” from the data repository of the University of Canada Brunswick. It contains spam records, phishing links, malware, defacements, and benign URLs [39]. We have extracted 10000 benign and 9964 phishing URLs from the repository.'"
+}
+```

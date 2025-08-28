@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The authors evaluate false positives on benign pages that legitimately embed brand elements (logos of trusted sites), satisfying the 'brand element usage' criterion. However, all benign datasets—both for training and testing—are drawn exclusively from high-reputation, top-ranked domains, with no inclusion of low-reputation or long-tail sites. Thus only one of the two required diversity dimensions is met.",
+  "evidence": "Page 15, Section 7.1: “we collected a benign subset of 125 pages (see Appendix B) that contain the logos of one or more of 9 trusted websites…only 3.07% of these pages were matched…” (tests brand-element usage). \nPage 4, Section 4: benign test set is constructed from Alexa top 500 and SimilarWeb top 400—i.e., high-reputation domains only (no low-reputation/long-tail sites)."
+}
+```

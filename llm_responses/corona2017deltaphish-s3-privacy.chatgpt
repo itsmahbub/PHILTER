@@ -1,0 +1,5 @@
+{
+  "value": "High",
+  "why": "DeltaPhish is designed to run entirely within the secure boundary of the monitored website (as a module in a web application firewall), performing URL, HTML, and visual analysis on‐site without sending raw URLs, page content, or screenshots to any external servers. This meets the criterion for high privacy preservation, as no sensitive data is transmitted off‐device or outside the organizational boundary.",
+  "evidence": "Abstract: “Our system, named DeltaPhish, can be installed as part of a web application firewall…”; Section 3: “δPhish can be implemented as a module in web application firewalls…”; Section 4.1: “We simulate its application as a module in a web application firewall…”"
+}

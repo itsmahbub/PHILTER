@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "Although the paper does not include an adversarial/evasion-focused evaluation or quantitative breakdown of attack types, its nine lexical features explicitly target and defend against common URL‐level obfuscation tactics (e.g. excessive dots, extra delimiters, inflated domain/TLD counts). This demonstrates resilience to manipulation techniques within its claimed URL-only scope, meeting the ‘Medium’ criteria.",
+  "evidence": "Section 3.3 (pp. 50–51): “No. of dots in URL: … phishing websites have comparatively more numbers of dots … No. of delimiter in a domain: … a dashed or a + symbol in URL www.face-book.com, www.face+book.com can make a phishing URL look like a legitimate one.”"
+}
+```

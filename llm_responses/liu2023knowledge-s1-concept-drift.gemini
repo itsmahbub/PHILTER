@@ -1,0 +1,28 @@
+```json
+{
+    "value": "High",
+    "why": "The paper satisfies both criteria for a 'High' rating. First, the proposed method, DynaPhish, is explicitly designed as an adaptive strategy to combat concept drift, which it identifies as a key limitation of existing reference-based detectors. The core 'Brand Knowledge Expansion' component dynamically discovers and adds new brands to its reference list at runtime, while a 'Maintenance' algorithm periodically re-validates existing references to handle updates or obsolescence. This directly addresses the problem of the static reference list becoming outdated as phishing campaigns evolve. Second, the evaluation protocol includes a rigorous temporal study. The 'Effectiveness in the Wild' experiment (RQ5) simulates a time-forward deployment by testing the system on a stream of 99,000 fresh websites collected over a one-month period, starting with an older, static reference list. The paper even analyzes the changing nature of phishing targets over this period, directly demonstrating and evaluating its resilience to concept drift.",
+    "evidence": [
+        {
+            "page": 2,
+            "section": "Abstract",
+            "quote": "In this work, we propose DynaPhish as a remedy for reference-based phishing detection, going beyond the predefined reference list. DynaPhish assumes a runtime deployment scenario and (1) actively expands a dynamic reference list, and (2) supports the detection of brandless webpages with convincing counterfactual explanations."
+        },
+        {
+            "page": 7,
+            "section": "Maintenance",
+            "quote": "We design Algorithm 2 to periodically cleanse the reference list. In Algorithm 2, for each reference ref (as a domain-representation pair), we validate its status (updated or obsolete) by checking (1) its potential adversarial intention (lines 2-8) and its potential obsolete status (lines 10-11)."
+        },
+        {
+            "page": 13,
+            "section": "10.1 Setup",
+            "quote": "To collect emerging webpages, we used CertStream [4], which provided us with webpages that had newly issued or updated TLS certificates. We controlled the experiment to crawl 3K randomly fresh websites per day... This experiment was conducted for about one month (from 2022-09-02 to 2022-10-04). As a result, 99K fresh webpages were crawled."
+        },
+        {
+            "page": 14,
+            "section": "Observation 2: Dynamics of Phishing Campaigns",
+            "quote": "Table 7 displays the Top-3 phishing targets that were identified during different time periods of our study, revealing the dynamic and evolving nature of emerging phishing campaigns. In the first five days, Microsoft was the most frequently attacked brand, but was replaced by Cisco from Day 6."
+        }
+    ]
+}
+```

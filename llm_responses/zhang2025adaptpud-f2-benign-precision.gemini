@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper sources its benign URLs from Alexa and Curlie. Alexa is a list of popular, high-reputation websites. Curlie (formerly the Open Directory Project, DMOZ) is a human-edited web directory known for its diverse and broad collection of websites, which inherently includes less popular, niche, and long-tail domains. This inclusion of Curlie satisfies the criterion of using low-reputation or long-tail domains. However, the paper makes no mention of specifically including or testing against benign pages that legitimately use third-party brand elements (e.g., PayPal payment buttons, Google/Facebook login widgets). The evaluation does not address this common source of false positives. Since the methodology includes one of the two required diversity subsets but not both, the rating is 'Medium'.",
+    "evidence": "page 7, section 5.1.1. Dataset, \"In both datasets, P-URLs (positive samples) from PhishTank and Kaggle, and B-URLs (negative samples) are sourced from Alexa³ and Curlie⁴. These URL data were gathered through downloading and crawling techniques.\""
+}
+```

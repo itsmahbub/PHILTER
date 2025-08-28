@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The STFL approach is explicitly designed as an adaptive, continually‐learning system—using federated learning rounds on fresh, unlabeled URL data at the edge and aggregating updates on the server to combat evolving phishing tactics. However, the evaluation protocol relies solely on random train/test splits of static datasets rather than a temporal (time‐forward) split, so the claimed resilience to concept drift is not empirically validated. This aligns with the “Medium” level: the method employs an adaptive strategy by design but lacks a temporally aware evaluation.",
+  "evidence": "1) Adaptive strategy by design: “Phishing attacks are continually changing, so machine learning detection models must be continuously updated by collecting new URL data from users without compromising their privacy.” (Page 1, Abstract)  \n2) Continuous FL retraining rounds: Algorithm 1 and Section IV describe federated learning rounds on users’ fresh URL data.  \n3) No temporal evaluation: “There is a need to collect a dataset from users’ entries partitioned by their temporal orders.” (Page 9, Section VI Conclusion and Future Work); Experimental Setting uses random 90%/10% splits (Page 6, Section V.B)."
+}
+```

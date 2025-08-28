@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports key class-sensitive metrics necessary for evaluating performance on imbalanced data, including precision, recall, and F1-score. The authors explicitly state that accuracy is not a suitable metric for this task and focus their analysis on the F1-score. However, the evaluation is incomplete as it fails to report any summary metrics like AUC-PRC, AUC-ROC, or MCC, which are required for a 'High' rating. The inclusion of precision, recall, and F1-score meets the criteria for 'Medium'.",
+    "evidence": "page 6, Section V. B. Experimental Setting: \"We calculate the accuracy, precision, recall, and F1 score of the test set.\"\n\npage 7, Section C. Experimental Results: \"Since accuracy is not a suitable metric for unbalanced data, we also measure the precision, recall, and F1 score. Sub-graphs (c) precision, (d) recall, and (b) F1 score present the results for each model in both environments.\"\n\npage 7, Figure 3: The figure contains sub-graphs explicitly plotting \"Test accuracy\", \"Test F1\", \"Test precision\", and \"Test recall\" results."
+}
+```

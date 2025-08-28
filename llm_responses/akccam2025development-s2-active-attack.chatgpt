@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper evaluates its BiLSTM URL-based phishing detector only on standard clean phishing vs. benign URL datasets without testing any active evasion techniques (e.g. obfuscated scripts, junk characters, invisible elements, dynamic content, cloaking or adversarially perturbed URLs). There is no mention of robustness experiments against deliberate manipulations aimed at bypassing the detector.",
+  "evidence": "Abstract and Sections 3–5: model is trained and tested solely on clean URL datasets (GramBeddings, Malicious and Benign URLs, Ebbu2017, Mendeley) with no evaluation of adversarial or evasive manipulations. For example, “With the developed model, URLs are classified as legitimate or phishing… BiLSTM algorithm and GramBeddings, Malicious and Benign URLs, and Ebbu2017 Phishing datasets were used to develop the model.” (p.1 Abstract)"
+}
+```

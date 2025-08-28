@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed framework incorporates adaptive strategies—its machine-learning models are retrained on a regular schedule and closed-loop user feedback is folded into new training data, and it relies exclusively on character-level URL features rather than volatile third-party signals. However, its evaluation protocol uses a simple random 80/20 train/test split (with no indication of training on earlier data and testing on later-collected samples), so it does not demonstrably assess resilience to temporal concept drift in the experimental results.",
+  "evidence": "Page 5, Section III.B (Machine Learning): “the data of the training model is updated regularly, and the training and testing processes of all models are automatically and regularly triggered.”; Page 9, Section V (Evaluation Results): “In addition, the test data ratio is 0.2.”"
+}
+```

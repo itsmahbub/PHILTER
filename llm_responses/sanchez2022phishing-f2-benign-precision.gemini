@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation is limited to benign URLs sourced from high-reputation, popular websites. The authors explicitly state that they collected legitimate URLs from the \"Top Million Quantcast website,\" which is a list of the most visited domains. This approach does not include low-reputation or long-tail domains, which are a key component for assessing robustness against false positives. Additionally, while the paper focuses on login pages, it does not mention any effort to specifically include pages that make legitimate use of third-party brand elements (e.g., OAuth widgets, PayPal buttons). The collection criteria focused on finding a password field on the page, not on the diversity of page content or domain reputation. Therefore, the evaluation fails to include either of the two specified forms of diversity.",
+    "evidence": "Page 5, Section III: \"We collected the legitimate URLs from the Top Million Quantcast website, which provides the most visited domains from the United States. The list provided on that website only contains the domain names, so we visited them to extract the complete URL. To reach the login page from a website, we used the Selenium web driver and Python, checking buttons or links that could lead to the login form web page. Once we found the presumptive login, we inspected if the form had a password field in order to confirm whether it was a login form.\""
+}
+```

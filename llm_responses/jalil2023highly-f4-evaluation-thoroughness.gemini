@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation that aligns with best practices for imbalanced classification problems like phishing detection. The authors explicitly state the limitations of using accuracy alone and proceed to define and report a full suite of class-sensitive and summary metrics. The experimental results consistently include Precision, Recall (as True Positive Rate or TPR), F1-score, and the Area Under the Receiver Operating Characteristic Curve (AUC-ROC). This thorough approach ensures a robust assessment of the model's performance, accounting for its ability to handle both false positives and false negatives.",
+    "evidence": "Page 12, Section 3.6, Performance evaluation measures: The paper explicitly lists and defines the metrics it will use for evaluation, including \"(1) True Positive Rate (TPR)\", \"(5) Precision\", \"(6) F1-Score\", and \"(7) ROC\".\n\nPage 13, Table 5, Experimental results of Kaggle (D1) dataset: This table, along with subsequent results tables (Tables 6-11), presents the performance of the classifiers using columns for all the required metrics: \"TPR (%)\" [Recall], \"Precision (%)\", \"F1-score (%)\", and \"ROC (%)\" [AUC-ROC]."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes and evaluates several machine learning and deep learning models, with the best-performing one being a Logistic Regression classifier on TF-IDF features from character N-grams. The entire evaluation framework is based on quantitative performance metrics like accuracy, precision, recall, and F1-score. The paper does not implement or discuss any methods for interpreting the model's decisions, such as analyzing model coefficients, calculating feature importances, or applying post hoc XAI techniques (e.g., SHAP, LIME). The models are treated as pure black boxes, providing classification outputs without any mechanism to explain or audit why a specific URL was flagged as phishing.",
+    "evidence": "Page 7, Section V-B, EXPERIMENTAL SETTINGS: \"We used the averaged values of 10-fold cross-validation, reporting the accuracy (Eq. (3)), the F1-Score (Eq. (4)), the precision (Eq. (1)) and the recall (Eq. (2)) [21], [28], [34].\" This quote establishes that the evaluation is strictly based on performance metrics. The subsequent results sections (VI-A and VI-B) and tables (Table 6, Table 7) exclusively report and compare these metrics, with no analysis of feature contributions or decision logic."
+}
+```

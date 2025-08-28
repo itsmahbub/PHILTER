@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper evaluates the ChatGPT-based phishing detector only on ‘clean’ examples of real phishing and benign sites drawn from a previous study, without any tests involving adversarial or evasive manipulations (e.g., junk HTML, obfuscated scripts, deferred execution, or cloaking) within its input modality. There is no discussion or experimental evaluation of robustness against active evasion techniques or adversarially crafted pages.",
+  "evidence": "Page 1–2, Section II (Methodology): “(1) input of websites, detected as non-phishing by the underlying approach [6]; … (3) extraction of the website’s content and metadata; … (5) use of the LLM’s output to classify website as either ‘phishing’ or ‘non-phishing’.”\n\nPage 2, Results & Discussion: “we analyzed the JSON files from the previous study [6] to examine phishing websites that had not been identified” — no mention of any active attack or evasion testing."
+}
+```

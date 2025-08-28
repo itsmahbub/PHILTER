@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper evaluates its URL-based phishing detector against a concrete active evasion technique—URL shortening—by creating a dedicated ‘Shortened URL Dataset’ and reporting a 92.16% accuracy on these obfuscated URLs. This demonstrates robustness to one relevant form of URL-level manipulation, but the paper does not assess other common evasions (e.g. percent-encoding, Punycode, adversarial character insertion), so it meets the criteria for Medium.",
+    "evidence": "Page 23, Section 5.3: “All shortened URL addresses from the three datasets were consolidated into a unified ‘Shortened URL Dataset’ … The proposed model was trained and tested using this dataset, and the results demonstrate that the model can classify shortened URL addresses with 92.16% accuracy. Table 13 illustrates the classification metric results obtained from the training and testing process with the URL Shortening Dataset.”"
+}
+```

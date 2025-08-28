@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper employs a comprehensive set of metrics that are well-suited for evaluating a phishing detection classifier, especially in the context of potential class imbalance. The authors explicitly state they will use Precision, Recall, and F1-score, which are essential class-sensitive metrics. Furthermore, they include AUC-ROC as a summary metric to assess the model's overall classification quality across different decision thresholds. The results are consistently reported using these metrics in tables and figures, demonstrating a robust evaluation methodology that meets all the criteria for a 'High' rating.",
+    "evidence": "Page 7, Section 5.1.3, \"We select seven metrics widely used to quantitatively evaluate the performance of DL-based models: Accuracy, Recall, False Positive Rate (FPR), Precision, F1-score, ROC curves, and AUC.\" The paper then reports these metrics in its results, for example in Table 4 (Page 8) which has columns for Accuracy, Recall, FPR, Precision, and F1-score, and in Figure 6 (Page 9) which displays the ROC curves and corresponding AUC values for all evaluated models."
+}
+```

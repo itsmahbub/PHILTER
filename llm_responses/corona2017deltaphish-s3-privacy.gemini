@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper proposes and evaluates DeltaPhish primarily as a server-side module integrated into a Web Application Firewall (WAF). In this deployment model, detection occurs entirely within the secure boundary of the website being protected. When a user requests a URL on a monitored website, the WAF intercepts the request and invokes DeltaPhish to analyze the page's HTML and visual content against the site's homepage. This process is self-contained within the website's own infrastructure. As a result, no sensitive user data—such as the full URL, webpage content, or screenshots—is transmitted from the user's device or the organization's server to an external, third-party service for analysis. This server-side, in-boundary deployment inherently protects user privacy and aligns with the criteria for a 'High' rating.",
+    "evidence": "Page 12, Section 4: 'In this section we empirically evaluate δPhish, simulating its application as a module in a web application firewall. Under this scenario, we assume that the monitored website has been compromised... The URLs contacted by users visiting the website are monitored by the web application firewall... The contacted URLs that are not blocked by the web application firewall are forwarded to δPhish, which detects whether they are substantially different from the homepage... If δPhish reveals such a sign of compromise, the web application firewall can deny user access to the corresponding URL.'"
+}
+```

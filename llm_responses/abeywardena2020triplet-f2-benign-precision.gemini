@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The evaluation's benign dataset is exclusively sourced from the Alexa Top 10k list, which constitutes a high-reputation dataset. The paper's rationale for this choice is that \"phishers usually target popular sites.\" This approach fails to meet the criteria for diversity, as it does not include low-reputation or long-tail domains. Furthermore, there is no mention of specifically including or evaluating against benign pages that legitimately use third-party brand elements (e.g., social media logins, payment buttons), which are common sources of false positives. The evaluation is therefore limited to popular sites and does not address the harder benign subsets required for a more robust assessment of the false positive rate.",
+    "evidence": "Page 2, Section III, DATA COLLECTION: \"We build a dataset from the Top 10k domains of the Alexa list of 2019-01-25. The rationale is that phishers usually target popular sites.\" and Page 2, Section III, Target scope: \"To evaluate our model as well as to compare with baselines in Section IV-E, we collect 232 new screenshots of 36 domains on the Alexa Top 10K list on 2019-10-07.\""
+}
+```

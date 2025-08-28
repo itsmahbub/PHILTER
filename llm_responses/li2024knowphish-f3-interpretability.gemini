@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method, KnowPhish Detector (KPD), is inherently interpretable due to its multi-stage, rule-based decision process. The final classification is not the output of a single black-box model but a logical conclusion based on a series of verifiable steps: 1) identifying a page as credential-requiring (CRP), 2) extracting a brand intention (visually or textually), and 3) comparing the page's domain against a list of legitimate domains for that brand. Crucially, the system design explicitly incorporates explanation generation. An LLM is prompted not only to extract information but also to provide an \"overall rationale for its CRP prediction.\" This LLM-generated summary, containing human-readable reasoning, serves as a direct, per-decision explanation for the model's intermediate steps, fulfilling the criteria for high interpretability by exposing the decision path and its justification.",
+    "evidence": "page 9, section 5.1, \"We design a prompt template (details provided in [26]) with three in-context examples to understand the webpage from various aspects, such as what the brand intention of the webpage is, whether the webpage is a CRP, which elements in the HTML makes it a CRP, and the overall rationale for its CRP prediction. The generated summary will serve as an auxiliary text attribute of the webpage for the following CRP classification and text brand extraction tasks.\""
+}
+```

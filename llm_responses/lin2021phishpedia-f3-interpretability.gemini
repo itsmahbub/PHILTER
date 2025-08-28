@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The Phishpedia system is explicitly designed to provide per-decision explanations for its classifications. Instead of a simple binary output, it generates visual annotations on the webpage screenshot. These annotations include bounding boxes that highlight the detected brand logo and the input fields for credentials, along with a textual explanation of the identified target and the threat. This method directly exposes the core reasoning: the page is flagged because it visually impersonates a specific, identified brand (via its logo) while being hosted on an unaffiliated domain, and it is soliciting user credentials. This use of bounding-box overlays and annotations constitutes a clear, per-decision explanation that aligns with the 'High' fulfillment criteria.",
+    "evidence": "Page 3, Section 1: 'Besides, Phishpedia also provides explainable visual annotations on the phishing page screenshot (see Figure 2 for a sample output from our system).'\n\nPage 3, Figure 2: The figure, titled 'Screenshot of Phishpedia', shows a webpage screenshot with overlaid bounding boxes and text. Annotations include 'The webpage is faking Amazon' next to a box around the Amazon logo, 'Input for stealing your inforation' next to boxes around login fields, and 'warning: this web domain looks similar to amazon!'.\n\nPage 4, Section 2.2: 'Finally, we combine the reported identity logo, input box, and phishing target to synthesize a visual phishing explanation (as shown in Figure 2).'"
+}
+```

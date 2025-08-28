@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static detection model that is trained in a 'pre-deployment' phase and then used for inference. The methodology does not incorporate any adaptive mechanisms, such as periodic retraining or continual learning, to address the evolution of phishing tactics (concept drift). The features used are primarily lexical and domain-based, which are known to be susceptible to drift. While the evaluation uses multiple datasets from different years (e.g., ISCX URL_2016, Mendeley_2020), there is no evidence of a temporal evaluation protocol (i.e., training on older data and testing on newer data). The use of 'cross-validation across several datasets' suggests standard random splits, which mixes temporal information. The authors acknowledge the problem of concept drift and the need for retraining but do not build this into their proposed system or evaluation framework, thus assuming static phishing tactics for the purpose of their model's design and testing.",
+    "evidence": [
+        {
+            "page": 3,
+            "section": "3. Proposed methodology",
+            "quote": "The pre-deployment and deployment phases comprise the suggested system's two phases... The simulation is saved for subsequent deployment into a data centre following methodical testing."
+        },
+        {
+            "page": 9,
+            "section": "4.1. Experimental setup",
+            "quote": "In-depth testing and cross-validation across several datasets further guaranteed the model's consistent and dependable performance, boosting the veracity of the findings and their relevance to actual phishing detection situations."
+        },
+        {
+            "page": 13,
+            "section": "4.3.6. Evaluation of overall performances",
+            "quote": "For example, the suggested model performed marginally worse on the Phishing Storm dataset even though it obtained high accuracy on the ISCX URL_2016 and Mendeley_2020 datasets. The underlying variations in each dataset's features and data distribution may be the cause of this disparity. Though they may not have been as common in the other datasets, the Phishing Storm dataset includes more recent and sophisticated phishing attacks... These results highlight how crucial it is to keep models updated and retrained using the most recent data in order to preserve their efficacy."
+        }
+    ]
+}
+```

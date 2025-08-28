@@ -1,0 +1,28 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation of the model's robustness against active attacks that are specifically relevant to its input modality (screenshots). The authors dedicate an entire section (6.6) to this security evaluation, where they test against two distinct classes of attacks. First, they assess resilience against seven types of 'hand-crafted perturbations' like blurring, noise, occlusion, and shifting, which simulate simple visual evasions. Second, they evaluate the model against sophisticated 'adversarial perturbations' using the Fast Gradient Sign Method (FGSM), a standard white-box attack in machine learning. Crucially, they not only show the model's vulnerability to FGSM but also demonstrate a successful defense by using adversarial training to improve its robustness. This evaluation against a diverse set of modality-aware attacks—spanning both simple transformations and advanced, gradient-based examples—and the demonstration of a defense mechanism meets the criteria for 'High'.",
+    "evidence": [
+        {
+            "page": "8",
+            "section": "6.6 Robustness and Security Evaluation",
+            "quote": "In this section, we study how susceptible VisualPhishNet is to two different models of evasion attacks. In the first one, we assume a white-box attack where the adversary has full access to the target model and the trusted dataset used in training... Another direction for evasion attacks is crafting adversarial perturbations with imperceptible noise that would change the model decision."
+        },
+        {
+            "page": "9",
+            "section": "6.6 Robustness and Security Evaluation",
+            "quote": "Performance against hand-crafted perturbations. We studied 7 types of perturbations [51] that we applied to the phishing test set (without retraining) to mimic simple attacks aiming at lowering detection without causing suspicious augmentations. We experimented with blurring, darkening, brightening, gaussian noise, salt and pepper noise, occlusion by insertion of boxes, and shifting."
+        },
+        {
+            "page": "9",
+            "section": "6.6 Robustness and Security Evaluation",
+            "quote": "Adversarial perturbations. Another direction for evasion attacks is crafting adversarial perturbations... we propose and investigate an adaptation of the well-known example generation methods to our problem by using the Fast Gradient Sign Method (FGSM) [15]..."
+        },
+        {
+            "page": "10",
+            "section": "6.6 Robustness and Security Evaluation",
+            "quote": "After applying the generated FGSM on the phishing test set using the tuned model. As shown in the last two columns of Table 5, the performance improved to a much a comparable performance to the original test set in the case of the 0.005 noise."
+        }
+    ]
+}
+```

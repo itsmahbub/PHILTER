@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper reports class-sensitive metrics (precision, recall, F1-score) but does not include any of the required summary metrics (AUC-PRC, AUC-ROC, or MCC) to properly evaluate performance under class imbalance.",
+  "evidence": "Page 12, Section V.C, Table 5: “Approaches … Precision/% … Recall/% … F1”; no AUC-ROC, AUC-PRC, or MCC values are reported."
+}
+```

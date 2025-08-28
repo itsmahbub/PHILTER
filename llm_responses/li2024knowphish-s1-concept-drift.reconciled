@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "KnowPhish and KPD are explicitly designed to avoid drift-prone signals—by relying on invariant brand features (logos, aliases, domains)—and include an automated pipeline for periodically rebuilding the brand knowledge base to incorporate new phishing targets. However, the paper’s end-to-end phishing detector is not evaluated in a true time-forward setting (i.e. training the full system on earlier data and testing on later data); only the small text-based CRP classifier is trained on 2022 data and tested on 2023 data. The logo-based components and overall system evaluation do not use temporally separated train/test splits, so the evaluation does not fully demonstrate resilience to concept drift over time.",
+  "evidence": "Section 4.4.2 (page 8): “Adapting to Evolving Phishing Targets. … one can simply handle such information obsolescence by regularly re-constructing KnowPhish to search for new potential phishing targets outside B.”\n\nSection 1 (page 2): “…this approach is based on an invariant that does not change over time, it is relatively robust to distribution shift [33, 34].”\n\nSection 6.1 (page 10): The text-based CRP classifier is trained on samples “from the end of 2022” (D₂) and tested on TR-OP data crawled “within 6 months from July to December 2023,” but the full RBPD (logo-based) components are evaluated only on a single 2023 dataset without an earlier training split."
+}
+```

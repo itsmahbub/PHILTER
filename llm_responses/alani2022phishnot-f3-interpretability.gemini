@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides global-level interpretability by analyzing and presenting the feature importances of their final Random Forest model. This offers insight into which features the model relies on most heavily across all predictions (e.g., directory_length, time_domain_activation). However, it does not provide any mechanism for per-decision explanations, such as showing the decision path for a specific URL or using post-hoc XAI techniques like SHAP or LIME. This provision of global insight without per-decision traceability aligns with the 'Medium' fulfillment criteria.",
+    "evidence": "Page 8, Section 6.2, \"Fig. 11 shows the feature importance of the 14 selected features. It is clear from Fig. 11 that four features contribute to the classification process significantly more than the other nine. These features are directory_length, time_domain_activation, qty_slash_directory, and file_length.\" This is directly supported by the bar chart in Figure 11 on Page 9."
+}
+```

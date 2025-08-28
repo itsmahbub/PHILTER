@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The evaluation uses three datasets, one of which (CPURNN) sources its benign URLs from Common Crawl. As a vast and uncurated web corpus, Common Crawl inherently includes a significant number of low-reputation and long-tail domains, satisfying one of the two key diversity criteria. However, another primary dataset used (PDRCNN) explicitly sources its benign URLs from the high-reputation Alexa 1M list, which is the type of \"easy\" benign set the metric cautions against. The paper makes no mention of including the second required diversity subset: pages with legitimate brand element usage (e.g., third-party login widgets, payment buttons). Because the evaluation includes low-reputation domains via Common Crawl but not the brand-element subset, it meets the criteria for a \"Medium\" rating.",
+    "evidence": "page 4, Section V. A. Datasets, \"CPURNN dataset [3] contains more than two million URLs: 1,146,432 phishing URLs from PhishTank and 1,200,000 benign URLs from Common Crawl.\"\npage 4, Section V. A. Datasets, \"PDRCNN dataset [49] contains approximately 500,000 URLs: ...and 245,023 benign URLs that were collected as follows: the authors used search engines to search for the domain names that appear in the Alexa 1M URLs.\""
+}
+```

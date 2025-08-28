@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper does not describe any privacy‐preserving deployment or data‐handling measures at inference time. There is no mention of client‐side or within‐boundary execution, hashing or truncating URLs, federated learning, or anonymized feature extraction. Instead, the method assumes sending full URL feature vectors to a centralized model for classification.",
+  "evidence": "Page 8, Section III.A: “The dataset was collected in a CSV file from the well-known dataset repository called Kaggle… After preprocessing, the complete dataset was converted into a single corpus and used for further processing. The complete corpus was divided into two partitions, 70% for training and 30% for testing… predictions were made to classify the phishing URLs and evaluate their performance.”"
+}
+```

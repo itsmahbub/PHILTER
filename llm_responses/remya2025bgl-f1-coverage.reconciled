@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While the authors do not provide a per-tactic breakdown of phishing examples or report performance on individual tactics, they explicitly design and evaluate their method to cover multiple real-world phishing strategies. The hybrid model incorporates lexical (e.g., suspicious keywords), structural (e.g., subdomain count, redirections), and metadata (e.g., domain age, SSL status) features, and the case study on agricultural sites discusses these varied tactics. This fulfills the ‘Medium’ criterion: the presence of multiple phishing tactics in the evaluation is clearly specified, but no per-tactic performance is reported.",
+  "evidence": "• Page 1, Abstract: “It also addresses evolving phishing tactics by considering both lexical and structural URL features.”\n• Page 6, Section VI.A: “The dataset comprises a diverse mix of features categorized into lexical, host-based, and metadata features… Presence of Suspicious Words… Domain Age… Presence of SSL Certificates.”\n• Page 16–17, Section XI and Table 7: “Key features include the domain age, presence of SSL certificates, the number of subdomains, redirections, and specific keywords… [Table 7 shows] real time dataset-sample with URLs exhibiting different combinations of these tactics.”"
+}
+```

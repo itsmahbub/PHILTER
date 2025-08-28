@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "PhishIntention is designed to be largely tactic-agnostic—relying on visual brand and credential-taking intention extraction rather than URL or HTML-specific heuristics—so it can detect phishing across varied hosting environments, obfuscation strategies, and URL evasion tactics. However, the authors do not provide a quantitative breakdown of detection performance by specific tactic (e.g., homograph attacks, subdomain spoofing, hosting on shared domains), reporting only overall precision/recall.",
+  "evidence": "– Section 2 Threat Model (p. 4): PhishIntention is evaluated against multiple adversaries, including HTML obfuscation and misleading legitimacies, demonstrating a tactic-agnostic design.  \n– Algorithm 1 (lines 4–6, p. 6): Detection is based on visual logo matching and a simple domain-alignment check, with no reliance on URL pattern features.  \n– Section 6.3 (p. 8): Presents only overall ROC curves for phishing versus benign pages, with no per-tactic performance breakdown."
+}
+```

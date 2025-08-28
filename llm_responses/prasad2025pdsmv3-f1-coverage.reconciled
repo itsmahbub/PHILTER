@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper explicitly selects and evaluates features corresponding to multiple phishing tactics observable in URLs (e.g. IP‐address usage, subdomain spoofing via dot count, lexical manipulations such as URL length and hyphens, domain age and DNS records to catch newly created domains, HTTPS misuse, suspicious tokens and brand names). This demonstrates awareness and inclusion of diverse tactics in the evaluation datasets. However, the authors do not provide a quantitative breakdown of how many samples of each tactic category appear in their test sets, nor do they report detection performance per tactic, so it fails to meet the 'High' criterion.",
+  "evidence": "Page 8, Section 3.5: “• Have IP: … determine that a URL is malicious if it includes an IP address. … • Sub-domain: … count of ‘.’ in the URL exceeds 3 …”; Page 9, Section 4.2.3: “Given that malicious URLs are frequently less than a year old, the age of the domains is a crucial feature … includes DNS records, WHOIS data”; Page 9, Section 4.2.4: “This dataset offers … attributes like using HTTPS, having different URL tokens, and having brand names.”"
+}
+```

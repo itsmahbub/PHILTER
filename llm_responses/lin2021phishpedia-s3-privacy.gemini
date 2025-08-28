@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's proposed deployment scenarios explicitly detail a server-side architecture where user-facing services (like email gateways) send URLs to an external \"Phishpedia service in the cloud\" for analysis. This service receives the full URL, fetches the webpage content, captures a screenshot, and then performs the detection. This model requires transmitting the complete and unfiltered URL, which may contain sensitive parameters, from the user's environment to an external server. The paper does not mention any client-side deployment options or privacy-preserving mechanisms such as URL hashing, sanitization, or sending anonymized feature vectors.",
+    "evidence": "Page 15, Section 7.2, Application and deployment scenarios: \"Scenario 1: URL access interception. ... ii) Every URL in an e-mail is transformed and prefixed with a cloud-service link, so that anytime a user clicks on the link, Phishpedia service in the cloud analyses the URL. In this case, Phishpedia fits in with negligible additional delay.\""
+}
+```

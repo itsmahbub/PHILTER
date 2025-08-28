@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper does not describe any privacy-preserving deployment or data-handling mechanisms. Instead, the method collects full, unfiltered URLs (including prefixes and suffixes), raw HTML content, response information, and screenshots and processes them externally. There is no mention of on-device inference, hashed URL lookups, federated learning, or anonymization of features, so sensitive data would have to be transmitted off-device without safeguards.",
+  "evidence": "Page 4, Section 3.2: “After loading each URL sample, the access information, which includes HTML details and response information, is saved once. … the access information is saved, along with a screenshot of the webpage.”"
+}
+```

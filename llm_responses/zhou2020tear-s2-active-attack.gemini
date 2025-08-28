@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper demonstrates a clear consideration for resisting active attacks within its chosen modalities (visual and network). The method is explicitly designed to be robust against several visual manipulation techniques, such as logo scaling (by using SIFT), logo splitting or layering (by matching against a screenshot of the full rendered page), and color inversion (by matching against both original and inverted logo images). Its reliance on rendered output also makes it inherently immune to HTML/JS source code obfuscation. However, it does not address other significant active attacks relevant to its scope. The methodology does not account for dynamic evasions, such as cloaking or content that is loaded or rendered only after user interaction (deferred execution), which could prevent the logo from being present in the initial screenshot. Furthermore, the authors explicitly acknowledge its vulnerability to network-level evasions like domain fronting. Therefore, the method is resilient to an important subset of attacks but not a comprehensive range.",
+    "evidence": [
+        {
+            "page": 5,
+            "section": "3.1 Features",
+            "quote": "adversaries may use tricks to avoid using full/original logo images to avoid detection, e.g., splitting the logo into small images, or overlay layers of images. However, they still need to preserve the overall visual presentation of the spoofed page. Hence, we render the full pages and utilize sub-image matching to compare them with logo fingerprints."
+        },
+        {
+            "page": 6,
+            "section": "3.2 Algorithms",
+            "quote": "As the phishing webpage can be self-defined, attackers can use different scales of logo images to deceive users and to evade logo detection methods which are not robust enough on image scale variation. So we applied Scale Invariant Feature Transform (SIFT) algorithm [19] which can generate scale-invariant keypoint descriptors."
+        },
+        {
+            "page": 6,
+            "section": "3.2 Algorithms",
+            "quote": "In particular, when using different background colors, such as white or black, attackers need to invert the color of logo images accordingly for users to recognize. When color inverted, the keypoints' positions could still match but the keypoints orientation and descriptor vector would change, which will reduce our matching performance. So we use both original image and color inverted image for matching."
+        },
+        {
+            "page": 15,
+            "section": "6 Discussions",
+            "quote": "For HTTPS-hosted unknown pages, PhishFencing relies on correct host names in SNI fields. However, domain fronting, a versatile censorship circumvention technique, can be employed to show one domain in SNI field while using another domain in the HTTP host field [14]. In this way, attackers can replace the host name in the SNI field with a legitimate host name to evade our detection."
+        }
+    ]
+}
+```

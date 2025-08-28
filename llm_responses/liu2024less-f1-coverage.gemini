@@ -1,0 +1,33 @@
+```json
+{
+    "value": "High",
+    "why": "The paper demonstrates a strong focus on tactic diversity throughout its design and evaluation. The core contribution—eliminating a predefined reference list—is aimed at covering a wider variety of brand targets, including less-popular ones. The methodology explicitly describes mechanisms to handle specific, common phishing tactics such as the use of web hosting services (e.g., GitHub, Vercel), SSO domain redirection, and legitimate domain aliases. The evaluation is comprehensive and provides quantitative performance breakdowns for several of these tactics. For example, it reports a 0% false positive rate on a dedicated domain alias dataset, a 70% brand recognition rate on low-ranked (less popular) brands, and measures robustness against various synthetic evasion attacks like HTML obfuscation and prompt injection. Furthermore, the paper provides a detailed quantitative breakdown of its failure cases from a large-scale field study, categorizing them by the underlying phishing tactic (e.g., 53% cryptocurrency phishing, 15% cloaking), which underscores a thorough, tactic-aware analysis.",
+    "evidence": [
+        {
+            "page": 6,
+            "section": "3.1.4 Adaptation to Domain Variants",
+            "quote": "Web Hosting Services Web hosting services such as GitHub, Vercel, and Netlify can be exploited by phishers due to their ease of deployment... To address this, we maintain a list of web hosting domains. If we encounter any of these domains, we proceed with brand recognition without the popularity validation step."
+        },
+        {
+            "page": 6,
+            "section": "3.1.4 Adaptation to Domain Variants",
+            "quote": "SSO Domain Redirection Single Sign-On (SSO) services often redirect users to third-party sites... When a redirection happens, we will re-run PhishLLM on the updated URL and screenshot."
+        },
+        {
+            "page": 10,
+            "section": "Table 4: Component-wise Performance Evaluation.",
+            "quote": "The table shows performance on 'Low-ranked Alexa' websites, with a recall of 0.70 for brand recognition, directly evaluating the ability to detect phishing targeting less common brands."
+        },
+        {
+            "page": 11,
+            "section": "4.5.3 Phishing Landscape",
+            "quote": "Target Analysis Out of the 1,340 reported phishing instances, 1,105 were with the brands not included in the reference list of 227, and they cover 939 unseen brands."
+        },
+        {
+            "page": 13,
+            "section": "5, Failure Cases",
+            "quote": "In contrast, false negatives arise due to 1: (i) Cryptocurrency Phishing (53%): These phishing involve actions like scanning QR codes, downloading malicious apps, or uploading wallet tokens, which do not ask conventional credentials... (ii) Cloaking (15%): Phishers use CAPTCHA challenges to hide content from automated detectors."
+        }
+    ]
+}
+```

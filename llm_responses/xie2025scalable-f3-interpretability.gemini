@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed model (SPWDM) is a complex deep learning architecture based on Temporal Convolutional Networks and attention mechanisms, making it inherently a 'black box'. The paper does not implement any post-hoc XAI techniques like SHAP or LIME, nor does it use its attention mechanisms to provide per-decision explanations (e.g., heatmaps). However, the authors do provide global-level insight into the model's behavior. They conduct a feature importance analysis using mutual information to score and rank the handcrafted URL, HTML, Response, and Dynamic features. This provides a general understanding of which signals the model relies on most, but it does not explain the reasoning behind any single classification.",
+    "evidence": "Page 13, Section 5.5 The Impact of Extracted Features on the Detection Model, \"In this section, we conducted several experiments to assess the influence of extracted features on our experimental outcomes. Initially, we utilized mutual information to score these features and compared the scores of the top 10, 20, 30, 40, and 50 features. As depicted in Figures 8a, 8b, and 8d, some features exhibited a mutual information score of 0, suggesting their potential insignificance.\" This is further supported by Figure 8 on the same page, which is explicitly titled \"Contribution analysis of different manual features based on mutual information.\""
+}
+```

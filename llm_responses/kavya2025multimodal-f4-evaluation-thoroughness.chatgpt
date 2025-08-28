@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The paper reports all three class‐sensitive metrics (precision, recall, F1‐score) and also includes a summary metric (AUC-ROC), satisfying the high standard for evaluation under class imbalance.",
+  "evidence": "Section IV (Comparative Result Analysis), page 14: “The performance of the proposed models was evaluated using metrics such as Accuracy, F1-Score, Precision, Recall, and AUC-ROC.”; Table 5 (page 14) lists Precision, Recall, and AUC-ROC for FGCL-Net."
+}
+```

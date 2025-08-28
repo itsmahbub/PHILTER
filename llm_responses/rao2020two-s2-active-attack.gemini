@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper demonstrates robustness against a subset of active attacks, primarily those involving content manipulation. The core design of the first-level filter uses fuzzy hashing (Simhash and Perceptual Hash) explicitly to be resilient to minor modifications, making it effective against near-duplicate sites where attackers misspell text, change tags, or alter paths. The method also directly counters the common evasion technique of replacing text with images by incorporating screenshot-based perceptual hashing. The second-level heuristic filter includes features like 'Zero Links' which are also informed by this evasion tactic. However, the paper does not address or evaluate resistance against more advanced active attacks. There is no discussion of defenses against dynamic content loading that requires user interaction (deferred execution), cloaking (where attackers serve benign content to the detector), or adversarial examples specifically crafted to bypass the machine learning-based heuristic filter. Therefore, it is resilient to some, but not all, relevant active attacks.",
+    "evidence": [
+        {
+            "page": 7,
+            "section": "3.1.1 Feature extraction",
+            "quote": "F5-Feature based on screenshot This feature captures the screenshot of the visited website to generate a fingerprint representing the website. This feature counters the phishing sites which replaces the textual content with an image as shown in Fig. 5."
+        },
+        {
+            "page": 6,
+            "section": "3.1.1 Feature extraction",
+            "quote": "Attackers may misspell or skip some text (copyright, title, metadata), tags in the phishing sites in order to avoid disclosure of actual identity of the site... Finally, there exists some phishing sites which replaces textual content with an image such that textual based techniques are bypassed. Features are selected and extracted considering the observations mentioned above..."
+        },
+        {
+            "page": 4,
+            "section": "2.3 Visual similarity based techniques",
+            "quote": "Due to the property of Simhash and PHash algorithms, the hashes of two similar documents vary by less number of bits. Thus, use of these algorithms in our proposed work made the technique fast and robust to manipulations."
+        },
+        {
+            "page": 2,
+            "section": "1 Introduction",
+            "quote": "The second technique is based on heuristics... These techniques are bypassed by the attackers once the algorithm or features are known to the phisher."
+        }
+    ]
+}
+```

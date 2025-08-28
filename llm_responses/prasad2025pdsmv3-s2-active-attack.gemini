@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper evaluates its proposed method using several standard, publicly available datasets of phishing and benign URLs. The methodology and experimental setup show no evidence of testing against active attacks or evasive techniques. The benchmarks are limited to classifying URLs from these static collections, which represent clean examples rather than instances of deliberate manipulation designed to bypass detectors. The paper discusses general challenges like 'vulnerabilities to adversarial attacks' in the introduction but does not include an evaluation of its own model's resilience to such threats. The evaluation focuses entirely on standard classification metrics (accuracy, precision, recall, etc.) on non-adversarial data.",
+    "evidence": [
+        {
+            "page": 9,
+            "section": "4.2. Dataset description",
+            "quote": "In this research, the ISCX URL_2016, URL, Phishing storm, and Mendeley_2020 datasets were employed as validation datasets to assess the efficacy of our suggested methodology."
+        },
+        {
+            "page": 9,
+            "section": "4.2.1. ISCX-URL phishing dataset (IEEE)",
+            "quote": "There are roughly 114,400 URLs in the ISCX-URL-2016 dataset, both reputable and shady... It has a wide range of URLs classified as benign or phishing."
+        },
+        {
+            "page": 9,
+            "section": "4.3. Evaluation metrics",
+            "quote": "A variety of evaluation metrics, including false positive rate (FPR), accuracy (A), recall (R), F1 score and precision (P), were introduced to assess the effectiveness of the model that was suggested."
+        },
+        {
+            "page": 3,
+            "section": "2.1. Existing limitations",
+            "quote": "Imbalanced datasets and vulnerabilities to adversarial attacks affect machine learning algorithms' accuracy. Spear phishing and other targeted attacks pose a serious risk because they are often tailored to target specific individuals or groups."
+        }
+    ]
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's method uses a logistic regression classifier, which is an inherently interpretable model. While the system does not provide per-decision explanations for why a specific URL is flagged (ruling out a 'High' rating), the authors dedicate a significant portion of the paper to providing global interpretability. Section 4.2, 'Evaluation of Features,' offers a detailed analysis of feature importance, presenting statistics and distributions for URL, hosting, and page content features. This analysis clarifies which signals the model relies on in aggregate (e.g., the presence of an IP address in the hostname, specific URL tokens, low PageRank), providing clear global insight into the model's behavior without offering per-instance traceability.",
+    "evidence": "page 3, section 3.1, 'A logistic regression classifier makes the final determination of whether a page is phishing on the basis of these features [5].'\npage 8, section 4.2, 'In this section, we analyze the value of the assorted features in our feature set. For a summary of the feature set we described in Section 3.2, see Table 2... For our URL features, we find that IP address hosting is several times more common in phishing pages than in non-phishing pages and that a very small percentage of non-phishing sites have unusually long host names (see Table 3.)'"
+}
+```

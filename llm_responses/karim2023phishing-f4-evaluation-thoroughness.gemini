@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several crucial class-sensitive metrics necessary for evaluating a phishing detection system, including precision, recall, and F1-score. The authors define these metrics and consistently report them across all experiments for each model tested. However, the evaluation lacks any of the required summary metrics that provide a more comprehensive view of classifier quality, such as AUC-PRC, AUC-ROC, or MCC. While the reported metrics are valuable, the absence of a robust summary metric means the evaluation does not have full metric coverage as defined by the criteria for a 'High' rating.",
+    "evidence": "Page 9, Section III.C, 'EVALUATION PARAMETER': 'Machine learning performance must be evaluated using several evaluation parameters. The machine-learning algorithm provides results in the form of predictions. The evaluation parameters measure the number of true and false predictions made by the model in both legitimate and phishing classes... Parameters such as accuracy, precision, recall, specificity and the F1-score were used.'\n\nPage 14, Table 10, 'Results for the performance of the hybrid model (LR+SVC+DT).': This table provides a comparative summary of all tested models, with dedicated columns for 'Accuracy', 'Precision', 'Recall', 'Specificity', and 'F1-score', confirming their use. A full review of the paper shows no mention or use of AUC-PRC, AUC-ROC, or MCC."
+}
+```

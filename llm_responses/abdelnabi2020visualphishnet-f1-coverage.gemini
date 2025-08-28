@@ -1,0 +1,33 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method, VisualPhishNet, is tactic-agnostic by design, as it learns a generalizable visual profile for a website to handle pages with new visual appearances, rather than relying on brittle page-to-page matching. This approach is inherently robust to tactics involving visual modifications. The paper's evaluation section provides an exemplary analysis of tactic diversity. The authors systematically test the model against a wide array of visual evasion tactics, including seven distinct types of hand-crafted image perturbations (blurring, noise, occlusion, shifting, etc.) and white-box adversarial machine learning attacks (FGSM). Crucially, the paper provides a quantitative breakdown of detection performance for each of these evaluated tactics, showing the relative drop in matching accuracy and ROC AUC. Furthermore, it explicitly evaluates the model's performance against unseen \"zero-day\" pages, demonstrating its ability to handle novel attack campaigns. The discussion also provides a qualitative analysis of successful detections, categorizing them by the difficulty of visual mimicry (from exact copies to pages with large design disparities). This comprehensive and quantitative evaluation of specific tactics demonstrates a deep consideration of tactic diversity.",
+    "evidence": [
+        {
+            "page": 2,
+            "section": "2.1.2 Image-based similarity approaches",
+            "quote": "Thus, our model and dataset collection do not rely on page-to-page matching, but on learning a similarity metric between any two same-website pages, even with different contents, to proactively generalize to partially similar, obfuscated, and unseen pages."
+        },
+        {
+            "page": 8,
+            "section": "6.7 Robustness and Security Evaluation",
+            "quote": "Performance against hand-crafted perturbations. We studied 7 types of perturbations [51] that we applied to the phishing test set (without retraining or data augmentation): blurring, brightening, darkening, Gaussian noise, salt and pepper noise, occlusion by insertion of boxes, and shifting. Table 4 demonstrates an example of each of these changes along with the corresponding relative decrease in performance."
+        },
+        {
+            "page": 9,
+            "section": "6.7 Robustness and Security Evaluation",
+            "quote": "Table 4: The studied hand-crafted perturbations applied to the phishing test set. The table shows the relative decrease in the top-1 matching accuracy and ROC AUC with respect to the performance on the original phishing set."
+        },
+        {
+            "page": 9,
+            "section": "6.7 Robustness and Security Evaluation",
+            "quote": "Adversarial perturbations... we propose and investigate an adaptation of the adversarial example generation methods to our problem by using the Fast Gradient Sign Method (FGSM)... We demonstrate our results in Table 5 where we show the relative decrease in the top-1 matching accuracy and the ROC AUC for each case..."
+        },
+        {
+            "page": 10,
+            "section": "6.8 Testing with New Crawled Data",
+            "quote": "Zero-day pages. To provide additional evidence for the efficacy of VisualPhishNet in detecting zero-day pages, we crawled recent 955 PhishTank pages targeting the trusted-list... These are new pages that were created and captured after dataset collection, training, and evaluating the model with all previous experiments... We then tested the trained model with this new set (without retraining), and 93.25% were correctly matched..."
+        }
+    ]
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The paper explicitly describes that all feature extraction and similarity computations are performed locally on the end‐user’s device (CPU or GPU) using pre‐computed embeddings, with no mention of transmitting raw URLs, page content, or screenshots to any external server. This on‐device inference design meets the ‘High’ criterion for privacy preservation.",
+  "evidence": "Section 7.3 Deployment Considerations (page 12): “our system does not require storing all screenshots of the trusted-list, as it suffices to store the embedding vectors … the average time for prediction was 1.1±0.7 seconds … on a NVIDIA Tesla K80 GPU. … the decision could only be computed when the user attempts to submit information.”"
+}
+```

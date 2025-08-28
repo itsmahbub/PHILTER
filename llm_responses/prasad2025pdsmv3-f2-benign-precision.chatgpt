@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The evaluation relies solely on standard benchmark datasets (ISCX-URL-2016, Kaggle URL, Phishing Storm, Mendeley_2020) without any targeted inclusion of long-tail or low-reputation domains, nor benign pages embedding legitimate brand elements (e.g., PayPal buttons or OAuth widgets). There is no discussion of evaluating the detector on personal, regional, or newly registered domains, nor on pages that legitimately include brand assets, so both harder benign subsets are unaddressed.",
+  "evidence": "Section 4.2 (page 9): “In this research, the ISCX URL_2016, URL, Phishing Storm, and Mendeley_2020 datasets were employed as validation datasets to assess the efficacy of our suggested methodology.” No mention is made of including low-reputation/long-tail domains or benign pages with legitimate brand elements."
+}
+```

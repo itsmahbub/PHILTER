@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation using a robust set of metrics suitable for the phishing detection task, which is characterized by class imbalance. The authors report all the required class-sensitive metrics: Precision, Recall, and F1-Score. Furthermore, they include two of the required summary metrics: Area Under the Receiver Operating Characteristic Curve (AUC-ROC) and the Matthews Correlation Coefficient (MCC). This approach goes far beyond simple accuracy, allowing for a thorough assessment of the model's performance in terms of minimizing both false positives and false negatives, which is critical for real-world deployment.",
+    "evidence": "Page 15, V. SIMULATION RESULTS, TABLE 4. The table titled \"Comparing the proposed RNT-J model's performance with current models.\" explicitly lists the performance of their proposed model and several baseline models across a wide range of metrics. The column headers include: \"ROC\", \"AUC\", \"Recall\", \"MCC\", \"Precision\", and \"F1-Score\". For their proposed RNT-J model, they report a Recall of 0.99, an MCC of 0.985, a Precision of 0.978, and an F1-Score of 0.988."
+}
+```

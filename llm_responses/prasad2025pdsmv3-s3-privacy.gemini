@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's proposed deployment architecture explicitly describes a client-server model where the user's client sends the complete, raw URL to a cloud-based server for analysis. The server is responsible for all subsequent processing, including feature extraction and classification. This design sends potentially sensitive, unfiltered user data (the full URL, which could contain personal identifiers or session tokens) off the user's device to an external entity. The paper does not mention any privacy-preserving mechanisms like hashing, URL truncation, sanitization, or client-side feature extraction to mitigate this risk.",
+    "evidence": "Page 3, Section 3, Proposed methodology: \"During deployment, the client retrieves the URL and transmits it to the cloud-based server via an API call. The URL is encoded employing UTF-8 encoding because it may contain several symbols. It is then sent as an HTTP parameter in a straightforward API call. After receiving the URL, the server parses the characteristics and requests external sources for the characteristics. Following their collection, the characteristics extracted by the Boosted ConvNeXt approach are fed into the trained DL classifier.\" This process is also visually depicted in Figure 1."
+}
+```

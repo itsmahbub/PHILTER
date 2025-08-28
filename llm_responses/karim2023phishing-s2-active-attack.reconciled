@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper explicitly incorporates defenses against a variety of URL‐level obfuscation and manipulation tactics (e.g. detection of embedded IPs, excessive subdomains, ‘@’ symbols, forced redirects, non-standard ports, URL shortening), which are the primary evasion methods for a URL‐only system. However, it does not provide a quantitative breakdown of the prevalence of these evasions in its dataset, nor does it evaluate robustness on adversarially crafted or evasion-focused datasets, so it does not meet the criteria for a High rating.",
+  "evidence": "Section III.A (URL BASED PHISHING DATASET), page 8: “The phishing and legitimate website URLs contain some common attributes such as UsingIP, LongURL, ShortURL, Symbol@, Redirecting//, PrefixSuffix-, SubDomains, HTTPS, DomainRegLen, Favicon, NonStdPort, HTTPSDomainURL, RequestURL, AnchorURL, LinksInScriptTags, and ServerFormHandler….”"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method, DynaPhish, is designed to provide clear, per-decision explanations for its classifications. For its primary reference-based detection, the explanation is inherent to the model: a specific brand-domain inconsistency is identified and reported. For brandless webpages, the system employs a 'Webpage Interaction' module that generates explicit, human-readable explanations based on counterfactual behavioral invariants. The system actively tests the page's response to fake credentials and post-submission behavior, and if it detects suspicious activity, it returns a specific, descriptive string explaining the reason for the phishing verdict (e.g., 'cannot verify fake user credential' or 'detecting evasion from original domain'). This provides a traceable decision path for each classification, aligning with the criteria for high interpretability.",
+    "evidence": "page 8, section 3.3.1, Algorithm 3: The algorithm for the Webpage Interaction module explicitly returns a phishing verdict paired with an explanation string. Lines 13-14 state: 'if w.domain ≠ w'.domain and w.logo == w'.logo then return {phishing, \"detecting evasion from original domain\"};'. Similarly, lines 15-16 state: 'if information_not_verified(w') then return {phishing, \"cannot verify fake user credential\"};'. This demonstrates a mechanism for providing a specific, per-decision explanation."
+}
+```

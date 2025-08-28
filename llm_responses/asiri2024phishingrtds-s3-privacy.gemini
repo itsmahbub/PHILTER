@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed system, PhishingRTDS, is deployed using a client-server architecture where a browser extension sends the suspicious URL to a container hosted on a remote cloud server for analysis. This process involves transmitting the full, unfiltered URL from the user's local machine to an external server. The paper makes no mention of privacy-preserving mechanisms like hashing, URL sanitization, or local inference. The authors themselves explicitly acknowledge the privacy risks of this approach, stating that collecting full URLs can be risky as they may contain sensitive information like session IDs or tokens.",
+    "evidence": "Page 7, Section 3.5, 'The URL is then passed to a cloud server, where the system opens the webpage and classifies it within an isolation system to determine if it is potentially harmful, classifying it as Phishing or benign. The classification result is then sent back to the browser extension.'\n\nPage 9, Section 5, 'Despite our focus on improving the phishing detection system and protecting users from downloading malicious software, challenges arise with user data privacy. We only collect URLs, but this raises privacy concerns with temporary, unauthenticated links. These short-lived URLs might contain sensitive information like session IDs, tokens, or personal details. Collecting them, even accidentally, can be risky if intercepted.'"
+}
+```

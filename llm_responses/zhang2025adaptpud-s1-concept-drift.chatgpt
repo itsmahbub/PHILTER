@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "AdaptPUD explicitly incorporates an adaptive concept‐drift detection and incremental‐learning mechanism (CDD) and is evaluated on temporally disjoint datasets—training on data from May 2022–July 2024 (Dataset‐1) and testing on newer data from August 2024–December 2024 (Dataset‐2)—demonstrating both adaptive strategy and time‐aware evaluation.",
+  "evidence": "Page 6, Section 4.3.2: “This step develops a CDD method … eliminating the need for data labels and enabling more efficient and reliable incremental learning.”; Page 9, Section 5.3.2: “All detection models are trained on the historical dataset, Dataset-1. After the best-performing model is selected and deployed, it is tested on the latest dataset, Dataset-2.”"
+}
+```

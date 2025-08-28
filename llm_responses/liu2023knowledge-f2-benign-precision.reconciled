@@ -1,0 +1,5 @@
+{
+    "value": "High",
+    "why": "The paper’s benign evaluation includes both (i) low‐reputation or long‐tail domains via the ‘Wild‐study Dataset’ of 99 000 randomly sampled fresh TLS‐certified sites (newly registered or non‐ranked domains), and (ii) legitimate brand‐element pages, evidenced by their analysis of false positives on benign pages embedding third‐party logos (e.g., an advertisement logo misrecognized as ‘Windsor Brokers’). This meets both criteria for a High diversity rating.",
+    "evidence": "Page 9, Section 4.2: “Wild‐study Dataset. … resulting in a dataset of 99 000 webpages.”  Page 19, Appendix A.3: “Figure 18: A FP benign website … The logo inside the embedded advertisement is matched to the ‘Windsor Brokers’ brand.”"
+}

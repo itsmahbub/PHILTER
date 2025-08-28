@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper explicitly addresses multiple phishing tactics—logo variants (T1), text‐based brand impersonation (T2), and HTML‐based evasion (T3)—and evaluates robustness against typosquatting, prompt injection, and text‐to‐image attacks. However, it does not provide a quantitative breakdown of its main detection performance by tactic, which is required for a ‘High’ rating.",
+    "evidence": "Page 4, Section 3 (Formalization) defines evasion attacks T1–T3 covering logo variants, text brands, and HTML‐based attacks. Page 12, Section 6.5 evaluates the system’s robustness to typosquatting, prompt injection, and text‐to‐image attacks. The main experimental results (e.g., Table 2 on page 10 and Table 3 on page 11) report only aggregate precision/recall without per‐tactic performance."
+}
+```

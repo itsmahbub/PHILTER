@@ -1,0 +1,1 @@
+{"value":"High","why":"The paper reports class-sensitive metrics—precision, recall, and F1-score (Table 2)—and also includes a summary metric, the area under the ROC curve (AUC-ROC) for each classifier (Table 5), thus meeting the High-level criteria.","evidence":"Table 2 (page 7, Section 4.4: Precision, Recall, F1-score) and Table 5 (page 8, Section 4.4: AUC scores)"}

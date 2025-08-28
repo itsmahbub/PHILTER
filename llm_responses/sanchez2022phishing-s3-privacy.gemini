@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method is designed to be entirely self-contained, operating exclusively on the URL string without reliance on any external services for inference. The authors explicitly state that a key advantage of their approach is its independence from external services like WHOIS, search engines, or online blacklists. This design ensures that the detection process can be executed locally on a client device (e.g., in a browser) or within a secure organizational boundary (e.g., a gateway server), without transmitting the user's URL to an external third party. By keeping the analysis local, the method inherently protects user privacy, as sensitive information potentially contained in URLs is not sent off-device.",
+    "evidence": "Page 10, Section VII. CONCLUSION: \"In comparison with the current state-of-the-art, reviewed in Section II, our approach present three main advantages: No dependence on external services. A limitation of the description methods that use features such as WHOIS domain age, page ranking on Google or Alexa or online blacklists, is their dependence on those services. Network slowdowns and service shortages can negatively impact analysis time, making real-time execution infeasible.\""
+}
+```

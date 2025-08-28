@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's evaluation uses Receiver-Operating-Characteristic (ROC) curves, which plot the True Positive Rate (TPR, equivalent to Recall) against the False Positive Rate (FPR). This is a robust method for evaluating classifier performance across various thresholds and is suitable for imbalanced datasets. The authors explicitly analyze performance at low, operationally relevant false positive rates (e.g., 1% FP). This demonstrates a clear understanding of the need for class-sensitive evaluation. However, the paper does not report precision or F1-score, which are specified in the codebook as required metrics for a 'High' rating. While providing ROC curves is a strong evaluation practice and a valid summary metric (AUC-ROC), the omission of other key class-sensitive metrics like precision means it lacks the full metric coverage required for the highest rating.",
+    "evidence": "page 13, section 4.2, 'The results for phishing detection are shown in Fig. 6 (left plot), using Receiver-Operating-Characteristic (ROC) curves. Each curve reports the average detection rate of phishing pages (i.e., the true positive rate, TP) against the fraction of misclassified legitimate pages (i.e., the false positive rate, FP).' and page 14, Figure 6, 'ROC curves (left) and adversarial evaluation (right) of the classifiers.' The figure and its axes (TP vs FP) confirm the use of ROC analysis."
+}
+```

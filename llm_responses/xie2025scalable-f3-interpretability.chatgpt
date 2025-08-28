@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper does not provide per‐decision explanations (e.g., via SHAP/LIME or heatmaps) nor does it expose the internal decision path of its deep model for individual samples. However, it does offer global insight into feature relevance by computing and presenting mutual information–based feature importance scores (Section 5.5), which constitutes a limited, global form of interpretability.",
+  "evidence": "Page 13, Section 5.5 (“The Impact of Extracted Features on the Detection Model”): “we utilized mutual information to score these features… some features exhibited a mutual information score of 0… Fig. 8 highlights the strong performance of our proposed dynamic features.”"
+}
+```

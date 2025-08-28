@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper exclusively details the design, training, and offline evaluation of the CatchPhish model. It provides no information regarding its deployment in a real-world, user-facing application (e.g., as a browser extension or a cloud-based API). There is no discussion of the data flow during inference, such as whether URLs or page content are processed locally on the client device or transmitted to an external server. The paper makes no mention of any privacy-preserving mechanisms like hashing, data sanitization, or on-device inference. According to the codebook, when \"no inference-time data-handling details are given... and no privacy safeguards are described,\" the rating is Low.",
+    "evidence": "Page 8, Section VI. CONCLUSION AND FUTURE WORK: \"Furthermore, we intend to apply CatchPhish in real databases, observing the functionality of the model trained with synthetic data in a real environment.\" This statement confirms that the research has not yet reached the stage of real-world application or deployment, and consequently, the practical aspects of handling user data and preserving privacy during live detection have not been addressed in the paper."
+}
+```

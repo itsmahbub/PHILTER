@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed PDSMV3-DCRNN and Boosted ConvNeXt ensemble is a purely black-box approach: it leverages deep neural networks without any built-in or post hoc explanation mechanisms. The paper does not describe per-decision explainability (e.g., SHAP/LIME, attention visualizations for a given input) nor any global feature-importance analysis to audit or interpret model outputs.",
+  "evidence": "Section 3.5 (page 7): “...the Boosted ConvNeXt approach extracts URL features fed into the trained DL classifier to determine if a URL is benign or phishing.” No XAI or interpretability techniques are mentioned anywhere in the methodology."
+}
+```

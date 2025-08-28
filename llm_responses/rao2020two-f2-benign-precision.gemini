@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The methodology for collecting benign pages relies on taking the top 100 Google search results for brands that are frequently targeted by phishing. This approach inherently biases the dataset towards popular, high-reputation, and well-established domains associated with those brands. The evaluation does not include low-reputation or long-tail domains (e.g., personal sites, small businesses, newly registered domains). Additionally, there is no evidence that the dataset includes benign third-party pages that legitimately use brand elements (e.g., a small e-commerce site with a PayPal button), which are often challenging for detectors. By focusing only on the top search results for major brands, the evaluation is limited to high-reputation sites and likely underestimates the false positive rate on a more diverse and realistic set of benign webpages.",
+    "evidence": "Page 12, Section 4.1, \"For the experimentation, we have collected dataset from two sources namely Phishtank and Google search results. Phishing sites are collected from Phishtank and for the legitimate sites, target legitimate brands are extracted from Phishtank and fed as search query to Google to return top 100 search results. These links in the search results are preprocessed to eliminate the duplicates and broken links. The resulting links are used as legitimate dataset.\" This is further confirmed in Table 4 on page 13, which lists \"Google Search results\" as the source for 5438 legitimate sites."
+}
+```

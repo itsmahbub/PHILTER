@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper does not perform any experimental evaluation against active attacks. It includes a section (3.4) that theoretically discusses potential adversarial attacks such as PageRank manipulation, training set poisoning, and cloaking (serving different content to the crawler). However, the performance evaluation in Section 4 is based on precision and recall on a large, live dataset, not a dataset specifically curated to test for evasive or obfuscated examples. Crucially, the paper's stated defense against a successful active attack like cloaking is not the system's technical resilience but rather a fallback to manual review based on user reports, which implicitly acknowledges the automated system's vulnerability to such techniques.",
+    "evidence": "Page 7, Section 3.4, \"Potential Adversarial Attacks\": \"Phishers could also try to serve our crawlers non-phishing content different from what they serve their intended victims to escape automatic phishing classifications. Even if a phishing page defeats our automatic classification system, the more people it reaches, the higher the likelihood that a victim will report the page to us. This allows us to correctly classify the phishing page manually, regardless of how the page appears to our classification system. Because of this, defeating our automatic classifier does not mean that the page will never appear on our blacklist. Instead, phishers can only hope to increase the length of time before their pages are blacklisted.\""
+}
+```

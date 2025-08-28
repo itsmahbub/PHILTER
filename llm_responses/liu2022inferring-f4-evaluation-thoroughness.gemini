@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper conducts a thorough evaluation using multiple performance metrics that are well-suited for the class imbalance problem inherent in phishing detection. It reports class-sensitive metrics including Precision, Recall (as True Positive Rate), and F-score. Furthermore, it includes a summary metric by presenting Receiver Operating Characteristic (ROC) curves to compare its performance against baselines across various thresholds. This combination of metrics provides a comprehensive and meaningful assessment of the proposed method's real-world effectiveness.",
+    "evidence": "Page 10, Section 6.3, Figure 11: The paper presents ROC curves for five different solutions, plotting the True Positive Rate against the False Positive Rate. The figure is titled: \"ROCs of EMD, PhishZoo, VisualPhishNet, Phishpedia, and PhishIntention\".\n\nPage 13, Section 9.2, Figure 15: The paper explicitly reports precision and recall in a bar chart evaluating robustness against misleading legitimate websites. The figure is titled: \"Best precision and recall on traditional webpage dataset, and false positive rate on misleading dataset.\"\n\nPage 14, Section 10.1.2, Table 9: The paper uses F-score to select the optimal similarity threshold. The table is titled \"Threshold ts Selection\" and includes a row for \"F-score\" with values corresponding to different thresholds."
+}
+```

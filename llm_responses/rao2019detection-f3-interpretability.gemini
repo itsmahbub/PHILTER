@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's proposed method, which primarily relies on Random Forest and its oblique variants (PCA-RF), is not inherently interpretable for single, per-decision classifications. The authors do not implement any post-hoc Explainable AI (XAI) techniques like SHAP or LIME to explain why a specific URL was flagged as phishing. This lack of per-decision traceability prevents a 'High' rating. However, the system is not a complete black box. The authors provide a global level of insight by conducting a thorough analysis of feature importance. In Section 6, they explicitly evaluate and present the predictive power (accuracy) of each individual feature when used in isolation to train a Random Forest model. This provides a clear understanding of which features contribute most to the model's overall performance, fulfilling the criteria for global or limited insight.",
+    "evidence": "page 20, section 6. Discussion, supporting quote: 'The contribution of individual features in detecting phishing sites is shown in Fig. 11... We also evaluated the contribution of individual features in detection of phishing websites with an aim of identifying top performing features. The statistics of each individual feature is calculated with an accuracy metric using Random Forest algorithm as shown in Fig. 11.'"
+}
+```

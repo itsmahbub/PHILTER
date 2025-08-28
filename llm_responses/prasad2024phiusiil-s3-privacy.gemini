@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed detection method, PhiUSIIL, relies on features extracted from both the URL and the full HTML content of the webpage. The operational workflow described requires the system to access and download the webpage to perform this feature extraction (e.g., checking for favicons, redirects, password fields, etc.). This architecture strongly implies a centralized, server-side model where a user must submit the full, unfiltered URL for analysis. The system then fetches the page content associated with that URL. The paper does not describe any client-side deployment, on-premise gateway solution, or privacy-preserving mechanisms such as URL hashing, parameter stripping, or federated learning. The transmission of full URLs to an external service for analysis, coupled with the complete absence of any discussion on privacy safeguards during inference, aligns with the criteria for a \"Low\" rating.",
+    "evidence": [
+        {
+            "page": 6,
+            "section": "4. PhiUSIIL's phishing URL detection module",
+            "quote": "When Phase 2 is activated, it extracts key features from the URL and HTML code to generate feature vector for the given URL."
+        },
+        {
+            "page": 8,
+            "section": "Figure 3. Work flow of PhiUSIIL's phishing URL detection framework.",
+            "quote": "The workflow diagram shows that after a URL is input, the system must 'Access HTML Code' and 'Extract HTML Features' to generate a feature vector for the incremental learning model."
+        },
+        {
+            "page": 6,
+            "section": "3.1.3. Extracting HTML features",
+            "quote": "Certain HTML features that can be used to identify potentially suspicious or fraudulent websites are extracted from the webpage HTML code to construct the dataset. Some of such key HTML features are discussed here. [Examples include:] HasFavicon... IsResponsive... NoOfURLRedirect... HasPasswordField, HasSubmitButton..."
+        }
+    ]
+}
+```

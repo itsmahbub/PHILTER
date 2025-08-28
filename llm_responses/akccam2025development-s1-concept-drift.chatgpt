@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed method trains and evaluates on static, randomly split datasets without any time‐aware or continual learning strategy. There is no mention of temporal splits, periodic retraining, or reliance on inherently stable features to address evolving phishing tactics, so it assumes the phishing URL distribution remains static.",
+  "evidence": "Section 4.4 (Train-Validation-Test Split): “Therefore, the datasets were initially randomly divided into two distinct subsets in an 80–20 ratio, one designated for training and the other for testing. Subsequently, the training dataset underwent another random split into training and validation subsets in an 80–20 ratio.”"
+}
+```

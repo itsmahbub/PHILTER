@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's evaluation is based on True Positive (TP) rate (which is equivalent to Recall) and False Positive (FP) rate. While these are relevant class-sensitive metrics, the evaluation lacks full coverage as required by the codebook. It does not report Precision, which is essential for understanding the rate of false alarms, nor does it provide a balancing metric like the F1-score. Furthermore, it omits any of the required summary metrics such as AUC-ROC, AUC-PRC, or MCC, which are crucial for assessing overall model performance, especially in imbalanced scenarios like phishing detection. The paper reports some useful metrics but not the complete set needed for a high-quality evaluation.",
+    "evidence": "Page 8, Section 5, \"Two metrics are used to evaluate the performance, which are true positive (TP) rate and false positive (FP) rate. The true positive rate measures the percentage of phishing sites which are correctly labeled as positive phishing and it is computed by Eq. (5-1): TP = (n_phish→phish) / (n_phish). False positive rate measures the percentage of legitimate sites which are falsely labeled as positive phishing and it is computed by Eq. (5-2): FP = (n_legitimate→phish) / (n_legitimate).\""
+}
+```

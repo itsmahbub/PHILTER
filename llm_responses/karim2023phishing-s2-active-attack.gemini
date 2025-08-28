@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation is strictly limited to a static, pre-existing dataset from Kaggle. The methodology consists of a standard 70/30 train-test split on this dataset. There is no evidence that the authors assessed the model's resilience against any form of active attack relevant to its URL-based modality. The study does not include experiments involving deliberately manipulated URLs, adversarial examples, or datasets specifically designed to test for evasive techniques (e.g., novel obfuscation, adversarial feature manipulation). The evaluation is confined to classifying a clean, non-adversarial collection of known phishing and benign URLs, which directly aligns with the criteria for a 'Low' rating.",
+    "evidence": "Page 7, Section III-A, 'URL BASED PHISHING DATASET': 'The dataset was collected in a CSV file from the well-known dataset repository called Kaggle, which provides benchmark datasets for research purposes. The dataset consisted of 11054 number of records and 33 attributes extracted from 11000+ websites.' and 'The complete corpus was divided into two partitions, 70% for training and 30% for testing the 70% training data were used to train the machine learning model, preserve 30% of the data for the predictions, and evaluate the performance of the proposed approach.' This describes a standard evaluation on a static benchmark without any adversarial or robustness testing."
+}
+```

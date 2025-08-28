@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper explicitly designs and evaluates its method against a custom-built dataset of 'misleading legitimate websites' to test its robustness against false positives. This dataset fulfills both criteria for a 'High' rating. First, it includes low-reputation and long-tail domains by sourcing 'emerging new websites reported by CertStream,' which inherently captures recently registered domains. Second, the collection methodology deliberately selects for pages with legitimate brand element usage, including 'websites with links to Facebook, Twitter, Youtube, etc.', 'websites allowing sign-in or registration via Facebook, Google, etc.', and sites with advertisements from major companies. By evaluating against this challenging set, the research demonstrates a thorough consideration for the diversity of benign pages that are most likely to cause false alarms in phishing detection systems.",
+    "evidence": "Page 12, Section 9.1, 'i) Misleading Legitimacy': 'We collect and verify 3,049 misleading legitimate websites (from Apr 9, 2021 to Apr 16, 2021) from the emerging new websites reported by CertStream [1] based on any of the three conditions: 1) media/news/blog websites with links to Facebook, Twitter, Youtube, etc., 2) websites allowing sign-in or registration via Facebook, Google, etc., and, 3) websites with advertisement of companies such as Amazon, Microsoft, etc.'"
+}
+```

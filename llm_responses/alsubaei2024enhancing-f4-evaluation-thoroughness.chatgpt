@@ -1,0 +1,1 @@
+{"value":"Medium","why":"The paper reports several class-sensitive metrics (Precision and F1-score), confusion matrices, and summary metrics (ROC/AUC and MCC) but does not report Recall, leaving out one of the required class-specific measures under imbalance.","evidence":"Table 4 (Section V): lists Precision, F1-Score, ROC/AUC, and MCC but no Recall column is provided."}

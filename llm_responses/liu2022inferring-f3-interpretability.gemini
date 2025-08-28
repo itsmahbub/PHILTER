@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method, PhishIntention, provides per-decision explanations for its classifications by visually highlighting the evidence on the webpage screenshot. Specifically, it uses a bounding box to identify the 'credential-taking region' that led to the prediction. The paper explicitly states the use of Score-CAM, a gradient-based model attribution technique, to generate a heatmap that explains the contribution of each input region to the output. This use of both bounding-box overlays and a specific XAI technique (Score-CAM) to explain individual predictions aligns directly with the 'High' fulfillment criteria.",
+    "evidence": "Page 8, Section 4.3 CRP Classification: 'To provide an explanation of the credential-taking intention, we highlight the credential-taking region on the screenshot, as shown in Figure 10. We also overlay a heatmap on the screenshot based on the model attribution technique, Score-CAM [66], which reasons out the contribution of each region in the input to the output prediction.'\n\nPage 8, Figure 10: The figure is captioned 'A screenshot annotated by PhishIntention: the highlighted region explains credential-taking intention' and visually demonstrates a bounding box overlay on the login form of a webpage."
+}
+```

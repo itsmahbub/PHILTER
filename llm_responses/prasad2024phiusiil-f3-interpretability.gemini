@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides limited, global insight into its model's decision-making but does not offer per-decision explanations. The methodology includes a feature selection phase where the authors calculate global feature importance scores using various classifiers (RandomForest, DecisionTree, etc.) and mutual information. This process identifies the most influential features for the model overall, offering a general understanding of what the model relies on. However, the final detection model, an ensemble of BernoulliNB, PassiveAggressive, and SGDClassifier, operates without any described mechanism to explain *why* a specific URL was flagged. The system provides a classification based on a voting scheme from these models, but it does not trace the prediction back to the input features for individual cases, as would be required for a 'High' rating. Therefore, it fits the 'Medium' category by providing global feature importance rather than being a complete black box.",
+    "evidence": "page 9, section 4.2.1, 'We implemented RandomForestClassifier, Decision-TreeClassifier, LGBMClassifier, and XGBClassifier to find the importance of each feature. All these algorithms have an attribute called feature importances that assigns a relative importance score to each feature based on their contribution to the final prediction... We selected all the features having feature importance values higher than zero... The top 85% of features are selected based on their higher Mutual_info_classif value.'"
+}
+```

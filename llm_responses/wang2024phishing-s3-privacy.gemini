@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's proposed deployment model, particularly for mobile devices, requires the client to send the full, suspicious URL to a server. The server then fetches the webpage, captures a screenshot, and performs the detection. This process transmits potentially sensitive user data (the full URL, which may contain session tokens or personal information in its parameters) to an external entity without any mentioned privacy-preserving mechanisms like hashing or data sanitization. This approach directly aligns with the criteria for low privacy preservation.",
+    "evidence": "Page 11, Section 5. Discussion, 'Does the method mentioned in this paper apply to the current mobile Internet environment?': 'According to the above analysis, to enable the proposed method on mobile devices, it must be deployed on the server side. Moreover, mobile devices need to send suspicious URLs to the server. This allows for capturing desktop screenshots. Ultimately, the server side will return the results to the mobile devices.'"
+}
+```

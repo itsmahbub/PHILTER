@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed multilayer stacked ensemble model is a general, tactics‐agnostic machine learning approach and is evaluated on genuine, publicly‐sourced phishing datasets (UCI and Mendeley). While it does not explicitly model or break down performance by specific phishing tactics, its use of real‐world data satisfies the criteria for a Medium rating. The absence of any per‐tactic quantitative analysis prevents a High rating.",
+  "evidence": "Section III‐A (page 5) describes evaluation on four real‐world datasets collected from public repositories (UCI and Mendeley). No section of the paper provides counts or performance breakdown by phishing tactic, confirming the lack of per‐tactic analysis."
+}
+```

@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper’s evaluation does not explicitly include a curated subset of low-reputation or long-tail domains nor a subset of benign pages embedding legitimate brand elements. Instead, it evaluates on URLs submitted by users and collected from Gmail spam, after dropping a whitelist of high-profile sites. There is no targeted analysis of long-tail domains or pages with legitimate brand widgets/logos, so the reported false positive rate may not reflect robustness against these harder benign cases.",
+  "evidence": "Page 5, Section 3.2.2: “We manually compile this whitelist of 2778 sites requiring that each site both have high traffic and not host arbitrary user-generated content. Sites on this list include citibank.com and cnn.com.”\nPage 8, Section 4.1: The evaluation dataset comprises only URLs from user reports and Gmail spam (with invalid/whitelisted URLs skipped), with no mention of sampling low-reputation domains or benign brand-element pages."
+}

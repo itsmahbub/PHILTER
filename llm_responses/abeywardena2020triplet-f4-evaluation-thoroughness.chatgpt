@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper reports class-sensitive metrics (precision@k and recall@k for k = 1 and 6), but does not include F1-score nor any summary metric (such as AUC-PRC, AUC-ROC, or MCC) that would capture overall performance under class imbalance. This partial coverage meets the medium level of the codebook.",
+  "evidence": "Section IV.D: “We evaluate the performance of our model using the precision@k and recall@k for k = 1 and 6.”; Table I reports only Precision@1, Precision@6, Recall@1, and Recall@6, with no F1-score or summary metric."
+}
+```

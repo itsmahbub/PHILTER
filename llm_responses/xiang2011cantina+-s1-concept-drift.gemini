@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper explicitly addresses the problem of evolving phishing tactics (concept drift) through its methodological design and evaluation. It proposes an adaptive strategy using a \"sliding window\" mechanism to retrain models on recent phishing data, ensuring the detector keeps up with new attack variants. This allows the system to \"incorporate the latest phishing variants into our training data\". Crucially, the authors validate this approach with a rigorous \"time-based evaluation\" that simulates a real-world deployment scenario by training models on historical data and testing them on future, unseen data. This dual focus on both an adaptive mechanism and a temporally-split evaluation protocol demonstrates a thorough understanding and handling of concept drift.",
+    "evidence": "Page 13, Section 7.3: \"In the time-based strategy specifically, we utilized the timestamps of the phishing attacks and simulated real-life scenarios by training our models on the past data and testing them on future data via a sliding window mechanism.\"\n\nPage 16, Section 8.4: \"The main goal of time-based evaluation, however, is to inspect the performance of CANTINA+ in real-world scenarios, in which we train our models using historical data and apply the models to future data.\"\n\nPage 3, Section 1: \"...by using such a length-adjustable moving window, we are able to incorporate the latest phishing variants into our training data and also achieve runtime speedup.\""
+}
+```

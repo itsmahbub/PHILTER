@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper conducts a comprehensive evaluation using metrics well-suited for class-imbalanced problems like phishing detection. The authors explicitly state they use Accuracy, F1-Score, Precision, Recall, and AUC-ROC. Throughout the results section, multiple tables confirm the reporting of these metrics. Specifically, Table 5 presents Precision, Recall, and the summary metric AUC-ROC. Table 3 focuses on the F1-Score, and Tables 11 and 12 provide a full breakdown including Precision, Recall, and F1-score for the final models. This reporting of class-sensitive metrics (Precision, Recall, F1-Score) alongside a recognized summary metric (AUC-ROC) fully satisfies the criteria for a high-quality evaluation.",
+    "evidence": "Page 10, Section IV. COMPARATIVE RESULT ANALYSIS: \"The performance of the proposed models was evaluated using metrics such as Accuracy, F1-Score, Precision, Recall, and AUC-ROC for different configurations in the experiments.\"\n\nPage 14, Table 5. Precision and recall comparison: The table explicitly reports results under columns titled \"Precision\", \"Recall\", and \"AUC-ROC\" for the proposed FGCL-Net model and baselines.\n\nPage 15, Table 11. Multi-modal temporal hypergraph fusion network (Mmthf-Net) results: This table reports performance for the main proposed model using columns for \"Accuracy (%)\", \"F1-Score\", \"Precision\", and \"Recall\"."
+}
+```

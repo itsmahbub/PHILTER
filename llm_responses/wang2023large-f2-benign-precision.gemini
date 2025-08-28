@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation uses a benign dataset consisting exclusively of high-reputation domains. Specifically, the authors selected the top 2 million web pages from the Open PageRank initiative list. This methodology does not account for the diversity of benign pages, as it fails to include low-reputation or long-tail domains (e.g., personal blogs, small business sites, recently registered domains). Furthermore, the paper makes no mention of including benign pages that legitimately use brand elements (like OAuth widgets or payment buttons), which are known to be challenging for detectors and are a common source of false positives. By limiting the benign set to popular, well-established sites, the evaluation does not sufficiently test the model's robustness against the types of legitimate pages most susceptible to misclassification.",
+    "evidence": "Page 3, Section 3.2. Experimental Data, \"To approximate the real scenario (the number of phishing pages there is much smaller than the number of benign pages), we select the URLs of the top 2 million web pages in the Open PageRank initiative list as benign URLs.\""
+}
+```

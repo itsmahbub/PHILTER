@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static detection model based on a fixed set of heuristic features. There are no mechanisms discussed for adapting to concept drift, such as online learning or periodic retraining. The features, while designed to capture then-current phishing characteristics, are not inherently stable and are susceptible to changes in attacker tactics (e.g., the use of HTTPS, which the paper acknowledges is no longer a reliable indicator). \n\nThe evaluation methodology reinforces this static approach. The dataset was split randomly into training and testing sets, rather than chronologically. This means the model was not tested on its ability to generalize from older data to newer, potentially different, phishing attacks. Consequently, the paper neither employs an adaptive design nor evaluates the method's resilience to the evolution of phishing strategies over time.",
+    "evidence": [
+        {
+            "page": 15,
+            "section": "4.2 Dataset used",
+            "quote": "We divided the dataset into two sets: training set and test set. 75% of original dataset is taken as training set which is used to train the model and remaining 25% of the dataset is taken as test set which is used to evaluate the model."
+        },
+        {
+            "page": 15,
+            "section": "5 Evaluation",
+            "quote": "Each experiment was repeated ten times with a randomly selected training set."
+        },
+        {
+            "page": 6,
+            "section": "2 Related work",
+            "quote": "For better performance, this model has to be retrained frequently with a fresh and up to date training dataset."
+        }
+    ]
+}
+```

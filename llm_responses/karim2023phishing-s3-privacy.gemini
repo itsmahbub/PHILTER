@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper describes a standard offline machine learning evaluation on a static dataset of URL features. It does not provide any details about a deployment architecture or how the detection system would handle user data during inference in a real-world setting. There is no mention of client-side processing, in-boundary deployment (e.g., at a gateway), or any privacy-preserving techniques such as hashing URLs, using federated learning, or creating non-reversible feature vectors. According to the codebook, a 'Low' rating is assigned when 'no inference-time data-handling details are given... and no privacy safeguards are described', which accurately reflects the content of this paper.",
+    "evidence": "Page 7, Section III, 'MATERIAL AND METHODS' and Figure 3. The entire methodology is framed around processing a static, pre-existing dataset: 'A phishing dataset was used to perform the experiments. The dataset is in the form of data vectors... The complete corpus was divided into two partitions, 70% for training and 30% for testing the 70% training data were used to train the machine learning model, preserve 30% of the data for the predictions, and evaluate the performance of the proposed approach.' This describes an offline experimental setup with no consideration for how live user data would be handled."
+}
+```

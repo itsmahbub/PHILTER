@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed BiLSTM–attention model is deployed purely as a classification black-box. The paper describes embedding layers, BiLSTM, attention, pooling and dense layers to optimise accuracy, but does not include any mechanism—neither inherently interpretable model structure nor post-hoc XAI (e.g., SHAP, LIME, attention-weight visualisations)—to explain individual predictions or audit the model’s reasoning.",
+  "evidence": "Page 14, Section 4 (“Proposed Method”): The architecture is described solely in terms of embedding, BiLSTM, Attention, GlobalMaxPooling and Dropout layers followed by a dense sigmoid output for classification—no explainability or feature-importance components are mentioned.\nPage 1, Abstract: “These results prove the effectiveness of the model in detecting phishing attacks.” No discussion of interpretability or explanation of how decisions are made is provided."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method is evaluated on a static dataset without considering the temporal evolution of phishing attacks. The model is trained and tested on data subsets that are randomly split from the same collection period (phishing URLs from 2018). There is no mechanism described for adapting the model over time, such as online learning or periodic retraining. The authors themselves acknowledge this as a limitation and an area for future work, explicitly stating their intention to later explore the \"evolution pattern of phishing websites over time\" by collecting a newer dataset. This indicates the current work assumes phishing tactics are static.",
+    "evidence": "Page 8, Section 5.1, Datasets and metrics: \"We collect 68030 legitimate URLs from 5000 Best Websites homepage (2012) and 12003 phishing URLs from PhishTank homepage (2019). The phishing URLs have been validated from April 2018 to July 2018. We randomly extract 4000 legitimate URLs and 4000 phishing URLs to form the test dataset.\" \n\nPage 12, Section 6, Conclusion and future works: \"Meanwhile, the dataset used in this work is collected in 2018. We think the pattern of phishing sites now is similar to that of 2018. In the future work, we will collect a new dataset and try to perform comparative experimental analysis on these two datasets simultaneously to exploring the evolution pattern of phishing websites over time.\""
+}
+```

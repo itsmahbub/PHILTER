@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper explicitly acknowledges that phishing tactics evolve over time, a key aspect of concept drift, and claims the proposed model is adaptive. It states the model can \"update itself on the latest trends\" and implements \"dynamic, continuously learning mechanisms.\" Additionally, a case study in Section XI tests the model, trained on a static dataset, against a \"real-time dataset of agricultural websites,\" which serves as a limited form of temporal evaluation (testing on newer data than the training set). However, the paper's main quantitative evaluation protocol is standard k-fold cross-validation on a static Kaggle dataset. This method shuffles data, ignoring its temporal nature, and is therefore unsuited for rigorously evaluating resilience to concept drift. The mechanism for how the model \"updates itself\" is also asserted rather than technically described. The combination of acknowledging the problem, claiming an adaptive solution, and conducting a limited temporal case study merits a 'Medium' rating, but the absence of a rigorous temporal evaluation in the main experiments prevents a 'High' rating.",
+    "evidence": [
+        {
+            "page": 8,
+            "section": "E. REAL-TIME PROCESSING AND SCALABILITY",
+            "quote": "The hybrid model is able to update itself on the latest trends and strategies of cybercriminals making it highly efficient in a constantly changing environment."
+        },
+        {
+            "page": 5,
+            "section": "V. KEY CONTRIBUTIONS OF THE SUGGESTED APPROACH",
+            "quote": "5) Aims to protect information system users by implementing dynamic, continuously learning mechanisms to prevent phishing attacks while ensuring seamless integration with existing measures."
+        },
+        {
+            "page": 13,
+            "section": "B. PERFORMANCE COMPARISON, 1) PERFORMANCE OF INDIVIDUAL MODEL",
+            "quote": "Through a process known as cross-validation, the dataset was divided into several subsets, and each model was trained and assessed on various subsets. In this procedure, the data is divided into k-folds with k=10, and k-1 of the folds are used to train the model, with the remaining fold being used for validation."
+        },
+        {
+            "page": 16,
+            "section": "XI. CASE STUDY: REAL-TIME DETECTION OF PHISHING THREATS IN AGRICULTURAL WEBSITES USING BGL-PHISHNET",
+            "quote": "To address this issue, we implemented BGL-PhishNet, a hybrid phishing detection model, and tested it on a real-time dataset of agricultural websites."
+        }
+    ]
+}
+```

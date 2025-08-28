@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation using a full suite of metrics that are appropriate for assessing a classifier's performance, especially in contexts like phishing detection where class imbalance is a concern. The authors report class-sensitive metrics including Precision, Recall, and F1-score, which measure the model's effectiveness in correctly identifying the positive class (phishing) and avoiding false alarms. Additionally, they include a summary metric, the Area Under the Receiver Operating Characteristic Curve (AUC-ROC), to evaluate the model's overall discriminative power across different thresholds. This combination of metrics fulfills all the requirements for a 'High' rating.",
+    "evidence": "Page 7, Table 5: This table explicitly compares the proposed CNN model against other methods using the columns: 'AUC', 'Accuracy', 'Recall', 'Precision', and 'F1-score'. The row for the 'Proposed CNN' shows values for all these metrics: 0.99799 (AUC), 0.997916 (Accuracy), 0.99998 (Recall), 0.995689 (Precision), and 0.997840 (F1-score). Further evidence is provided in Figures 10 and 11, which show the ROC curves for the LSTM and the proposed CNN models, respectively, and state the area under the curve."
+}
+```

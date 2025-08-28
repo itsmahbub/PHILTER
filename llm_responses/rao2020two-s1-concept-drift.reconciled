@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The proposed method both avoids drift-prone features by relying on inherently stable visual fingerprints (Simhash of HTML/text and PHash of screenshots) and is evaluated in a temporally disjoint manner (train on April–October 2018, test on December 2018–February 2019). This combination meets the ‘High’ criterion of using stable features by design and demonstrating robustness on truly unseen, future data.",
+  "evidence": "Page 8, Section 3.1.2: “We have collected phishing sites at different time periods for the generation of blacklist database and for the replica detection. The dataset used for blacklist database generation was collected during April 2018–October 2018 and the dataset for replica detection was collected during December 2018–February 2019. The main intention to choose the dataset at different time slots is to illustrate that phishing sites gets repeated with replica or manipulated content over time.”"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper does not demonstrate coverage of diverse real-world phishing tactics and provides no per-tactic evaluation. It uses generic phishing samples from PhishTank/OpenPhish without categorizing them by tactics (e.g., subdomain spoofing, homograph attacks, compromised domains, IP address URLs). The feature design and evaluation focus solely on identity matching (logo and text) and report only overall detection metrics, thereby ignoring tactic diversity as defined in the codebook.",
+    "evidence": "Page 11, Section 4.1: “Legitimate webpages were collected based on the Alexa top 1 million list… phishing webpages were sourced from URLs in PhishTank and OpenPhish…”\nPage 12, Table 4: reports only overall TPR, TNR, and accuracy with no breakdown by phishing tactic."
+}
+```

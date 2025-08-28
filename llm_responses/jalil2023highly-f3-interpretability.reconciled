@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While the framework does not offer per‐decision explanations (no SHAP, LIME, attention maps, or decision‐path extraction), it does provide global insight into which input features drive the model: the authors extract 100 candidate URL features and then explicitly select the top 30 via domain knowledge and ReliefF feature‐importance ranking. This satisfies the ‘Medium’ criterion of providing global/limited interpretability without per‐instance traceability.",
+  "evidence": "Section 3.2.2 Feature engineering: “From out of 100 features, top 30 features are selected using domain knowledge and ReliefF technique in WEKA tool.” No per‐decision XAI methods are described anywhere in the paper."
+}
+```

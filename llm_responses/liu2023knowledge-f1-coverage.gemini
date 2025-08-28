@@ -1,0 +1,28 @@
+```json
+{
+    "value": "High",
+    "why": "The paper's core contribution is explicitly designed to address tactic diversity that standard reference-based detectors miss. It introduces two distinct mechanisms for two different tactics: 1) the 'Knowledge Expansion' module to handle phishing attacks on novel, emerging, and less-popular brands, and 2) the 'Webpage Interaction' module to detect 'brandless' phishing pages. The threat model is structured around these tactics. The evaluation provides a quantitative breakdown and performance report for each. The wild study specifically analyzes the diversity of unconventional brands discovered, showing that the system is effective against targets beyond typical high-risk brands (e.g., security and cryptocurrency companies). Furthermore, the paper evaluates the system's robustness against content obfuscation (HTML) and adversarial visual attacks. The ablation study effectively serves as a per-tactic performance report by isolating the contributions of the modules designed for novel brands and brandless pages.",
+    "evidence": [
+        {
+            "page": 3,
+            "section": "2 Threat Model",
+            "quote": "T1: Phishing with Novel Brand. ...By constructing phishing webpages for new brands absent from the reference list, attackers can elude detection... T2: Phishing with Implicit Brand. ...attackers can create webpages with implicit brand intention, where the logo is absent (see Figure 1). This deceptive tactic can fool F and lead to the attacker's webpage being misreported as benign."
+        },
+        {
+            "page": 11,
+            "section": "6 RQ2: Ablation Study",
+            "quote": "Table 2 shows the performance of the Brand Knowledge Expansion module and the Webpage Interaction module in enhancing our reference-based phishing detector. In Table 2, we denoted the phishing detector F enhanced with only the Brand Knowledge Expansion module as F + BKE, and the Webpage Interaction module only as WI. ... WI [standalone performance] 100.00% [Precision] 43.00% [Recall]"
+        },
+        {
+            "page": 13,
+            "section": "10.2 Results",
+            "quote": "Observation 1: Unconventional Phishing Targets The huge gap of the recall between F and F + DynaPhish highlights the possibility of phishing campaigns targeting brands that are not traditionally viewed as high-risk targets (such as PayPal or Facebook). Notably, our study reveals a stark contrast in phishing targets when compared to previous literature. As depicted in Figure 11, Cisco emerges as the most frequently attacked brand, with other security and cryptocurrency companies like Sonic Wall [17] and Premint [16] also being targeted."
+        },
+        {
+            "page": 13,
+            "section": "9.2 Results",
+            "quote": "Table 5 shows the overall performance of DynaPhish against HTML obfuscation. Overall, the OCR approach complemented the HTML heuristics well enough so that the recall was largely preserved."
+        }
+    ]
+}
+```

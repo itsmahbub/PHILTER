@@ -1,0 +1,33 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper addresses multiple phishing tactics, particularly cloaking/disguise, redirection, and cloned websites. The data collection methodology is explicitly designed to bypass cloaking by using WebDriver to simulate human interaction. The feature engineering process also incorporates specific attributes to detect these tactics, such as a feature for redirection and another to identify when a cloned site's hyperlinks point to external real targets. However, the paper does not provide a quantitative breakdown of its evaluation dataset by tactic, nor does it report detection performance for each specific tactic. The dataset it creates, Crawling2024, is categorized based on URL structure (prefix/suffix) and access status (successful/failed), not by phishing attack types like homographs or subdomain spoofing. The experimental evaluation reports only aggregate performance metrics, thus not fully demonstrating the model's effectiveness against a diverse range of attack vectors.",
+    "evidence": [
+        {
+            "page": 2,
+            "section": "1",
+            "quote": "b) A module for capturing access information was developed using WebDriver to bypass obfuscation techniques encountered during the scraping process. To make the crawling process more akin to human operations, basic actions that mimic human behavior, such as clicking on pages and scrolling, were incorporated."
+        },
+        {
+            "page": 4,
+            "section": "3.2. Data Acquisition",
+            "quote": "A collector was then built using SeleniumWire to circumvent client-side or server-side disguises and ensure accurate data."
+        },
+        {
+            "page": 6,
+            "section": "Table I",
+            "quote": "Feature Name: Whether to redirect technology, Reason for feature selection: Attackers hide malicious content by displaying benign content to web crawlers and robots [34].\nFeature Name: Number of domain name links that are different from the access domain name, Reason for feature selection: Cloned websites typically have hyperlinks pointing to real targets [33]."
+        },
+        {
+            "page": 7,
+            "section": "Algorithm1. Get each category",
+            "quote": "SPt ←{i|D[labeli] = Tj ∧ D[suf _leni] <2 ∧ 200 < D[state_codei] <300 ∧ D[successi]=1}\n...[The algorithm proceeds to categorize data based on label, suffix length, state code, and success status, not on phishing tactics.]"
+        },
+        {
+            "page": 13,
+            "section": "Table IX",
+            "quote": "[Table IX shows a comparison of overall performance metrics (ACC, PRE, REC, F-1) on the Crawling2024 dataset, without breaking down results by phishing attack type.]"
+        }
+    ]
+}
+```

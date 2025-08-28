@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports class-sensitive metrics, specifically precision and recall, which are crucial for evaluating performance in imbalanced datasets typical of phishing detection. However, it does not report F1-score, nor does it include any of the required summary metrics such as AUC-PRC, AUC-ROC, or MCC. The evaluation relies solely on precision@k and recall@k. While these metrics are relevant, their inclusion without a summary metric provides an incomplete picture of the model's overall classification quality, thus meeting the criteria for a \"Medium\" rating.",
+    "evidence": "Page 3, Section IV-D, Evaluation Metrics: \"We evaluate the performance of our model using the precision@k and recall@k for k = 1 and 6.\"\n\nPage 4, Table I, \"PERFORMANCE ON THE TARGET SCOPE DATASET\": The table presents the experimental results using only 'Precision' and 'Recall' as the performance indicators."
+}
+```

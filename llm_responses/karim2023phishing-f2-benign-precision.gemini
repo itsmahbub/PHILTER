@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper states that the dataset, sourced from Kaggle, contains \"phishing and legitimate URL attributes\". However, it provides no specific details about the origin, composition, or characteristics of the legitimate URLs. There is no mention of including low-reputation or long-tail domains (e.g., personal sites, small businesses) or pages that make legitimate use of third-party brand elements (e.g., PayPal payment widgets, Google login APIs). The evaluation of diversity in the benign dataset is completely unaddressed. This lack of information prevents an assessment of the model's robustness against false positives on more challenging, non-standard benign pages, fitting the criteria for a \"Low\" rating.",
+    "evidence": "page 7, section III.A, \"URL BASED PHISHING DATASET\": \"The dataset was collected in a CSV file from the well-known dataset repository called Kaggle, which provides benchmark datasets for research purposes. The dataset consisted of 11054 number of records and 33 attributes extracted from 11000+ websites... The dataset consisted of two classes: phishing and legitimate, as shown in Figure 4.\""
+}
+```

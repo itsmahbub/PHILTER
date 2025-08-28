@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper’s evaluation reports only overall detection counts and percentages (e.g., “hit rates” and detection rates of 98.1% and 94.1%) but does not report any class-sensitive metrics such as precision, recall, or F1-score, nor any summary metrics like AUC-PRC, AUC-ROC, or MCC. Without these, the evaluation fails to meaningfully assess performance under class imbalance.",
+  "evidence": "Page 2, Section III: “The hit rates for detected threats are the same for Scenario 2 and 3, with five out of eleven websites detected. In Scenario 1, four websites were successfully identified… A rate of originally 94.1% successfully identified phishing sites could be calculated.”"
+}

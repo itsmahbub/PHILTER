@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "While the paper demonstrates robustness against a narrow set of visual‐evasion tactics (image splitting and CSS‐only rendering), it does not systematically address the broader range of phishing tactics (e.g., subdomain spoofing, homograph attacks, URL redirection, IP‐based URLs, lexical manipulations) nor does it provide any quantitative breakdown of tactics in its evaluation dataset or per‐tactic performance. Therefore it fails to meet even the ‘Medium’ criterion of addressing multiple tactic categories without per‐tactic reporting, and falls under ‘Low’.",
+  "evidence": "Page 3, Section 2.2: “For instance, images can be decomposed into several parts … Fig. 2 shows an example of splitting image resources. … an adversary could convert images to pure cascading style sheets (CSS) ….”  \nPage 4, Section 3.1: “Our approach is robust against resource evasion techniques, such as image splitting (Fig. 2) or the replacement of image resources by pure CSS.”  \nPage 7, Section 4.2.1 and Table 2: The dataset is characterized only by brand targets (e.g., PayPal, Microsoft) with no information on phishing tactic diversity and no per‐tactic performance reported."
+}
+```

@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper proposes a method with several components specifically designed to counter a subset of active, URL-based attacks. The \"Maliciousness Analysis Module\" explicitly targets typosquatting by calculating Levenshtein distance to known brand and keywords. The \"Random Word Detection Module\" uses a Markov Chain model to identify randomly generated strings, a common tactic for creating evasive subdomains. The feature set also includes a check for Punycode, which is used in IDN homograph attacks. These design choices show clear consideration for resisting specific, common manipulation techniques. However, the evaluation is not a comprehensive stress test against a diverse or adversarial set of attacks. While the PhishTank dataset used is from the wild and likely contains such examples, the paper does not systematically report on the system's performance against different classes of evasion. The robustness is implied by the system's design and overall accuracy, rather than being explicitly demonstrated against a broad and challenging attack surface. Therefore, it demonstrates partial robustness but not across the full potential attack surface for its modality.",
+    "evidence": [
+        {
+            "page": 7,
+            "section": "4.5. Maliciousness analysis module",
+            "quote": "To detect whether the words in the given/tested URLs are used for fraudulent purposes or not, we have implemented a Maliciousness Analysis Module (MAM), which mainly focuses on detection of Typosquatting. Typosquatting is also known as URL hijacking, which targets computer users who incorrectly type a website address..."
+        },
+        {
+            "page": 7,
+            "section": "4.4. Random word detection module",
+            "quote": "In the phishing URLs, it is seen that some words are formed from random characters. Therefore, it is an efficient way to detect the number of the random words (or possible random words) with their lengths. To detect these words, we implemented the Random Word Detection Module (RWDM) by getting help from an open source project in GitHub..."
+        },
+        {
+            "page": 10,
+            "section": "Table 2 NLP based features.",
+            "quote": "Puny Code: Puny Code is a standard that allows the browser to decode certain special characters in the address field. Attackers may use Puny Code to avoid detecting malicious URLs."
+        }
+    ]
+}
+```

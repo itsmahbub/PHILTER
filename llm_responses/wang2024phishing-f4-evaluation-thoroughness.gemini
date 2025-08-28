@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation using metrics appropriate for the class-imbalanced nature of phishing detection. It explicitly defines and reports class-sensitive metrics (precision, recall, F1-score) and a suitable summary metric (Area Under the ROC Curve - AUC). The inclusion of both Precision-Recall (P-R) and Receiver Operating Characteristic (ROC) curves further demonstrates a thorough evaluation methodology, fulfilling all criteria for a high rating.",
+    "evidence": "Page 5, Section 4.1: \"To evaluate the proposed model, the following metrics are introduced: precision, recall (true positive rate), F1 score, matching accuracy, false positive rate (FPR), receiver operating characteristic (ROC) curve, and area under curve (AUC).\"\n\nPage 6, Section 4.1: The paper provides the mathematical formulas for Precision (Eq. 8), Recall (Eq. 9), and F1-score (Eq. 10), and defines AUC-ROC: \"AUC is a scalar value that quantifies the overall performance of a binary classification model using the ROC curve. It represents the area under the ROC curve.\"\n\nPage 8, Table 8: This table presents the comparison results of different methods, reporting values for Precision (Pre), Recall (Rec), F1, and AUC, demonstrating the practical application of the defined metrics."
+}
+```

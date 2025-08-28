@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a static detection model using a fixed set of nine lexical features. Lexical features are generally considered prone to concept drift as attackers can easily modify URL structures. The methodology does not incorporate any adaptive strategies like online learning or periodic retraining to account for evolving phishing tactics. Crucially, the evaluation protocol is not designed to measure resilience to concept drift. The model is trained and tested using a standard split of a single, time-bound dataset (ISCXURL-2016). There is no evidence of a chronological split (e.g., training on older data and testing on newer data) to simulate a real-world deployment scenario where attack patterns change over time. The claim of detecting 'new' websites refers to generalization to unseen samples within the same data distribution, not adaptation to a shifting distribution over time.",
+    "evidence": "Page 7, Section 4.3: \"To evaluate our proposed approach, we have used a dataset 'ISCXURL-2016' from the data repository of the University of Canada Brunswick.\" and \"Once the dataset gets standardized, it is then split into the training set and testing set. The training set data contains 15971 instances, whereas the testing set contains 3993 instances.\" This indicates a standard, non-temporal split of a dataset from a single year, which is insufficient for evaluating adaptation to concept drift."
+}
+```

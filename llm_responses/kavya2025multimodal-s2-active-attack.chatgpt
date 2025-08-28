@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The authors explicitly evaluate and defend against a wide range of active evasion techniques within their multi-modal, graph-based input scope, including visual obfuscations (image distortions, transparent overlays), URL cloaking (dynamic redirects, homographs), HTML obfuscation (invisible form fields, script injections) and adversarial perturbations (PGD, FGSM). They measure the drop in detection under these attacks and incorporate perturbation-resistant adversarial training and adaptive graph augmentation to recover performance, demonstrating robustness against a diverse set of active attacks.",
+  "evidence": "Page 13, Section IV (Comparative Result Analysis): “Upon testing, it was found that the application of adversarial perturbation methods (like Projected Gradient Descent (PGD) and Fast Gradient Sign Method (FGSM)) later caused a drop in phishing detection by 7.8%… To secure the architectures, perturbation-resistant embedding-based adversarial training is incorporated into MM-HFN and TGNN-Att… This method improves phishing detection accuracy against adversarial attacks by 5.6%… Additionally, an adaptive graph augmentation is proposed in MMTHF-Net… giving the phishing websites an additional 9.3% robustness against sophisticated adversarial attack scenarios.”"
+}
+```

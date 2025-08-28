@@ -1,0 +1,5 @@
+{
+  "value": "Medium",
+  "why": "The paper’s evaluation reports class-sensitive metrics—precision, recall, and F1-score—but does not include any of the required summary metrics (AUC-PRC, AUC-ROC, or MCC) that reflect overall classifier quality under class imbalance.",
+  "evidence": "Page 6, Section 5.2 and Tables 2 & 4: “Precision…Recall…F1 Score” are reported for all models, but no AUC-PRC, AUC-ROC, or MCC is presented."
+}

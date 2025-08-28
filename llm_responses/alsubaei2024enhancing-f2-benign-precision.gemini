@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper bases its evaluation on a single dataset obtained from Kaggle. The authors provide no details about the composition, sources, or diversity of the benign (non-phishing) websites within this dataset. There is no mention of including challenging benign cases such as low-reputation or long-tail domains (e.g., personal blogs, small business sites, recently registered domains). Furthermore, the paper does not discuss or claim to have included benign pages that make legitimate use of third-party brand elements (like PayPal widgets or social media login buttons), which are a common source of false positives. The evaluation's reliance on an undescribed dataset fails to demonstrate the model's robustness against a diverse set of real-world benign pages.",
+    "evidence": "Page 5, Section III.A. DATASET DESCRIPTION: \"In this study, our focus revolves around a meticulously curated dataset comprising 10,000 instances, each characterized by various attributes associated with URLs and web pages. The dataset, obtained from Kaggle [40], is specifically designed for the identification of phishing websites, aiming to discern between reliable websites and potential threats.\" \n\nThe paper provides no further information on the sources or nature of the \"reliable websites\" used for evaluation, limiting the assessment to the contents of this single Kaggle dataset."
+}
+```

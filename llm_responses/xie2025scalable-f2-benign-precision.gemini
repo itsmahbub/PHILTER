@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper explicitly states that the benign URLs for its custom \"Crawling2024\" dataset were collected from Alexa's top sites. This source consists exclusively of popular, high-reputation domains. The methodology does not involve sourcing URLs from low-reputation or long-tail domains, such as personal websites, small businesses, or recently registered domains. While the authors made an effort to find and crawl login pages within these top-tier legitimate sites, this is done to balance the page types (portal vs. login) against the phishing samples, not to evaluate the model's robustness against legitimate third-party brand element usage (e.g., a small site using a Google OAuth widget). Therefore, the evaluation is limited to high-reputation sites and does not address the specific diversity criteria required for a higher rating.",
+    "evidence": "Page 4, Section 3.2, Data Acquisition: 'To address the above issues, phishing URLs were collected from PhishTank**, and legitimate URLs were collected from Alexa††. A collector was then built using SeleniumWire to circumvent client-side or server-side disguises and ensure accurate data.' The footnote (††) for Alexa confirms the source: 'https://www.alexa.com/topsites'."
+}
+```

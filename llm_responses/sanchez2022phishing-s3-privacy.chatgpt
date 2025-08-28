@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The authors’ method relies on collecting and analyzing full URLs (including query parameters) with TF-IDF and character n-grams, and there is no mention of any client-side or in-boundary deployment, hashing, URL parameter stripping, federated learning, or other privacy safeguards. Thus, sensitive URL data would need to be transmitted to wherever inference is performed without protection.",
+  "evidence": "Page 6, Section IV.A: “The text preprocessing was limited to converting the text to a lower case.”\nPage 7, Table 2: Examples of URLs include full query parameters (e.g. “?hl=es&passive=true&amp;continue=…”).\nNo section describes any privacy-preserving deployment or data-handling mechanism."
+}
+```

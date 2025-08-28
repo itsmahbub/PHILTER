@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's methodology for collecting benign URLs relies exclusively on high-reputation domains from a single source. The authors state they collected legitimate URLs from the \"Open PageRank Initiative,\" which is a list of top-ranked websites. The evaluation does not mention including more challenging benign categories such as low-reputation or long-tail domains (e.g., small businesses, personal domains) or pages specifically selected for their legitimate use of third-party brand elements (e.g., PayPal widgets, OAuth logins) to test for false positive robustness. This approach limits the diversity of the benign dataset to popular, well-established sites, which aligns with the 'Low' fulfillment criterion.",
+    "evidence": "Page 5, Section 3.1: \"We collected legitimate URLs from Open PageRank Initiative Anon (2023g) and phishing URLs from PhishTank, OpenPhish, and MalwareWorld.\"\nPage 7, Section 4.1: \"The target URL is a URL from the list of the top 10 million legitimate websites downloaded from Open PageRank Initiative.\"\nPage 16, References: The reference \"Anon, 2023g\" points to \"https://www.domcop.com/top-10-million-websites.\""
+}
+```

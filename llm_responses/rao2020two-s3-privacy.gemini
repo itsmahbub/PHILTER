@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper describes a client-server architecture for its deployed Chrome extension, 'BlackPhish'. The extension sends the full, unfiltered URL of every visited webpage to a remote server via a REST API call. The server then performs all the analysis, which includes fetching the page's source code and taking a screenshot for feature extraction and comparison against its models. This process directly transmits sensitive user browsing data (the complete URL) off the user's device to an external server without any privacy-preserving mechanisms like hashing, truncation, or anonymization. This architecture exposes the user's entire browsing history to the service provider, which aligns with the criteria for a low privacy preservation rating.",
+    "evidence": "Page 16, Section 5.1 BlackPhish: chrome extension, \"The REST API service is used by the model for transferring the URL to the remote server where the dual filtering takes place for the detection of phishing sites. The REST service is implemented with Spring framework and hosted on Intel Xeon 16 core Ubuntu server... We used GET method for transferring the URL to the BlackPhish application. Once the URL is obtained at the server side, firstly an enhanced blacklist is checked for a match... If no match is found, the URL undergoes second level of filtering by extracting URL and source code-based features.\""
+}
+```

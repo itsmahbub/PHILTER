@@ -1,0 +1,30 @@
+## Evaluation Metric: Interpretability
+
+## Description:
+
+This metric assesses whether a phishing detection method provides clear and accessible 
+reasoning behind its classification decisions. Interpretability enables users, developers, 
+and auditors to understand why a webpage was flagged as phishing or legitimate, including 
+which input features or signals contributed most to the outcome. These explanations may 
+arise from inherently transparent models (e.g., decision trees) or from post hoc 
+Explainable AI (XAI) techniques, such as SHAP, LIME, Integrated Gradients, or Grad-CAM, 
+applied to more complex networks.
+
+Transparent detection behavior supports trust, informed decision-making, and error 
+analysis. Developers can trace and correct misclassifications, security teams can 
+validate model behavior, and end users are more likely to accept and act on system 
+warnings. Interpretability also facilitates system debugging, highlights potential 
+biases, and improves accountability.
+
+This metric applies across input modalities. For content-based methods, explanations 
+may highlight suspicious page regions (e.g., heat‑maps or bounding‑box overlays), 
+visual elements, or structural cues; for URL-based models, they may surface lexical 
+patterns, domain structures, or contextual signals.
+
+## Fulfillment Criteria:
+
+- High: Provides a clear explanation for each individual decision. Explanations may come from XAI methods (e.g., SHAP/LIME, attention or gradient heatmaps), visual cues such as bounding-box overlays, simple transparent rules (e.g., brand–domain mismatch), or inherently interpretable models (e.g., decision trees) where the decision path is directly observable.
+
+- Medium: Provides only global or limited insight (e.g., feature importances, Information Gain) without per-decision explanations.
+
+- Low: Provides no explanation; predictions come from a pure black box with no mechanism to interpret or audit.

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "DEPHIDES explicitly supports iterative updating of the model with newly acquired data, which constitutes an adaptive strategy for handling evolving phishing tactics. However, the evaluation does not use a time‐forward split (training on older data and testing on newer data), so it lacks the temporal evaluation needed for a High rating. Under the codebook, meeting either the adaptive‐strategy criterion or the temporal‐evaluation criterion earns a Medium rating.",
+    "evidence": "Page 9, Section IV.A: “To ensure the detection of the latest attacks and address the limitations of supervised learning, the iterative updating of the model with newly acquired training data proves highly beneficial.”\nPage 12, Section V: “It is not necessary to retrain the entire dataset when incorporating new data. The model can be updated iteratively, continuing from where it left off in the previous training.”\nPage 9, Section IV.A: “The dataset is divided into three parts for making a comparable performance measurement. 70% is used for training, while 20% is for validation and 10% is used for testing.” (demonstrating a random split rather than a time-forward evaluation)"
+}
+```

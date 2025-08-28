@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper uses a standard dataset from the UCI repository. The source of benign pages is described vaguely as \"Google's searching operators,\" which provides no specific information about their diversity. There is no evidence in the paper to suggest that the benign dataset was curated to include low-reputation sites, long-tail domains, or recently registered domains. Furthermore, the paper does not mention evaluating against benign pages that legitimately use third-party brand elements (e.g., social media logins, payment buttons), which are common sources of false positives for many detectors. The evaluation, as described, is limited to a standard collection of benign pages without addressing the specific diversity criteria required for a higher rating.",
+    "evidence": "Page 8, Section 4.2 Data set description, 'We adopt dataset named Phishing website dataset come from the UCI repository. This dataset collect mainly from PhishTank archive, MillerSmiles archive and Google's searching operators. ... The remaining samples are benign samples.'"
+}
+```

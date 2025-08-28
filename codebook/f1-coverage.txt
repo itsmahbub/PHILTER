@@ -1,0 +1,13 @@
+## Evaluation Metric: Tactic Diversity Coverage
+
+## Description:
+
+This metric evaluates whether a phishing detection method considers the wide range of tactics used in real-world phishing attacks. Phishers employ varied strategies to increase reach, longevity, and believability, including misuse of HTTPS, hosting on trusted shared domains (e.g., GitHub Pages, Google Sites), deployment on compromised legitimate domains, URL redirection, subdomain spoofing (e.g., \texttt{login.paypal.com.fake.net}), homograph attacks (e.g., \texttt{app1e.com}), use of IP addresses as URLs, lexical manipulations (e.g., misspellings, hyphens, brand permutations), impersonation of less popular brands, and mimicry of internal systems (e.g., HR portals or ticketing platforms)~\cite{pourmohamad2024deep, da2020heuristic, kulkarni2024phishing}. Phishing detection methods can address such diversity by employing generalizable design choices, such as domain-independent features or tactic-agnostic mechanisms, that remain effective across varied hosting environments, brand targets, and evasion strategies
+
+This metric is modality-aware: methods are evaluated based on the tactic diversity they can reasonably detect within their input space. Content-based methods, which use webpage content and/or external signals, are expected to demonstrate the ability to handle multiple tactics spanning different categories. URL-based methods, which rely solely on the URL string, are expected to capture tactic diversity observable in URL patterns (e.g., HTTPS misuse, subdomain spoofing, homograph attacks).
+
+## Fulfillment Criteria:
+
+- High: Addresses multiple phishing tactics or is tactic-agnostic by design, provides a quantitative breakdown of the evaluation dataset, and reports detection performance for each tactic.
+- Medium: Addresses multiple phishing tactics or is tactic-agnostic by design but does not provide a per-tactic breakdown.
+- Low: Ignores tactic diversity. Uses an evaluation dataset with no information on phishing tactic diversity.

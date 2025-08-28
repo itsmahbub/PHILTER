@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper constructs its benign dataset from two sources: the official websites of 153 brands targeted by phishing, and a random selection of 764 sites from the Tranco top 2k list. The use of the Tranco top 2k list introduces diversity by including long-tail domains, satisfying the criterion for including low-reputation or less popular sites. However, the methodology does not explicitly mention the inclusion of the second key subset: benign pages that make legitimate use of third-party brand elements (e.g., a small e-commerce site with a PayPal button or a blog with a Facebook login widget). The benign set consists of the brands' own official sites and a general popular list, but it does not specifically address the challenging case of legitimate third-party brand integration, which is a common source of false positives. Therefore, it only fulfills one of the two criteria required for a 'High' rating.",
+    "evidence": "page 7, Section IV-B, NON-PHISHING SITES: \"The seed URLs consisted of legitimate websites for the 153 brands targeted by phishing sites, as well as the top 2k domain names from the Tranco list [48]. From the legitimate sites of the 153 brands, we extracted the URLs of their homepages and, if available, the login pages (a total of 236 URLs with 196 FQDNs)... The remaining 764 websites (out of 1,000 non-phishing sites) were randomly selected from the crawled Tranco top sites.\""
+}
+```

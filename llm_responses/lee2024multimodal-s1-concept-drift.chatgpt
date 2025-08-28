@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed method avoids relying on drift-prone, short-lived features by leveraging the semantic, multimodal knowledge embedded in large pretrained LLMs, thus sidestepping the need for frequent retraining on new phishing samples. However, the evaluation does not employ a temporally-aware protocol—there is no training on older data and testing on newer data to simulate concept drift—so only half of the High criterion is met.",
+  "evidence": "Page 1, Abstract: “The biggest advantage of having an LLM-based phishing detection system is that it does not require any labeled data…LLMs offer the opportunity to extract and provide interpretations of results, a capability lacking in existing research proposals.”\nPage 5, Section V: “Dataset: We use the manually labeled and verified benign and phishing webpage dataset (Table I) described in Section IV for the evaluation of brand identification and phishing classification using LLMs.” (no mention of temporally-separated train/test splits)"
+}
+```

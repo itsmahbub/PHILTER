@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The evaluation includes a specific dataset of lower-ranked legitimate websites to assess performance beyond popular, high-reputation domains, which fulfills the 'low-reputation or long-tail domains' criterion. The authors explicitly construct a dataset (DS-2) from websites ranked between 5000 and 6000 on the Alexa list to test if lower-ranked sites negatively impact the true negative rate. However, the paper does not mention constructing or evaluating against a benign dataset specifically designed to test robustness against pages containing legitimate third-party brand elements (e.g., social media buttons, payment widgets). As it only fulfills one of the two criteria for a 'High' rating, the score is 'Medium'.",
+    "evidence": "page 11, section 4.1, \"In short, we constructed the first dataset (DS-1) consisting of 500 phishing samples, and another 500 legitimate samples sourced from the top 1000 rank of the Alexa top websites list. The second dataset (DS-2) consists of 250 legitimate webpages ranked in between the top 5000 to 6000 of the Alexa top websites list.\""
+}
+```

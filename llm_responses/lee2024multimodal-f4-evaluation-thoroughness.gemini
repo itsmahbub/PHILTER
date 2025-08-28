@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper consistently uses and reports on class-sensitive metrics that are crucial for evaluating a phishing detection system, where class imbalance is a significant factor. The authors explicitly state their use of precision, recall, and F1-score. These metrics are used throughout the evaluation section to compare different models, input types, and system configurations. However, the evaluation does not include any summary metrics like Area Under the Precision-Recall Curve (AUC-PRC), Area Under the Receiver Operating Characteristic Curve (AUC-ROC), or Matthews Correlation Coefficient (MCC). The absence of these summary metrics prevents the evaluation from meeting the 'High' criteria, which requires both class-sensitive and at least one summary metric for a comprehensive assessment.",
+    "evidence": "Page 6, Section V, Metrics: \"We use the common metrics for evaluating the phishing detection capability of solutions. They include precision (that quantifies the misclassification), recall (or detection rate of phishing pages), and F1-score (harmonic mean of precision and recall).\"\nPage 6, Section V-A: \"The F1-score achieved by GPT-4 and Claude3 are approximately 0.92 and 0.90, respectively. ... Consequently, the F1-score of Gemini is lower at ≈ 0.81.\"\nFigures 2, 3, and 6 also consistently plot and analyze precision and recall."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The evaluation’s benign dataset is drawn exclusively from high‐reputation, popular sites (the primary Alexa domains of the eight most‐targeted brands). There is no inclusion of low‐reputation or long‐tail domains, nor of benign pages from varied small/regional sites with legitimate brand widgets. As a result, the reported false positive rate is based only on “easy” cases and does not assess robustness against harder benign subsets.",
+  "evidence": "Page 11, Section 5.1: “Similarly, we visited the corresponding legitimate websites to generate negative (non-phishing) samples. For each legitimate site, we intended to visit multiple webpages in different content, HTML structures, languages, and background colors...”  (All samples are from primary Alexa domains of eight target brands.)"
+}
+```

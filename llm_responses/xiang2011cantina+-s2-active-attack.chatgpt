@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper evaluates CANTINA+ only on unmodified phishing and benign pages drawn from PhishTank and standard web corpora. It does not include any experiments or analysis of active evasions—such as junk HTML insertion, obfuscated scripts, image-only text, dynamic content loading, or cloaking—that would test the system’s resilience to adversarial manipulations within its input modality.",
+  "evidence": "Page 6, Section 4: “We acknowledge that this hashing-based filter is easy to beat. However, it is highly effective against existing phish today…we only use it as a filtering step…”; Page 12, Section 7.2: “Our Web page collection consists of phishing cases from PhishTank, and legitimate Web pages from five sources…we did not download adversarially manipulated or obfuscated examples.”"
+}

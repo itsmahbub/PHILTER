@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The authors’ approach requires only the raw URL string and does not invoke any external lookup services or send data off-device at inference time. By design it can be run entirely on the client (or within an organizational gateway) with no sensitive URL data transmitted outside that boundary, satisfying the ‘High’ privacy preservation criterion.",
+  "evidence": "Page 10, Section VII. CONCLUSION: “No dependence on external services. A limitation of the description methods that use features such as WHOIS domain age, page ranking on Google or Alexa or online blacklists, is their dependence on those services…making real-time execution infeasible.”\nPage 2, near end of Introduction: “To overcome these limitations, we focus on phishing detection through URLs since it implies advantages such as fast computation – because no websites are loaded – and 3rd party and language independent, since features are extracted only from the URLs.”"
+}
+```

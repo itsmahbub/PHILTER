@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "WebPhish requires the raw, full URL (including sub‐domain, path, query parameters) and the entire HTML source of the page as input, and the paper gives no indication that inference ever happens solely on the client or within a protected boundary. No privacy‐preserving mechanisms (e.g. hashed lookups, federated learning, URL sanitization or on‐device only inference) are described.",
+  "evidence": "Section 3.1 (Input layer): “To create a dictionary of characters for the URLs … each URL character sequence … is tokenised; a corresponding number replaces the original characters … This constitutes the character‐level corpus of the URLs.” \n\nSection 4.2 (Dataset): “In the dataset, all the elements of an HTML document … and all parts of the URL, including the (subdomain, domain name, path, and query) were used when training the deep learning model.”"
+}
+```

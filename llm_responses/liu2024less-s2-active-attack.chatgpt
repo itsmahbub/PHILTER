@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "PhishLLM evaluates and mitigates a variety of active attacks—logo adversary injections, LLM prompt‐injection, pixel‐level adversarial perturbations, and HTML obfuscation—demonstrating robustness within its screenshot‐and‐LLM input modalities. However, it does not evaluate dynamic evasions such as deferred execution or cloaking, leaving parts of the active‐attack surface untested.",
+  "evidence": "Page 11, Section 4.4: “Table 5 shows that PhishLLM is generally robust against various adversarial attacks…” which include logo adversary, prompt injection, pixel perturbation, and HTML obfuscation, but no tests of dynamic content loading or cloaking."
+}
+```

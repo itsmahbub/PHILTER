@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed RNT-J framework incorporates a wide range of URL- and content-based features that capture multiple phishing tactics—e.g., misuse of HTTPS, subdomain spoofing, URL redirection markers (double slashes, @), lexical manipulations (hyphens, underscores, random strings), IP-address URLs, abnormal form actions, embedded brand names, and external resource ratios. However, the evaluation reports only overall detection metrics (accuracy, precision, recall, ROC) on a generic Kaggle phishing dataset, without a per-tactic breakdown of performance or explicit annotation of tactics in the test set.",
+  "evidence": "– Table 2 (page 6): lists features such as “HTTPSInHostname”, “DoubleSlashInPath”, “NumDashInHostname”, “RandomString”, “IPaddress” among 50 URL and HTML attributes, indicating multiple tactics addressed.  \n– Evaluation (pages 14–15): only overall confusion matrices and aggregate metrics for RNT-J vs. baselines; no section or table providing performance per phishing tactic category."
+}
+```

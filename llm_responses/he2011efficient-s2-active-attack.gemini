@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper does not evaluate its method against active attacks designed to evade detection. The evaluation is conducted on standard datasets of phishing and legitimate pages (CastleCops, PhishTank, Alexa) which are not explicitly described as containing evasive or adversarial examples. Most critically, the authors acknowledge in the discussion section that the core mechanism for 'identity extraction' is vulnerable to active attacks. They state that an attacker could use invisible text to manipulate the tf-idf scores, or use images instead of text to bypass the term extraction entirely. The system is also vulnerable by design to deferred execution attacks, as it only performs detection if a text input field is found on the initial page load, otherwise it labels the page as 'neutral'.",
+    "evidence": "Page 9, Section 6, 'Discussion': \"The tf-idf algorithm of our method can be attacked by using texts invisible to users (but visible to computer) to modify the term frequency value of certain terms; hence the identity extracted from this page may be the wrong term. Images instead of words may also be used; consequently the page appeared to have no identity.\"\n\nPage 2, Figure 2, 'Phishing detection algorithm': \"2. If P has a text input ... 3. Else return neutral label (0)\". This algorithmic step shows that if an input form is loaded dynamically after an initial check (a deferred execution attack), the entire detection process is bypassed."
+}
+```

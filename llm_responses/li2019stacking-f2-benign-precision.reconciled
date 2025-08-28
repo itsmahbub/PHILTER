@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The evaluation includes benign pages from low-reputation/long-tail domains (the 2K-PD dataset draws 1,000 legitimate sites with Alexa ranks 100,000–101,000), but it does not include any curated pages making legitimate use of third-party brand elements (e.g., PayPal/OAuth widgets or embedded logos). This meets only one of the two diversity criteria, corresponding to a Medium rating.",
+  "evidence": "Page 31, Section 4.1 Dataset: “(1) 2K Phishing Detection Dataset (2K-PD)… The legitimate ones are collected from Alexa [47], which rankings are between 100,000 to 101,000.”  No part of the evaluation mentions inclusion of benign pages containing legitimate brand-element usage."
+}
+```

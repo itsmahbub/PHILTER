@@ -1,0 +1,21 @@
+## Evaluation Metric: Diversity of Benign Pages
+
+## Description:
+
+Assesses whether a phishing detection method is evaluated on a sufficiently diverse set of benign webpages, so that the reported false positive rate reflects genuine robustness rather than performance on "easy" cases. When detectors fail to handle such diversity, false alarms increase---frustrating users, eroding trust in protective systems, and eventually leading to warning fatigue or disabling of safeguards.
+
+Many legitimate sites, especially those from small businesses, personal domains, or regional e-commerce shops, lack common reputational indicators such as high domain rank or domain age. Moreover, they may legitimately embed elements from well-known brands (e.g., PayPal buttons, Google/Facebook OAuth widgets, social media logos), which detectors can misinterpret as signs of phishing. Robust evaluation should therefore include benign datasets that capture multiple forms of diversity, particularly:
+- Low-reputation or long-tail domains (e.g., Alexa/Tranco top-rank sites, personal domains, recently registered domains, or regional businesses).
+- Legitimate brand element usage (e.g., PayPal/OAuth login widgets, social media buttons, embedded logos).
+
+
+Including these harder benign subsets alongside popular, well-established domains provides a more faithful measure of detector robustness. Without such diversity, evaluations risk underestimating false positive rates by excluding benign pages most susceptible to misclassification.
+
+
+## Fulfillment Criteria:
+
+- High: Evaluation intentionally includes both: (i) low-reputation or long-tail domains (e.g., Alexa/Tranco low-ranked, recently registered, personal subdomains, small/regional businesses), and (ii) pages with legitimate brand element usage (e.g., PayPal/OAuth widgets, social media buttons, embedded logos).
+
+- Medium: Evaluation intentionally includes only one of the two subsets (either low-reputation domains or brand-element pages), but not both.
+
+- Low: Evaluation is limited to high-reputation or popular sites (e.g., Alexa/Tranco top-ranked domains) without addressing low-reputation or brand-element subsets.

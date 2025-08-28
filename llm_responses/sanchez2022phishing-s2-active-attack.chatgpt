@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed URL‐only phishing detector is evaluated solely on clean legitimate versus phishing URL datasets (homepages and login URLs) without any assessment of evasion techniques or adversarial manipulations (e.g. obfuscated URLs, injected junk characters, cloaking, dynamic content). There is no testing against active attacks within its URL modality and scope.",
+  "evidence": "Page 5, Section III: “We collected reported phishing URLs from Phishtank [21], [36], [39], between November 2019 and February 2020.”"
+}
+```

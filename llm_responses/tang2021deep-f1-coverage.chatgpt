@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper’s evaluation uses URL-based datasets drawn from multiple sources and reports only overall accuracy, F1, false positive/negative rates, and mAP. It does not describe or quantify the distribution of phishing tactics in its datasets, nor provide any per-tactic performance breakdown. There is no discussion of specific tactics (e.g., subdomain spoofing, homograph attacks, IP-based URLs) or analysis of the method’s effectiveness against different evasion strategies.",
+  "evidence": "Page 1518, Section V.A (Table 3): “Table 3 shows the core performance indicators of the GRU model with 8 datasets.”\nPage 1517, Section V.B (Table 4): “Different classifiers’ performance comparison by the same dataset: KPT-12.”\n— No mention of tactic categories or per-tactic performance breakdown throughout the evaluation sections."
+}
+```

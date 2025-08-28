@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The evaluation reports the class‐sensitive metrics precision and recall across multiple datasets (e.g., Table 3, Table 4, Table 7), but it does not report F1‐scores nor any summary metric such as AUC‐ROC, AUC‐PRC, or MCC. Thus it covers some but not all of the required metrics for robust evaluation under class imbalance.",
+    "evidence": "Table 3 (Section 4.2): Overall Performance reports Precision and Recall but omits F1-score and any AUC or MCC summary metric."
+}
+```

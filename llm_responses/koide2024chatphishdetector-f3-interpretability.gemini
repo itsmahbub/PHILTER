@@ -1,0 +1,23 @@
+```json
+{
+    "value": "High",
+    "why": "The system is explicitly designed to be interpretable. It uses a Chain-of-Thought (CoT) prompting technique that instructs the Large Language Model (LLM) to provide a step-by-step rationale for its classification. For each website analyzed, the model is required to explain its reasoning, point out suspicious elements, identify the brand, and then state its conclusion. The paper provides concrete examples of these generated natural language explanations, which detail why a specific site was flagged by referencing its URL structure, social engineering cues in its text/HTML, and visual elements from screenshots. This constitutes a clear, per-decision explanation that allows for human analysis and auditing of the model's behavior.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "III. CHATPHISHDETECTOR, B. PROMPT ENGINEERING",
+            "quote": "We create the template based on the Chain of Thought (CoT) prompting technique [25], [42]. The CoT is a prompting technique that encourages LLMs to explain their reasoning."
+        },
+        {
+            "page": 4,
+            "section": "III. CHATPHISHDETECTOR, Prompt Template 1",
+            "quote": "3. State your conclusion on whether the site is a phishing site or a legitimate one, and explain your reasoning."
+        },
+        {
+            "page": 11,
+            "section": "V. EVALUATION, F. EXAMPLES OF LLM RESPONSES, Response 1 - GPT-4",
+            "quote": "1. Suspicious elements: The URL contains a subdomain \"securitypages\", which is unrelated to the legitimate Facebook domain (www.facebook(.)com). The extracted text alerts the user about having 12 hours to cancel the account. This is a social engineering technique often used in phishing attacks. ... 3. The site appears to be a phishing site because of the suspicious URL and social engineering tactics in the text."
+        }
+    ]
+}
+```

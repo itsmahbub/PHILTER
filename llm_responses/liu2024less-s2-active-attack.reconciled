@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While PhishLLM demonstrates robustness against a range of static, screenshot-level active attacks (logo manipulation, prompt injection, adversarial pixel perturbations, and HTML obfuscation), it does not evaluate evasion techniques that rely on dynamic content loading or cloaking (e.g., deferred execution of forms, AJAX-loaded UI elements, or crawler-specific content). According to the codebook, High robustness requires covering dynamic evasions observable within the system’s interaction scope, which are not systematically tested in the paper.",
+  "evidence": "Page 11, Section 4.4: Table 5 evaluates only four attack types—logo adversary, LLM prompt injection, pixel-level perturbation, and HTML obfuscation—but omits tests of deferred execution or cloaking techniques.\nPage 4, Section 3 overview describes dynamic interaction (auto-click), yet no corresponding adversarial evaluation of dynamic evasions is reported."
+}
+```

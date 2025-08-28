@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method uses a character-level deep learning approach on URLs, which provides inherent robustness against a subset of active attacks, specifically lexical obfuscations that aim to bypass keyword-based or simple feature-based detectors. The paper highlights this by explaining how its model could handle variations like 'amazonserucelogn.com' instead of 'amazonsecurelogin.com' without relying on specific keywords. However, the system's resilience is not comprehensively evaluated and has clear limitations. The authors explicitly state their system cannot detect URL hijacking or redirection attacks. Furthermore, their approach to URL shorteners is not a technical defense but a dismissal, assuming that the final destination URL will eventually be analyzed. The experiments are conducted on a standard dataset from PhishTank without a specific focus on evaluating the system against adversarially crafted or heavily obfuscated URLs. Therefore, the method shows partial robustness but does not address the full spectrum of active attacks relevant to its URL-only modality.",
+    "evidence": [
+        {
+            "page": 11,
+            "section": "C. OVERVIEW OF TESTED ALGORITHMS",
+            "quote": "Many deep learning approaches eliminate the need for the feature engineering step. Basic keyword searches are a method that can be easily avoided. For instance, instead of using amazonsecurelogin.com, a similar domain like amazonserucelogn.com could be employed for attacks. Since the words 'secure' and 'login' are not used directly in this example, keyword checking may not be successful."
+        },
+        {
+            "page": 10,
+            "section": "C. OVERVIEW OF TESTED ALGORITHMS",
+            "quote": "Attackers may attempt to bypass prevention systems by utilizing URL shorteners. Even if the DEPHIDES URL checking service fails to successfully classify the shortened URLs, the attackers’ objectives cannot still be reached because the shortened URLs are directed to original web pages during the attack, and they will be accurately classified as phishing by the system."
+        },
+        {
+            "page": 12,
+            "section": "V. EXPERIMENTAL RESULTS",
+            "quote": "URL hijacking, also known as URL redirection or URL spoofing, is a type of cyber-attack where an attacker redirects a website’s traffic from a legitimate URL to a malicious one. However, the proposed system cannot detect URL hijacking attacks due to its structure."
+        }
+    ]
+}
+```

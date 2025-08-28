@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper does not provide a mechanism for per-decision explanations (e.g., via XAI techniques like SHAP or LIME), which would be required for a 'High' rating. However, it is far from a 'Low' black-box system. The authors provide significant global insight into their model's behavior by conducting a detailed analysis of the individual contribution of each of their 15 features. They use the Area Under the Curve (AUC) as a summary statistic to measure the predictive power of each feature in isolation, identifying the most influential signals. This analysis allows developers and auditors to understand which characteristics (e.g., 'bad forms', 'nonmatching URLs') are the primary drivers of the model's classifications on a global level, even if the specific reason for a single prediction is not exposed.",
+    "evidence": "Page 19, Section 8.7, \"Learning with Individual Features\": \"The statistics in the previous sections were obtained by using the whole feature set (15 features in total), and in this section, we evaluate the contribution of each single feature to the overall performance. We refrain from using TP/FP and instead stick to the summary statistic AUC in measuring the performance of each individual feature... Figure 4 shows that a few features clearly stand out from the others with over 0.85 AUC, including “bad forms,” “bad action fields,” “nonmatching URLs,” and “page in top search results.”\" This is further visualized in Figure 4 on page 20, which explicitly plots the AUC for each feature."
+}
+```

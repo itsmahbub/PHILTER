@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper sources its benign URLs primarily from a single Kaggle project, along with two other academic datasets (Phish Storm and ISCX-URL2016). However, the paper provides no description of the characteristics of these benign URLs. There is no mention of whether the datasets include low-reputation or long-tail domains (e.g., personal sites, small businesses, recently registered domains) or legitimate pages that use third-party brand elements (e.g., social media logins, payment widgets). The evaluation is limited to these uncharacterized sources, and without any evidence of including harder-to-classify benign instances, it does not meet the criteria for Medium or High.",
+    "evidence": "Page 4, Section III.A, DATA COLLECTION TASKS: \"We collected data from different open sources shown in Table 1... We loaded around 350,000 benign URLs from an open Kaggle project [23].\"\nPage 9, Section V.A, GRU WITH DIFFERENT DATASETS: \"KPT stands for the data collected from Kaggle and Phish Tank, and each KPT dataset is a balanced dataset...\"\nThe paper never characterizes the benign URLs from Kaggle or the other sources beyond labeling them as 'legitimate' or 'benign', thus failing to demonstrate the inclusion of diverse or challenging benign examples."
+}
+```

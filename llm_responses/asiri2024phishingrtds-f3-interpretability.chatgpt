@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed PhishingRTDS method is a black-box deep learning pipeline (BiLSTM + attention + sigmoid) with no mechanism provided for per-decision explanations or auditing. There is no use of post-hoc XAI tools (e.g., SHAP, LIME, Integrated Gradients) nor any exposition of feature importances, attention-weight visualizations, or decision paths that would allow a developer or user to understand why a particular URL or page was flagged.",
+  "evidence": "Page 6, Section 3.3.4 Classification: “After extracting the features, they pass to a fully connected layer with a Sigmoid function for classification.”  No further mention of any explanation or interpretability mechanism."
+}
+```

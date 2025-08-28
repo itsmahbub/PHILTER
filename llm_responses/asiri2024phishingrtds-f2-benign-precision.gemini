@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's benign dataset is sourced exclusively from \"Alexa['s]... most visited websites' URLs,\" which represents high-reputation and popular domains. The methodology does not mention any effort to include more challenging benign cases, such as low-reputation or long-tail domains (e.g., small businesses, personal blogs, recently registered domains). Furthermore, there is no indication that the authors curated the benign set to include pages with legitimate brand element usage (e.g., embedded PayPal buttons, Google/Facebook OAuth widgets), which are common sources of false positives. The evaluation is therefore limited to popular sites and does not demonstrate robustness against the types of diverse, legitimate webpages that often resemble phishing attacks.",
+    "evidence": "Page 7, Section 4.1. Data collection: \"Benign dataset: A benign dataset provided by Alexa Ghodke (2018), which contains 100,000 most visited websites' URLs. We randomly sampled 25,000 of these URLs to verify that they were still active and benign manually.\""
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed method is evaluated solely on a static, clean URL dataset (Kaggle ’Phishing Website URLs’) using standard classification metrics (accuracy, precision, recall, F1-score, ROC-AUC). There is no assessment of robustness against any active evasion techniques—such as URL obfuscation with junk characters, HTML/JS cloaking, deferred content loading, or adversarial perturbations—within its stated URL-based scope.",
+  "evidence": "Section VI.A (Dataset): “Within this research, we have chosen the dataset labelled ‘Phishing Website URLs’ sourced from Kaggle and consists of 549,346 URLs.”  \nSection X (Performance Metrics): Evaluation uses only accuracy, precision, recall, F1-score and ROC-AUC on clean phishing vs. benign examples, with no mention of testing against active or evasive attacks."
+}
+```

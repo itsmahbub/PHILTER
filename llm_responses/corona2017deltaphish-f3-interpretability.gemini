@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides global interpretability for its HTML-based classifier by analyzing the feature weights of the trained linear Support Vector Machine (SVM). The authors present a boxplot of these weights and identify the most influential features (Title, URL, SS-URL, I-URL), offering a general understanding of the model's decision-making logic. However, the system does not offer per-decision explanations for why a specific page was flagged, which would be required for a 'High' rating. Furthermore, the high-dimensional visual classifier and the non-linear fusion classifier (SVM with RBF kernel) are not analyzed for interpretability and are treated as black boxes.",
+    "evidence": "Page 15, Section 4.2 Adversarial Evasion: \"The distribution of the feature weights (and bias) for the HTML-based classifier (computed over the 20 repetitions of our experiment) is shown in the boxplot of Fig. 8, highlighting two interesting facts... Second, the most relevant features (i.e., those which tend to be assigned the lowest negative weights) are Title, URL, SS-URL, and I-URL. This will be, in most of the cases, the first four features to be increased by the attacker to evade detection, while the remaining features play only a minor role in the classification of phishing and legitimate pages.\" This is further supported by Figure 8 on page 16, which explicitly visualizes the weights for each of the 11 HTML features, providing global insight."
+}
+```

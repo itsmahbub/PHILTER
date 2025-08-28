@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper evaluates its method using Accuracy, False Positive Rate (FPR), and False Negative Rate (FNR). FNR is equivalent to 1-Recall, making it a class-sensitive metric that measures missed threats. The paper also introduces a custom 'Cost' metric that heavily weights FPR, demonstrating an understanding of the real-world impact of false alarms. However, the evaluation is incomplete according to the codebook's criteria for a 'High' rating. It omits other standard class-sensitive metrics such as Precision and F1-score. More importantly, it lacks any of the required summary metrics robust to class imbalance, like AUC-PRC, AUC-ROC, or MCC. The presence of some relevant metrics (FPR, FNR) but the absence of a complete suite justifies a 'Medium' rating.",
+    "evidence": "Page 10, Section V-A, EXPERIMENT DATA AND INDICATORS, \"We use accuracy, FPR (false positive rate), FNR (false negative rate), cost, and detection time to evaluate the effectiveness of the detection approach we proposed. [...] FPR (false positive rate) measures the rate of all legitimate websites that were misclassified as phishing out of the total legitimate websites. [...] FNR (false negative rate) measures the rate of all phishing websites that were misclassified as phishing out of the total phishing websites. [...] We propose the detection cost to comprehensively evaluate FPR and FNR, as follows: Cost = FNR + λ × FPR, λ > 1\""
+}
+```

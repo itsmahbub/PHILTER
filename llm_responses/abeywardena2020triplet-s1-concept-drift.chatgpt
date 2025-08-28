@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "The method avoids drift-prone URL and code features by relying on inherently stable visual content and structural similarity embeddings, and its evaluation protocol trains on data collected in January 2019 but tests on a separate “Target scope” dataset collected in October 2019, demonstrating performance on temporally newer samples.",
+  "evidence": "Page 1, Introduction: “Since our method does not rely on text and code features, it is resilient to code obfuscation.”; Page 2, III DATA COLLECTION, Target scope: “we collect 232 new screenshots of 36 domains on the Alexa Top 10K list on 2019-10-07.”"
+}
+```

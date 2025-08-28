@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides a strong evaluation by consistently reporting essential class-sensitive metrics, including precision, recall, and F1-score, which are critical for assessing performance under the class imbalance typical of phishing detection. The authors use these metrics to compare their proposed method (KPD with KnowPhish) against several baselines. However, the evaluation does not meet the criteria for 'High' because it omits any summary metrics like AUC-PRC, AUC-ROC, or MCC, which are necessary for a complete assessment of classification quality, especially in imbalanced datasets.",
+    "evidence": "Page 11, Section 6.3: \"We evaluate the effectiveness of different RBPDs via accuracy, F1 score, precision, recall, number of brands detected, and efficiency based on the average running time per sample.\"\n\nPage 11, Table 2: This table presents the core experimental results and includes columns for 'ACC↑', 'F1↑', 'Precision↑', and 'Recall↑', demonstrating the use of the required class-sensitive metrics."
+}
+```

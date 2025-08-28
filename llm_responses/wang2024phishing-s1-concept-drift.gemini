@@ -1,0 +1,28 @@
+```json
+{
+    "value": "High",
+    "why": "The paper addresses concept drift through both its core design and its evaluation protocol. First, the method is based on visual similarity, which the authors argue is an inherently stable feature against evolving attacker tactics. Second, the authors explicitly acknowledge the need for model maintenance and demonstrate that periodic retraining effectively adapts the model to changes in trusted websites over time. Most importantly, the evaluation is temporally sound. The model is trained on one set of data and then tested, without retraining, on a 'zero-day phishing webpage dataset' which is explicitly described as having a 'temporal separation' from the training data. This combination of using stable features, proposing an adaptive strategy, and performing a temporal evaluation meets the highest criteria for this metric.",
+    "evidence": [
+        {
+            "page": 5,
+            "section": "4.1. Datasets and metrics",
+            "quote": "Zero-day phishing webpage dataset. To evaluate zero-day phishing pages, 955 pages targeting the trusted list were collected from PhishTank. There is a temporal separation between these pages and the phishing webpage dataset."
+        },
+        {
+            "page": 10,
+            "section": "4.5. Testing with zero-day phishing webpages",
+            "quote": "To provide evidence for the model's efficacy in detecting zero-day pages, the model is evaluated against the zero-day phishing webpage dataset. The trained model is tested without retraining, and 76% of zero-day phishing webpages are correctly matched their target."
+        },
+        {
+            "page": 11,
+            "section": "5. Discussion",
+            "quote": "The maintenance of the trusted list. The model needs to be retrained and updated when trusted website pages change... Therefore, when trusted webpages change, the proposed model still works by retraining with a new training set."
+        },
+        {
+            "page": 2,
+            "section": "2. Related work",
+            "quote": "First, in order to successfully deceive users, phishing pages must be visually similar to benign pages. Therefore, visual similarity is a stable feature."
+        }
+    ]
+}
+```

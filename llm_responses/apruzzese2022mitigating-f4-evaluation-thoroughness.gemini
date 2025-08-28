@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several key class-sensitive metrics that are appropriate for evaluating phishing detection systems, including F1-score and Recall (reported as True Positive Rate, TPR). It also reports the False Positive Rate (FPR), which is crucial for assessing real-world impact (i.e., blocking legitimate sites). This demonstrates a strong understanding of the evaluation needs in an imbalanced domain. However, the evaluation lacks a summary metric such as AUC-ROC, AUC-PRC, or MCC, which would provide a more comprehensive, threshold-independent measure of classifier performance. Because it includes critical class-sensitive metrics but omits a summary metric, it meets the criteria for \"Medium\" but not \"High\".",
+    "evidence": "Page 9, Tables 4 & 5: The results tables for the baseline and POC-hardened detectors consistently report performance using \"F1-score\", \"Acc\" (Accuracy), \"FPR\" (False Positive Rate), and \"TPR\" (True Positive Rate, which is equivalent to Recall). For example, the column headers for Table 4 are: \"Classifier F1-score Acc FPR TPR F1-score Acc FPR TPR...\""
+}
+```

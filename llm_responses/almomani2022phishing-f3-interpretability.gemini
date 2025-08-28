@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides global insight into feature importance by using Information Gain for feature selection, but it does not offer per-decision explanations. The authors explicitly state they use 'Information Gain Attribute Evaluation to select the best features from the dataset,' which measures the general significance of each feature for the classification task. This aligns with the 'Medium' criterion of providing global or limited insight. While the study includes inherently interpretable models like Decision Trees, it does not leverage their transparency to show decision paths or rules for individual predictions. The focus remains on comparing aggregate performance metrics (accuracy, precision, etc.) rather than explaining the reasoning behind specific classifications.",
+    "evidence": "page 8, section 3.1. Pre-Processing and Features Extraction, 'There are several methods of feature selection and in this paper,we have used Information Gain Attribute Evaluation to select the best features from the dataset.By measuring the information gap calculated for the target class, this method measures the significance of the attribute.'"
+}
+```

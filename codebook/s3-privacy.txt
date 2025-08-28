@@ -1,0 +1,19 @@
+## Evaluation Metric: Privacy Preservation
+
+## Description:
+
+Evaluates whether a phishing website detection method protects user privacy during detection, particularly in deployment settings integrated into user-facing environments such as browsers, email clients, or mobile apps. It considers whether sensitive data, such as full URLs (including query parameters), webpage content, or screenshots, is transmitted from the user’s device to external servers. Even URL-only detection methods can create risks if raw URLs are sent off-device, since these may contain session tokens, personal identifiers, or application-specific parameters.
+
+Privacy-preserving design is essential for user trust, regulatory compliance, and adoption. In practice, privacy can be achieved by ensuring that sensitive or identifiable data is not transmitted off-device and by adopting privacy-aware deployment or data handling mechanisms. Common approaches include:
+
+- Hashed URL lookups, such as prefix-hash-based blacklists like Google Safe Browsing.
+- Federated learning, where only model updates (such as gradients or weights) are shared.
+- Anonymized, non-reversible feature vectors that cannot be traced back to the original URL.
+
+## Fulfillment Criteria:
+
+- High: Detection/inference runs locally on the client device or entirely within a secure organizational boundary (e.g., gateway, mail server), with no sensitive data transmitted externally; or it employs explicit privacy-preserving mechanisms such as hashed URL lookups, federated learning (sharing only model updates), or anonymized, non-reversible feature vectors.
+
+- Medium: Some privacy safeguards are in place, such as transmitting truncated or sanitized URLs (e.g., stripped of query parameters or identifiers).
+
+- Low: Sends full, unfiltered URLs (including query parameters), webpage content, or screenshots to an external server for inference; or no inference-time data-handling details are given (i.e., there is no mention of any client-side or in-boundary deployment and no privacy safeguards are described).

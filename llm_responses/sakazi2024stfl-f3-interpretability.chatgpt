@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The STFL method is built on Bi-LSTM autoencoders and downstream deep classifiers, but the paper does not include any mechanism—neither inherently interpretable models nor post hoc XAI techniques—to explain individual predictions or provide feature‐level insights. Therefore it functions as a black‐box.",
+  "evidence": "Pages 1–10: There is no section or discussion of interpretability or explainability, nor any mention of SHAP, LIME, attention‐based explanations, feature importances, or decision paths."
+}
+```

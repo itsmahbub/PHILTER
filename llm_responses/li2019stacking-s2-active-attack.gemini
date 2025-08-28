@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper evaluates its method on standard datasets collected from Phishtank and Alexa, which represent known phishing and benign examples, respectively. The evaluation framework focuses on classification performance metrics like accuracy, missing rate, and false alarm rate on this static collection. There is no specific experiment, analysis, or discussion dedicated to assessing the model's robustness against active attacks or evasive maneuvers. Although some engineered features, such as 'Hidden/Restricted information' or 'Redirection', are designed to detect common suspicious patterns that could be part of an evasion attempt, the paper does not demonstrate the method's resilience against a targeted set of adversarial or obfuscated samples. The evaluation is limited to a clean phishing vs. benign benchmark, without any adversarial or evasive manipulation.",
+    "evidence": "Page 5, Section 4.1, Dataset: \"The small dataset contains 2000 webpages and their HTML codes, where 1000 ones are legitimate and 1000 ones are phishing. The legitimate ones are collected from Alexa [47]... The phishing ones are from Phishtank [48]...\" This describes the standard data collection process, with no mention of curating samples that employ active attack or evasion techniques. The subsequent experimental sections (4.4, 4.5) focus entirely on performance on these standard datasets, lacking any evaluation against manipulated or adversarial examples."
+}
+```

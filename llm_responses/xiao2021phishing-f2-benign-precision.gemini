@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation relies on a benign dataset sourced from the \"5000 Best Websites homepage (2012)\". This source, by its name, consists of popular, well-established, and therefore high-reputation domains. The study does not incorporate any measures to ensure diversity by including low-reputation or long-tail benign domains (e.g., personal blogs, small business sites, recently registered domains). Additionally, there is no mention of including benign pages that legitimately use elements from well-known brands (like social media login widgets or payment buttons), which are a common cause of false positives. The evaluation is therefore limited to a set of \"easy\" benign examples, which is insufficient for assessing the model's robustness against misclassifying more ambiguous legitimate pages.",
+    "evidence": "Page 8, Section 5.1. Datasets and metrics, \"We collect 68030 legitimate URLs from 5000 Best Websites homepage (2012) and 12003 phishing URLs from PhishTank homepage (2019).\""
+}
+```

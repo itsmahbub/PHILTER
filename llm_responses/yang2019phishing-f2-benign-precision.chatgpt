@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper’s benign dataset is drawn solely from dmoztools.net without any explicit sampling or analysis to include long‐tail or low‐reputation domains, nor any selection of pages legitimately embedding brand elements. As a result, the evaluation lacks both required subsets (low‐reputation domains and brand‐element pages) to faithfully assess false positives on harder benign cases.",
+  "evidence": "Page 2, Section I – “we build a real dataset by crawling a total of 1 021 758 phishing URLs … and a total of 989 021 legitimate URLs as negative samples from dmoztools.net.”  No further mention of sampling low‐reputation domains or benign pages with brand widgets."
+}
+```

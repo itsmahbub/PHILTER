@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method provides a clear, per-decision explanation for its classifications. Instead of a simple binary output (phishing/legitimate), the model identifies the specific brand a suspicious webpage is impersonating. This is achieved by first localizing the brand's logo within a bounding box and then classifying the page's visual identity. The final verdict is an explicit comparison: if the identified brand's legitimate URL does not match the input URL, the page is flagged as phishing. This process inherently explains *why* a page is considered malicious (e.g., \"This page looks like PayPal, but its URL is not paypal.com\"). This use of bounding-box localization for a key feature and providing the identified target brand as part of the output constitutes a high degree of interpretability.",
+    "evidence": "page 2, Section 2, \"Second, by visually comparing webpages with predefined legitimate references, the proposed model can identify phishing pages along with their target brand, thereby providing explainable results.\"\npage 3, Section 3.3, \"The object detection model takes as input a webpage screenshot and generates a bounding box to annotate the webpage's logo region.\"\npage 3, Section 3.2, \"Finally, a prediction result is derived by comparing the predicted URL with the input URL. If the input URL is different from the predicted URL, it will be identified as a phishing website; otherwise, it will be identified as a benign website.\""
+}
+```

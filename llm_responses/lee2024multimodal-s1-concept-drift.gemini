@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's proposed method is designed to be robust against concept drift by relying on an LLM's pre-trained, general knowledge of stable brand identity (logos, themes, etc.) rather than volatile, easily changed features. The authors explicitly position this as an advantage over traditional models that require continuous retraining to adapt to evolving attacker tactics. This design choice fulfills one part of the metric's criteria. However, the evaluation protocol does not validate this claimed robustness in a temporally meaningful way. The dataset was collected over a single, contiguous three-month period, and the experiments do not use a time-aware train-test split (e.g., training on older data and testing on newer data). The paper also acknowledges a potential weakness related to concept drift, noting that an LLM's knowledge is static up to its training cut-off and may not be aware of the latest brands. Since the method is designed to handle drift but is not evaluated against it temporally, it meets the criteria for a 'Medium' rating.",
+    "evidence": [
+        {
+            "page": 1,
+            "section": "Abstract",
+            "quote": "However, such models are costly and difficult to maintain, as they need to be retrained with labeled dataset that has to be regularly and continuously collected... Given that the LLMs are pretrained on a large corpus of data, we aim to make use of their understanding of different aspects of a webpage (logo, theme, favicon, etc.) to identify the brand of a given webpage..."
+        },
+        {
+            "page": 3,
+            "section": "III. A. System design",
+            "quote": "As a final point, the list of brands targeted by phishing changes over time [15], [12]. Given these challenges, maintaining a static list of domain names corresponding to a set of reference brands is not an effective solution."
+        },
+        {
+            "page": 4,
+            "section": "IV. DATA COLLECTION",
+            "quote": "We collected our dataset by crawling the bengin and phishing webpages over a period of three months from Oct. to Dec. 2023."
+        },
+        {
+            "page": 12,
+            "section": "VIII. DISCUSSION ON NEW ATTACK VECTORS DUE TO THE USE OF LLMS",
+            "quote": "d) Obsolete or missing knowledge: A known weakness of LLM is outdated information, as the model may not have access to the correct information about the brands in real-time. Therefore, based on the training cut-off time, an LLM might not be aware of the latest brands."
+        }
+    ]
+}
+```

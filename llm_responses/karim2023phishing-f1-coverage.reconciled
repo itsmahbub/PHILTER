@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The URL‐based approach incorporates features targeting a range of phishing tactics observable in URLs (e.g. use of raw IPs, excessive subdomains, prefix/suffix manipulations, HTTPS misuse, redirects), demonstrating that it addresses multiple tactics. However, the paper does not provide any breakdown of the evaluation dataset by tactic nor report per‐tactic detection performance—it only reports aggregate metrics over the entire phishing class.",
+    "evidence": "Page 7, Section III.A: “The phishing and legitimate website URLs contain some common attributes such as UsingIP, LongURL, ShortURL, Symbol@, Redirecting//, PrefixSuffix-, Sub-Domains, HTTPS, DomainRegLen, Favicon, NonStdPort, HTTPSDomainURL, RequestURL, AnchorURL, LinksInScriptTags, and ServerFormHandler, which help to identify whether the URL is phishing.”  \nPage 11–14, Section IV (Tables 2–10): All reported accuracy, precision, recall, specificity and F1‐score are aggregated over the full test set, with no per‐tactic analysis."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a comprehensive evaluation that fully meets the 'High' criteria. It explicitly defines and reports all required class-sensitive metrics: Precision, Recall (also referred to as True-Positive Rate or TPR), and F-measure (the F1-score). Furthermore, it includes the Matthews Correlation Coefficient (MCC), which is one of the specified summary metrics suitable for evaluating performance on potentially imbalanced datasets. These metrics are used consistently throughout the experimental section to analyze the model's performance and to compare it against seven other classifiers.",
+    "evidence": "Page 8, Section 4.3, 'Evaluation measures': 'In order to evaluate and compare the performance of different classifier model, the following evaluation metrics is introduced: Accuracy, True-positive rate (TPR), False-positive rate (FPR), Precision, Recall, F-measure and Matthews Correlation Coefficient (MCC). Correspondingly, the following equations represent their definitions:'.\nPage 12, Table 6, 'Performance of the proposed detection model versus other classifier model on the testing dataset': This table presents the final comparative results, with columns for 'Accuracy', 'TPR', 'FPR', 'Precision', 'Recall', 'F-measure', and 'MCC' for the proposed model and all baseline models."
+}
+```

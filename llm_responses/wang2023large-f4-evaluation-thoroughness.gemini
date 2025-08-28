@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper uses strong class-sensitive metrics suitable for imbalanced data, namely F1-score and True Positive Rate (Recall) at a very low False Positive Rate (TPR@FPR=0.01%). These metrics correctly focus on the model's ability to detect phishing sites while controlling for false alarms. However, the evaluation lacks any of the specified summary metrics (AUC-PRC, AUC-ROC, or MCC) that would provide a comprehensive view of performance across all classification thresholds. While the chosen metrics are relevant and well-justified, the absence of a summary metric prevents the evaluation from achieving full coverage as defined by the 'High' criteria.",
+    "evidence": "Page 3, Section 4, \"Metrics\": \"We use the following three metrics, accuracy, F1-score, TPR@FPR=0.01%.\"\n\nPage 3, Figure 2: The y-axis label is \"F1-Score (%)\" for graph (b), confirming its use.\n\nPage 4, Figure 4: The y-axis label is \"TPR@FPR=0.01% (%)\", showing the use of Recall at a specific false positive rate."
+}
+```

@@ -1,0 +1,33 @@
+```json
+{
+    "value": "High",
+    "why": "The paper explicitly identifies concept drift as a primary challenge in URL-based phishing detection and designs its method, AdaptPUD, with a dedicated mechanism to address it. The proposed method includes a label-free Concept Drift Detection (CDD) module based on non-parametric statistical tests (KS and KW) designed to detect shifts in the data distribution. When drift is detected, the system can trigger incremental training to adapt the model. The evaluation methodology is robust and directly aligned with the metric's criteria. The authors use two temporally distinct datasets: models are trained on historical data (Dataset-1, from 2022-2024) and then evaluated on more recent data (Dataset-2, from late 2024) to measure performance degradation due to drift. The paper demonstrates that its CDD method works and that subsequent incremental training restores the model's high performance, effectively countering concept drift. This combination of a purpose-built adaptive mechanism and a rigorous, time-aware evaluation protocol fully satisfies the criteria for a high rating.",
+    "evidence": [
+        {
+            "page": 2,
+            "section": "Abstract & Introduction",
+            "quote": "And then, design a multi-channel detection model integrated with the concept drift, which can support dynamically incremental learning while maintaining high accuracy... Thus, how to design an accurate detection model for concept drift is the second challenge."
+        },
+        {
+            "page": 6,
+            "section": "4.3.2. Concept drift detection model",
+            "quote": "Since in practical applications, the specific distribution form and labels of the data cannot be known in advance, the advantages of non-parametric test methods are particularly prominent because they do not rely on the distribution assumptions of the data and can adapt to complex and uncertain scenarios. Therefore, we performed the Kolmogorov-Smirnov (KS) test and the Kruskal-Wallis (KW) test in parallel, which are both non-parametric methods and can effectively avoid the impact of uncertainty in data distribution and labels."
+        },
+        {
+            "page": 7,
+            "section": "5.1.1. Dataset",
+            "quote": "Two datasets are used in the experiments. Dataset-1 is for training and testing all models, spanning the period from May 2022 to July 2024. ... Dataset-2 is used to evaluate model robustness, CDD performance, and incremental training effects. It includes 108,512 samples, spanning from August 2024 to December 2024."
+        },
+        {
+            "page": 9,
+            "section": "5.3.2. Comparison under concept drift",
+            "quote": "Similar to real-world scenarios, all detection models are trained on the historical dataset, Dataset-1. After the best-performing model is selected and deployed, it is tested on the latest dataset, Dataset-2."
+        },
+        {
+            "page": 10,
+            "section": "5.3.2. Evaluation of CDD method and incremental training",
+            "quote": "Obviously, AdaptPUD has shown excellent performance again after incremental training, effectively addressing the concept drift issue. Furthermore, this method only requires labeling 9,800 drift data points, rather than the entire set of over 100,000 new data for training. This significantly reduces the cost of incremental training."
+        }
+    ]
+}
+```

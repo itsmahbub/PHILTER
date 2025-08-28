@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper presents only standard classification benchmarks on clean phishing and benign URL datasets (accuracy, F1, TPR@FPR) under varying data sizes and epochs. It does not evaluate any evasive or adversarial manipulations of URLs (e.g., junk characters, encodings, obfuscations) to test resilience against active attacks relevant to its URL-only input modality.",
+  "evidence": "Page 3, Section 4 (Numerical Evaluation): “Experiment Scenario. We evaluate the proposed method in an unbalanced experimental scenario… by reducing the training set size and training epoch… an additional ablation study… Metrics. We use the following three metrics, accuracy, F1-score, TPR@FPR=0.01%.″ No tests against manipulated or adversarially crafted URLs are described."
+}

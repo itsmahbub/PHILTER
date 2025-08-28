@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The evaluation of PhiUSIIL’s false positive rate is based solely on legitimate URLs drawn from high‐reputation sources (the Open PageRank top sites). The paper does not include specialized subsets of low‐reputation or long‐tail domains nor benign pages embedding legitimate brand elements (e.g., PayPal/OAuth widgets, social media buttons), which are critical to stress‐test robustness against realistic benign diversity.",
+  "evidence": "Section 3.1 (Dataset Construction): “We collected legitimate URLs from Open PageRank Initiative…”; Section 4.1 (Phase 1): “The target URL is a URL from the list of the top 10 million legitimate websites downloaded from Open PageRank Initiative.”"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "PhishIntention produces per‐decision explanations by overlaying bounding boxes on detected UI components (e.g., logo, input fields, buttons) and by applying a gradient‐based XAI technique (Score-CAM) to highlight on each screenshot the regions that most contributed to its phishing vs. benign classification. This level of per‐instance, visual explanation exceeds mere global feature importance and meets the ‘High’ criterion.",
+  "evidence": "Page 6, Section 4.3: “To provide an explanation of the credential-taking intention, we highlight the credential-taking region on the screenshot, as shown in Figure 10. We also overlay a heatmap on the screenshot based on the model attribution technique, Score-CAM [66], which reasons out the contribution of each region in the input to the output prediction.”"
+}
+```

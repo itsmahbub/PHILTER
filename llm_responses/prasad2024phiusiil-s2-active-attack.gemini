@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper demonstrates clear robustness against a specific but important subset of active attacks: visual similarity and typosquatting attacks. The core of the proposed method's first phase, the URL Similarity Index (USI), is explicitly designed to detect evasions like homographs, character substitution, and misspellings. The authors provide experimental evidence of this capability. Additionally, the feature engineering for the second phase shows awareness of obfuscation techniques by including features like 'NoOfObfuscatedChar' and 'LargestLineLength' (to detect code obfuscation). However, the evaluation is not comprehensive across a diverse set of active attacks. The method relies on static HTML analysis and does not address dynamic evasions such as cloaking, deferred content loading via JavaScript, or server-side redirects. Furthermore, there is no evaluation against adversarial machine learning examples specifically crafted to mislead the classifiers.",
+    "evidence": [
+        {
+            "page": 1,
+            "section": "Abstract",
+            "quote": "The similarity index helps effectively identify visual similarity-based attacks such as zero-width characters, homograph, punycode, homophone, bit squatting, and combosquatting attacks."
+        },
+        {
+            "page": 12,
+            "section": "5.4. Evaluation of URL similarity index based phishing URL detection",
+            "quote": "Phishing URLs generally mimic legitimate URLs, deceiving users into thinking they are accessing a legitimate website. Cybercriminals create phishing URLs that look similar to legitimate URLs by replacing any similar-looking character. In addition, they swap characters, making phishing URLs appear identical to the legitimate URL. The proposed URL similarity index (USI) technique identifies such tricks by calculating USI for a URL."
+        },
+        {
+            "page": 13,
+            "section": "Table 4: Experimental result showing URL similarity based phishing URL detection.",
+            "quote": "This table provides concrete examples of the USI's effectiveness. For instance, 'example.com' with a 'Latin e with dot below symbol' yields a similarity index of 91.18 and is classified as 'Phishing'. Similarly, 'exampl.com' (with a missing 'e') is classified as 'Phishing'."
+        }
+    ]
+}
+```

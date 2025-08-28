@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper explicitly evaluates the proposed method's resistance to active attacks through a dedicated robustness experiment (Experiment 4). The evaluation, however, relies on a simulation rather than testing against a diverse set of real-world attack techniques. The authors simulate a successful bypass of a single component model (URL, HTML, or DOM) by artificially changing its predictions for phishing sites to be benign. They then measure the performance degradation of the overall hybrid system. This approach directly tests the architectural resilience against a compromised component, which is a form of robustness against active attacks. It qualifies for 'Medium' because it demonstrates robustness against a subset of attacks—specifically, a simulated, successful bypass of a single modality—but does not cover the full, diverse attack surface (e.g., obfuscated JavaScript, adversarial content generation, cloaking) required for a 'High' rating. The authors acknowledge the theoretical nature of their simulation, reinforcing that it is not a test against a variety of implemented attack vectors.",
+    "evidence": [
+        {
+            "page": 11,
+            "section": "5.2.4. Experiment 4: robustness",
+            "quote": "By testing the robustness, we aim to measure the impact of an attacker bypassing one of the individual models on the overall detection abilities. To measure this, we simulate a phisher exploiting a flaw in one of the individual models. This results in the bypassed individual model giving false predictions."
+        },
+        {
+            "page": 12,
+            "section": "5.2.4. Experiment 4: robustness",
+            "quote": "We simulate the bypass by changing the probability prediction of a phishing website formerly recognized by the individual model (p > 0.5) to the probability just below the threshold of phishing (p = 0.5)... We execute the above steps a second time, but we simulate three perfect bypasses of the individual models this time... we mean that the bypassing method fully convinces the model that the phishing website is legitimate. We simulate this by changing the probability prediction for each phishing website to completely legitimate (p = 0)."
+        },
+        {
+            "page": 13,
+            "section": "6.1. Proof of concept, Robustness",
+            "quote": "However, several caveats should be considered. First, our bypass simulations are theoretical and do not replicate a real-life hostile environment. Thus, the extent of realism in our simulation remains uncertain."
+        }
+    ]
+}
+```

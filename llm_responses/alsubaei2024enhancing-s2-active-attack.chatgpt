@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper evaluates its phishing detector solely on clean, static datasets of URLs and HTML‐extracted features, reporting accuracy and false‐positive/false‐negative rates, but it includes no experiments or analysis of any active evasion techniques (e.g. obfuscated JavaScript, junk HTML, Base64‐encoded scripts, invisible elements, dynamic content loading, cloaking, or adversarial perturbations) within its claimed input modality. As such, it does not demonstrate any robustness against the very manipulations that attackers employ to bypass automated detectors.",
+  "evidence": "Page 1 (Abstract): “Rigorously tested on real phishing attack datasets, our AI model consistently outperforms state‐of‐the‐art algorithms…”\nPage 7 (Section III.A, Dataset Description) & Table 2: All features are static URL/HTML attributes from a Kaggle dataset, with no mention of adversarial or evasive manipulations.\nPage 14 (Section V, Simulation Results): Performance metrics are reported on clean test sets; there is no subsection or mention of testing against obfuscated or dynamically cloaked samples."
+}
+```

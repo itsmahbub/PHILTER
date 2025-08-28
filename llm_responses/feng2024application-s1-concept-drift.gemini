@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method assumes that phishing tactics are static and does not incorporate any mechanisms to adapt to concept drift. The features used are a standard set of 30 URL, page, and domain-based heuristics from the UCI dataset, which are known to be susceptible to changes in attacker strategies over time. The paper makes no attempt to select features that are inherently stable. Most critically, the evaluation methodology explicitly precludes any assessment of temporal robustness. The authors use a \"stratified random sampling method\" to split the dataset, which shuffles the data and ensures that the training and testing sets are drawn from the same static distribution. This approach completely ignores the temporal dimension required to evaluate resilience against evolving phishing attacks.",
+    "evidence": "page 8, section 4.2, \"In our experiment, we split our dataset to 20% for testing and 80% for training by stratified random sampling method.\""
+}
+```

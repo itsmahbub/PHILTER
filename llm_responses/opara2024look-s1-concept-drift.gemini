@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper assumes a static environment for phishing attacks and does not address concept drift. The evaluation methodology relies on 5-fold cross-validation on a dataset collected from a specific point in time (phishing data from a 2020 study, legitimate sites from a snapshot of the Alexa list). This random shuffling of data for training and testing means the model is not evaluated on its ability to generalize to future, evolved attacks. There is no temporal separation between the training and testing sets, which is a critical requirement for assessing robustness to concept drift. The method itself does not include any adaptive mechanisms, such as continual learning or scheduled retraining, to cope with changing attack patterns over time.",
+    "evidence": "Page 7, Section 5: 'Finally, we evaluated the machine learning model’s performance using the k-fold cross-validation technique with k set to 5. Therefore, the data is divided into five folds and iterated five times. Cross-validation reduces problems such as overfitting and underfitting and indicates how the model will generalize to an independent dataset.'\n\nPage 6, Section 4.2: 'As a result, we collated a balanced phishing set of 22,687 phishing web pages from the study by Korkmaz et al. (2020).' This specifies that the phishing data is from a fixed, historical source, and the cross-validation approach mixes this data rather than simulating a time-forward deployment."
+}
+```

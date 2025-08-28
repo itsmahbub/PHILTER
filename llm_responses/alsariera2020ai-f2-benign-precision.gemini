@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper evaluates its models using a single, pre-existing dataset from the UCI repository, originally created by Mohammad et al. [15]. The paper provides no details about the sources or characteristics of the benign (legitimate) websites within this dataset. There is no mention of including low-reputation/long-tail domains or pages with legitimate brand element usage (e.g., OAuth widgets, social media buttons) to ensure a diverse set of benign samples. The evaluation is therefore limited to the unspecified collection of benign sites in the original static dataset, without any demonstrated consideration for the diversity needed to robustly test the false positive rate.",
+    "evidence": "Page 4, Section III.A, 'The phishing website dataset is used in this study as it has been vastly used in existing studies (See Section II). It was developed by Mohammad et al. [15] and available on UCI and Kaggle databases. The phishing website dataset contains 11,055 instances, 30 independent features, and one (1) class attributes having two labels (“-1” for a phishing website and \"1\" for a legitimate website).'"
+}
+```

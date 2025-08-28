@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes static machine learning models (meta-learners based on Extra-Trees) and evaluates them on a single, static dataset using a standard 10-fold cross-validation technique. This methodology inherently assumes that phishing tactics are static and does not account for concept drift. There is no mention of adaptive strategies like continual learning or periodic retraining. The evaluation protocol does not use a time-aware split (e.g., training on older data and testing on newer data), which is essential for assessing a model's robustness against evolving threats. The features used (URL, domain, HTML/JS) are also not argued to be inherently stable over time.",
+    "evidence": "Page 5, Section III.A: \"More importantly, the development of the AI-based meta-learner models was conducted using the N-fold cross-validation technique [19]. In this research work, N was set to 10. Thus, the model development process, considering 10-fold cross-validation, underwent the rigorous process of partitioning the datasets into ten (10) equal groups and then train on nine (9) of the partitioned data while testing on the remaining one (the tenth part).\""
+}
+```

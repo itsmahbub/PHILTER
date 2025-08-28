@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "DEPHIDES adopts a URL-based, character-level deep learning design that is tactic-agnostic by construction and thus can in principle capture a wide range of phishing tactics observable in URLs (e.g. subdomain spoofing, lexical manipulations, IP-address URLs, etc.). However, the paper does not provide any quantitative breakdown of the evaluation dataset by phishing tactic nor report detection performance for each tactic, as required for a High rating.",
+  "evidence": "Page 8, Section IV.A (Dataset Collection): “Phishing URLs are collected from ‘www.phishtank.com’, and legitimate URLs are collected from ‘commoncrawl.org’ … In our study, approximately 5.1 million URLs were collected, with 2.3 million being phishing and 2.8 million being legitimate.”  (No per-tactic categorization or performance breakdown is provided.)"
+}
+```

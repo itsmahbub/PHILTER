@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation is limited to a standard classification task on a static, public dataset of phishing and benign URLs from Kaggle. The method, which operates solely on URL strings, is not tested against any active attacks or evasive manipulations relevant to its modality. The experiments compare performance metrics (accuracy, recall, etc.) against other models on this same 'clean' dataset, but do not assess the model's robustness to deliberate obfuscation, adversarial crafting of URLs, or other techniques designed to bypass detectors. The entire evaluation framework lacks any component dedicated to testing resilience against active attacks.",
+    "evidence": "Page 5, Section IV-A, Data Set: \"Our data set is from Kaggle [28], which provides public data sets. The data set contains a total of 549 346 URLs (72% for legal URL samples and 28% for phishing URL samples).\"\n\nPage 7, Section C, Comparison With Other Models: \"The above experiments are all carried out in the same data set, which has good comparability. It can be seen from Table V that the tiny-Bert Stacking model proposed in this article is superior to other models in all metrics, this indicates that our model is more suitable for the phishing website detection task.\"\n\nThis evidence confirms that the evaluation is performed on a single, static public dataset, with comparisons focused on standard performance metrics rather than robustness against attacks."
+}
+```

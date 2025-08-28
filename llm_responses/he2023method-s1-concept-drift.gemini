@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper presents a static model that is trained and evaluated on a single, time-agnostic dataset. There is no discussion of or mechanism for adapting to evolving phishing tactics over time, such as periodic retraining or online learning. The evaluation methodology relies on a standard random split of a static dataset collected at a specific point in time. This approach assumes that the characteristics of phishing URLs are stationary and does not validate the model's performance against future, unseen attack patterns, which is a key requirement for addressing concept drift.",
+    "evidence": "page 5, Section IV-A, \"1) Data Set: Our data set is from Kaggle [28], which provides public data sets. The data set contains a total of 549 346 URLs... and in the experiment, we divided the data set into training set and test set at a ratio of 8:2.\"\n\nThis evidence shows that a single static dataset is used and split randomly, rather than using a temporal split (e.g., training on older data and testing on newer data) which is necessary to evaluate resilience to concept drift."
+}
+```

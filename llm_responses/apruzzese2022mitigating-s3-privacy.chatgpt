@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper describes a server‐side feature extraction and adversarial‐robustness mechanism that requires full URLs (including query parameters), webpage HTML, screenshots, and DNS data to be collected and processed externally. There is no mention of any client‐side inference, in-boundary deployment, or use of privacy‐preserving techniques such as URL hashing, federated learning, or sanitization of sensitive data before transmission. As a result, the method offers no safeguards to prevent the transmission of sensitive or identifiable user data off‐device.",
+  "evidence": "Page 3, Section 3.3 (“Creation Workflow of LNU-Phish”): “Our scripts visited each URL and saved the corresponding HTML as well as the full image representation of the homepage. We also queried and stored information provided by public DNSs for each URL.”"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed method relies solely on standard URL-based feature datasets (UCI and Mendeley) and treats all phishing instances as a single class, without any consideration of the varied tactics (e.g., subdomain spoofing, homograph attacks, use of IP addresses, lexical manipulations, etc.) used by phishers. There is no per-tactic feature design, no tactic-based evaluation, nor any breakdown of performance by tactic category.",
+  "evidence": "Section III.A (page 6): “Each dataset consists two classes such as phishing and legitimate.”  (No further breakdown or discussion of tactic diversity.)"
+}
+```

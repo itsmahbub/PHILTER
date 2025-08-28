@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The evaluation's benign datasets are explicitly limited to popular, high-reputation websites, failing to include harder, more diverse cases. The paper states that the benign pages for both the PhishPedia and VisualPhish datasets are sourced from \"top-ranked Alexa-listed\" and \"well-known websites.\" This methodology omits two critical categories for robust false positive testing: (i) low-reputation or long-tail domains (like small businesses or personal sites) and (ii) benign pages that legitimately use third-party brand elements (e.g., PayPal payment buttons, social media login widgets). By focusing only on well-established sites, the evaluation does not adequately challenge the detector's ability to distinguish legitimate pages from phishing pages in real-world scenarios where such diversity is common, thus likely underestimating the true false positive rate.",
+    "evidence": "Page 4, Section 4.1, Datasets and metrics: \"The benign webpage dataset [for PhishPedia] contained 29,951 screenshots of top-ranked Alexa-listed benign webpages.\"\n\nPage 5, Section 4.1, Datasets and metrics: \"Top-ranked legitimate webpage dataset. The dataset [for VisualPhish] includes 3107 legitimate webpages whose domains are different from the trusted list. The dataset is a legitimate test set, including well-known websites with various categories, such as financial institutions, eCommerce, and social media.\""
+}
+```

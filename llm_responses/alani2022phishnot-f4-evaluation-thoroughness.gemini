@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several essential class-sensitive metrics, including Precision, Recall, and F1-score, and defines them based on the components of a confusion matrix (TP, TN, FP, FN). The results are consistently presented using these metrics across different experimental setups (Tables 2, 4, 5). However, the evaluation lacks any of the specified summary metrics (AUC-PRC, AUC-ROC, or MCC) that provide a more comprehensive view of classifier performance, especially under class imbalance. While the use of precision, recall, and F1 is commendable, the absence of a summary metric means the evaluation does not have the full coverage required for a 'High' rating.",
+    "evidence": "Page 5, Section 5.2, Performance measures: \"Our work uses the main four performance parameters: 1. Accuracy: This measures the ratio of correct predictions... 2. Precision: This measures the ratio of the accuracy of positive predictions... 3. Recall: This measures the ratio of positive instances that are correctly detected... 4. F1 Score: This measures the harmonic mean of precision and recall...\" \n\nPage 6, Table 2, \"Initial results with 77 features.\": The table presents results for five models, with columns for Accuracy, Precision, Recall, and F1 Score.\n\nPage 7, Table 4, \"PhishNot testing results with 14 features.\": This table again presents results using Accuracy, Precision, Recall, and F1 Score for the models tested on the reduced feature set."
+}
+```

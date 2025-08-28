@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The final classification stage of the proposed method, PhishFencing, relies on a One-Class Support Vector Machine (SVM) with a non-linear Radial Basis Function (RBF) kernel. This type of model is inherently a 'black box,' as its decision-making process in a high-dimensional feature space is not directly interpretable by humans. The paper does not describe the use of any post-hoc Explainable AI (XAI) techniques (like SHAP or LIME) to provide per-decision explanations. Furthermore, it does not offer any global interpretability measures, such as feature importance scores, that would clarify which host features (IP prefix, AS number, geolocation) are most influential in the model's decisions. The system identifies a website as an outlier and labels it as phishing without providing any rationale or evidence for that specific classification.",
+    "evidence": "page 7, section 3.2, Phishing Website Identification Algorithm: \"To identify phishing websites, we apply host features of both target websites and suspecious websites to One Class Support Vector Machine (one-class SVM) [9] to detect outliers, which are host features of phishing websites... Since our training data can not be linearly separated, kernel function Radial Basis Function kernel (RBF kernel) is employed to map the data to a higher dimension feature space, in which data can be linearly separated.\""
+}
+```

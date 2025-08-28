@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper sources its benign URLs from `dmoztools.net`, a successor to the DMOZ Open Directory Project. This human-edited web directory is known for its comprehensive and hierarchical categorization of a vast range of websites, including niche, regional, and personal sites, thus satisfying the criterion for including \"low-reputation or long-tail domains\". However, the paper provides no evidence that the evaluation dataset was curated to include the second key aspect of diversity: benign pages that make legitimate use of brand elements (e.g., PayPal payment buttons, Google/Facebook login widgets). While such pages may exist within the large DMOZ dataset, their inclusion is not explicitly addressed or tested, which is a critical challenge for false positive robustness. As the method is evaluated against only one of the two required diversity subsets, the rating is Medium.",
+    "evidence": "Page 9, Section V. EVALUATION AND ANALYSIS, A. EXPERIMENT DATA AND INDICATORS, \"Then, 989 021 URLs were crawled from the open catalogue website dmoztools.net [38] as negative samples of the phishing website, which are legitimate URLs.\""
+}
+```

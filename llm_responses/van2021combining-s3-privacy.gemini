@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method's core functionality for target identification relies on sending data extracted from the user's visited webpage to external, third-party search engines. Specifically, it transmits textual features (e.g., from the page title) to a text search engine and portions of the webpage screenshot to a reverse image search engine. This process involves sending sensitive user data (page content and visual information) off-device to a commercial service (Google) for analysis. The paper does not describe any privacy-preserving mechanisms, such as hashing, data sanitization, or anonymization, that would mitigate the privacy risks associated with this data transmission. Therefore, it meets the criteria for the 'Low' rating.",
+    "evidence": "page 4, Section 3.1, 'Textual features are used as search terms in a text-based search engine (e.g., Google, Yahoo, Yandex), whereas the portions of the screenshot identified as regions of interest are fed to a reverse image search engine.' and page 6, Section 4.1, 'To find the associated pages using visual features (step 3 of Fig. 3), we initially considered Google, Yandex and TinEye. ... Hence, our application relies on Google as the search engine.'"
+}
+```

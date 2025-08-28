@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several essential class-sensitive metrics, including Precision, Recall, and F1-score, which are crucial for understanding model performance beyond simple accuracy, especially in a classification task like phishing detection. The authors explicitly define these metrics with their corresponding formulas. However, the evaluation lacks any of the summary metrics specified in the codebook that are robust to class imbalance, such as AUC-ROC, AUC-PRC, or MCC. While the provided metrics are valuable, the absence of a comprehensive summary metric means the evaluation does not meet the criteria for a 'High' rating.",
+    "evidence": "Page 7, Section V. EXPERIMENTS AND RESULTS: \"We used the averaged values of 10-fold cross-validation, reporting the accuracy (Eq. (3)), the F1-Score (Eq. (4)), the precision (Eq. (1)) and the recall (Eq. (2)) [21], [28], [34].\" This is followed by the mathematical formulas for each metric. Table 6 on page 9 presents the main experimental results using columns for Precision, Recall, Accuracy, and F1-Score, confirming their use. The paper does not mention or report AUC or MCC metrics."
+}
+```

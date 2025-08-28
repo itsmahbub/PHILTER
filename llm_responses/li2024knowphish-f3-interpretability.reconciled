@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "KnowPhish Detector exposes a fully transparent, multi‐stage decision path for each webpage: it (1) classifies credential‐requiring intent, (2) extracts brand intention (via logo bounding boxes or alias matching), and (3) checks the domain against a known list. Moreover, it uses an LLM to generate a human‐readable summary—including the specific HTML elements and overall rationale behind the CRP decision—for every input. These per‐decision natural‐language rationales, together with the explicit rule‐based steps and visible logo bounding‐boxes, satisfy the criterion of providing per‐decision explanations and exposing the decision path of an inherently interpretable model.",
+  "evidence": "Page 9, Section 5.1: “We design a prompt template … with three in-context examples to understand the webpage from various aspects, such as … which elements in the HTML makes it a CRP, and the overall rationale for its CRP prediction. The generated summary will serve as an auxiliary text attribute of the webpage for the following CRP classification and text brand extraction tasks.”"
+}
+```

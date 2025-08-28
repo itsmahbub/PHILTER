@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's proposed method addresses multiple, distinct phishing tactics through a diverse feature set spanning URL structure, hosting information, and page content. The features are designed to detect common tactics such as using IP addresses in hostnames, subdomain spoofing via long hostnames, lexical manipulation of URLs, and impersonation of trusted brands through page content. Features like Autonomous System Number (ASN) and geolocation analysis provide a degree of tactic-agnosticism by focusing on suspicious hosting infrastructure rather than specific attack patterns. However, the paper does not meet the criteria for 'High' because its evaluation lacks a quantitative breakdown of the dataset by tactic, nor does it report detection performance on a per-tactic basis. While it analyzes the prevalence of certain features (e.g., IP address hosts, long hostnames), it does not evaluate the classifier's performance against these specific tactics individually.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "3.2.2 URL Feature Extraction",
+            "quote": "One feature this process extracts is whether the URL contains an IP address for its hostname. ... Another feature this process extracts is whether the page has many host components. Phishers commonly use a long hostname... Besides manipulating the structure of their URLs, phishers often include characteristic strings in their URLs to mislead viewers."
+        },
+        {
+            "page": 5,
+            "section": "3.2.4 Hosting and Page Feature Extraction",
+            "quote": "To start, the Page Feature Extractor constructs features out of the autonomous system numbers to which the page's hosts and nameservers correspond... The feature extractor also computes features based on the geolocations of the page's hosts and nameservers... Instead, the feature extractor only makes features of the terms with the highest term frequency-inverse document frequency (TF-IDF) values."
+        },
+        {
+            "page": 8,
+            "section": "4.1 Evaluation Dataset",
+            "quote": "Roughly 51,000 of the phishing pages in the April-July dataset, hosted across hundreds of domains, match a particular bank phishing template. All of their URLs are in the form http://www.bankofamerica.com.srv_<random>.<random>.<random top-level domain>/..."
+        },
+        {
+            "page": 11,
+            "section": "4.3 Classifier Performance",
+            "quote": "To evaluate the performance of our classification system, we examine the classifier trained on data we collected between April 16 and July 14... Figure 4 shows the performance of the classifier in a precision-recall curve for the average cross-validation performance... Table 9 shows exact statistics for the classifier in cross-validation and on the August dataset for this threshold."
+        }
+    ]
+}
+```

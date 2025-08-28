@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper provides global interpretability by calculating and presenting feature importance scores using three different methods: Spearman correlation, K best, and Random Forest's native feature importance. This analysis reveals which of the nine lexical features are most influential for the model's predictions on average, offering insight into its general decision-making logic. However, the method does not offer per-decision explanations. Although an inherently interpretable model (Random Forest) is used, the paper does not describe a mechanism for tracing the decision path for a specific URL to understand why it was classified as phishing or legitimate, nor does it employ any post-hoc XAI techniques.",
+    "evidence": "Page 8, Section 4.4: \"Our proposed features are very accurate and give the highest accuracy. However, we apply three different algorithms to measure the importance of features. We have used Spearman correlation, K best, and Random forest to calculate the importance score of each feature. Fig. 9 represents the feature importance scores... it can be concluded that delimiter in a path, delimiter in a domain, number of dots in a URL, length of URL are some most important features among all.\" This is supported by Figure 9 on page 9, which visually presents these global feature importance scores."
+}
+```

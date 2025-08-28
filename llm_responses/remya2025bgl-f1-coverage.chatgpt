@@ -1,0 +1,5 @@
+{
+  "value": "Medium",
+  "why": "The proposed hybrid model leverages multiple URL‐based tactics—lexical features (e.g. suspicious words, URL length), structural features (e.g. subdomain graphs via GNN), and metadata (e.g. SSL, WHOIS)—and thus is designed to detect diverse phishing strategies. However, the evaluation uses a generic Kaggle phishing URL dataset without any quantitative breakdown or per‐tactic performance reporting, so it does not provide a per‐tactic analysis.",
+  "evidence": "Page 1, Abstract: “It also addresses evolving phishing tactics by considering both lexical and structural URL features.”\nPage 6, Section VI.A: Uses a single labeled URL dataset with no mention of separate phishing tactic categories or per‐tactic evaluation."
+}

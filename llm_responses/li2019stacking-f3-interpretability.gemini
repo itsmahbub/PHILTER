@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method is a stacking model combining GBDT, XGBoost, and LightGBM, which is inherently a black-box approach. However, the paper provides a global-level explanation by conducting a feature importance analysis. The authors use the 'importance coefficient' of the features from the final GBDT model to rank and visualize which features are most influential in the model's decisions across the entire dataset. This analysis identifies key contributors like 'HTML string embedding' and 'URL length information.' While this offers valuable insight into the model's general behavior, it does not provide per-decision explanations for why a specific webpage was flagged, thus meeting the criteria for a 'Medium' rating.",
+    "evidence": "Page 8, Section 4.8, 'As specified in Section 3.1, two-fold features related to URL and HTML are introduced, including 238 features in total. We use the importance coefficient of the features in GBDT to visualize the importance of the features as shown in Fig. 10, from which we can observe that the top-3 important features are “HTML string embedding”, “URL length information” and “Internal and external resources”.'"
+}
+```

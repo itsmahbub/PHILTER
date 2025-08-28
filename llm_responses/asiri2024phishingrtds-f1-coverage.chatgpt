@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed system explicitly targets multiple phishing tactics—TinyURLs, Browsers-in-the-Browser (BiTB), and regular URL-based attacks—demonstrating awareness of tactic diversity. However, the evaluation does not include a quantitative breakdown of the dataset by tactic nor report detection performance for each individual tactic.",
+  "evidence": "Page 1, Abstract: “we design a system that detects three types of phishing attacks: Tiny Uniform Resource Locators (TinyURLs), Browsers in the Browser (BiTB), and regular phishing attacks.”; Page 3, Contributions: “The proposed model detects three types of phishing attacks: Regular URL-based attacks, Browser in Browser attacks (BiTB), and TinyURL attacks.”; Page 8, Section 4.5/Table 3: overall performance metrics are presented without per-tactic breakdown."
+}
+```

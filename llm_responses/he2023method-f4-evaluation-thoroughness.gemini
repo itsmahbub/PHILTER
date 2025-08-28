@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several class-sensitive metrics essential for evaluating a phishing detector, including recall, F1-score, and False Positive Rate (FPR). It also explicitly defines the formulas for precision, recall, and F1-score. This demonstrates a clear understanding of the need to go beyond simple accuracy, especially in imbalanced datasets typical of phishing detection. However, the evaluation lacks a summary metric such as AUC-ROC, AUC-PRC, or MCC. These metrics are crucial for understanding the model's overall classification quality across different thresholds and are a requirement for the 'High' rating.",
+    "evidence": "Page 5, Section IV-A, \"Evaluation Metrics\": \"In order to measure the performance of the model after training, the evaluation metrics selected in this article are: accuracy, recall, FPR, and F1_score.\" The paper then provides the formulas for Accuracy, Recall, FPR, Precision, and F1-score in equations (3) through (7). The results in Table IV and Table V (pages 6-7) also report these metrics, but no summary metrics are mentioned or reported anywhere in the paper."
+}
+```

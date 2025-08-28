@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a phishing detection method that operates exclusively on the URL string. The relevant active attacks for this modality would include lexical obfuscation or the use of adversarial examples crafted to mislead the classifier. However, the paper's evaluation is limited to a standard classification task on a static dataset. The experiments focus on handling data imbalance using a Generative Adversarial Network (GAN) and comparing the model's performance (Accuracy, Recall, etc.) against other architectures. There is no mention, evaluation, or discussion regarding the model's resilience to deliberate evasive manipulations of the URL string. The benchmarks are based on clean, known phishing URLs from PhishTank and benign URLs, without any form of adversarial or evasive modification.",
+    "evidence": "page 8, section 5.1, supporting quote: \"We collect 68030 legitimate URLs from 5000 Best Websites homepage (2012) and 12003 phishing URLs from PhishTank homepage (2019). The phishing URLs have been validated from April 2018 to July 2018. We randomly extract 4000 legitimate URLs and 4000 phishing URLs to form the test dataset.\" This quote demonstrates that the evaluation is performed on a static collection of known phishing and benign URLs, with no experiment designed to assess robustness against active attacks or evasions."
+}
+```

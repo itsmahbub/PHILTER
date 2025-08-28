@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several key class-sensitive metrics, including precision, sensitivity (recall), and f-measure (F1-score), which are crucial for evaluating performance on imbalanced datasets like phishing detection. The authors provide the formulas for these metrics and present them clearly in a results table. However, the evaluation lacks any of the specified summary metrics (AUC-PRC, AUC-ROC, or MCC) that provide a more comprehensive, threshold-independent measure of classifier performance. While the inclusion of precision, recall, and F1-score is good, the omission of a robust summary metric prevents the evaluation from meeting the 'High' standard.",
+    "evidence": "Page 9, Section 5.5, Test results: \"By using the values in confusion matrix, 4 different statistics as precision, sensitivity, f-measure, and accuracy are calculated to measure the usefulness and efficiency of the algorithms. These statistics, whose formulation is depicted in Eqs. (2-5), are also important for making a comparison between the tested machine learning approaches.\"\n\nPage 11, Table 5, Test results of the classification algorithms: The table explicitly lists results for \"Precision\", \"Sensitivity\", and \"F-Measure\" for seven different algorithms across three feature sets."
+}
+```

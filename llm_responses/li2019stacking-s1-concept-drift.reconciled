@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper describes and implements adaptive strategies—specifically incremental learning for the XGBoost and LightGBM components and periodic retraining for the GBDT component—which directly addresses concept drift by enabling the model to incorporate new phishing samples over time. However, the evaluation protocol relies on random train–test splits rather than a chronological split, so the robustness to temporal drift is not empirically validated. This meets the ‘Medium’ criterion (adaptive design without temporal evaluation).",
+    "evidence": "Section 4.11 (page 10): “In terms of updating the model, we use incremental learning strategy to train XGB and LGB if there are new phishing data, which avoids training from scratch. For the basic model GBDT, we may add the new phishing data into training set to train an updated model.”\n\nSection 4.5 (page 8): “The evaluations are conducted on the 50K-PD dataset, which is divided into a training set consisting of 70% data samples, and a test set containing the rest ones.”"
+}
+```

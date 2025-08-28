@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several key class-sensitive metrics necessary for evaluating performance under class imbalance, including Precision, Recall (reported as 'Sensitivity'), and Specificity. These are calculated and presented in the results tables. However, the evaluation lacks completeness as it omits the F1-score, which provides a balanced measure of precision and recall. Furthermore, it does not include any of the required summary metrics like AUC-ROC, AUC-PRC, or MCC, which are crucial for a comprehensive assessment of a classifier's overall quality, especially in imbalanced domains like phishing detection.",
+    "evidence": "Page 15, Section 5, lists the evaluation metrics used: \n- \"Sensitivity: Calculates the rate of correctly classified phishing sites out of total number of phishing sites... Sensitivity = TP / (TP + FN)\" [This is the definition of Recall].\n- \"Precision (Pre): Calculates the ratio of correctly classified phishing sites out of total number of classified phishing sites. Pre = TP / (TP + FP)\". \n- The paper also reports Specificity, False Positive Rate, and Accuracy. \n- The results are presented using these metrics in Tables 4, 5, 6, 7, and 8. The absence of F1-score, AUC-ROC, AUC-PRC, or MCC in the methodology and results sections confirms the incomplete coverage."
+}
+```

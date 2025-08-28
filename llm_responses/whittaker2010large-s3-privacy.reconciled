@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The system transmits full, unfiltered URLs (including path tokens) and complete page HTML/content from users’ browsers to an external server for feature extraction and classification. There is no on-device inference, URL sanitization (e.g., stripping query parameters), hashing, or other privacy-preserving mechanisms at inference time, which places this squarely in the 'Low' category according to the codebook.",
+  "evidence": "Section 3.2.2 (URL Feature Extraction): “extracts all string tokens separated by non-alphanumeric characters out of the URL to use as features”  \nSection 3.2.3 (Fetching Page Content): “the Content Fetcher crawls the page … records the page HTML, as well as all iframe, image, and javascript content embedded in the page.”"
+}
+```

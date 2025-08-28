@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed detection method, KnowPhish Detector (KPD), relies on an external, third-party Large Language Model (LLM) to perform its core text analysis. The methodology explicitly states that the webpage's full HTML content and URL are sent to an LLM to generate a summary. This summary is then used for subsequent steps, including credential-requiring page (CRP) classification and text-based brand extraction. Sending the full content of a visited webpage and its URL to an external server without any mentioned privacy-preserving mechanisms (like sanitization, hashing, or anonymization) constitutes a significant privacy risk. This data could contain sensitive personal information, session tokens, or other confidential details.",
+    "evidence": "Page 9, Section 5.1, LLM-based Webpage Summary: 'To generate this summary, we first process the HTML by removing extraneous elements like JavaScript and CSS blocks. Subsequently, this processed HTML, along with the URL, will become the input of an LLM.'\n\nPage 9, Algorithm 1: 'Input : Webpage w = (w.html, w.screenshot, w.domain), LLM-based webpage summarizer LLMSummary... Output: Whether w is phishing or benign. 1 s ← LLMSummary(w.html, w.domain);'\n\nPage 13, Section 6.6.2 & Table 6: The paper evaluates and confirms the use of external, third-party LLM services as the backbone for the detector. 'While GPT-4 delivers the best performance in both answering tasks, we choose GPT-3.5-turbo-instruct as the default LLM backbone...'"
+}
+```

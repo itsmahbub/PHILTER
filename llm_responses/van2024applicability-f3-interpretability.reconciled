@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper does not implement any per‐decision interpretability mechanisms. While it experiments with inherently interpretable stacking models (Decision Tree, Logistic Regression), it neither exposes their decision paths in practice nor uses feature‐attribution or XAI techniques to explain individual predictions. The brief claim that the stacking layer ‘provides transparency’ is unsubstantiated, and no global or per‐decision explanations (e.g., feature importances, SHAP/LIME, attention maps) are presented.",
+    "evidence": "Section 3 (Limitations), p.4: “Although Deep Learning shows advantages for the automated detection of phishing websites, it has limitations. First, these models operate in a black-box fashion, making it difficult to understand the reasoning behind the prediction… when the output results are largely uninterpretable (Do et al. 2022).”"
+}
+```

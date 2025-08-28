@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "While the core BiLSTM+attention classifier is a black-box with no per-decision XAI outputs, the system does expose a transparent, rule-based aggregation layer (the Weighted Average Strategy) that assigns and discloses fixed weights to different URL types (main URL, iframe URLs, hyperlinks, others). This global decision logic gives limited but concrete insight into how individual URL classifications combine into the page-level verdict, satisfying the “Medium” interpretability criterion (global feature importance without per-decision traceability).",
+  "evidence": "Page 7, Section 3.4.3 (WeAS): “WeAS’s goal is to differentiate between URLs based on their position… Therefore, we assign weight to each URL based on its essentials.”\nPage 9, Table 4: “URL’s location Weight. Webpage URL: 0.45; Frame URLs: 0.30; hyperlinks: 0.15; Others: 0.10.”"
+}
+```

@@ -1,0 +1,13 @@
+## Evaluation Metric: Resistance to Active Attacks
+
+## Description:
+
+This metric assesses whether a phishing detection method is resilient to active attacks---deliberate manipulations or evasions intended to bypass automated detectors. Such attacks may target commonly used features, for example by inserting junk characters to distort lexical statistics, replacing text with images, injecting Base64-encoded scripts, obfuscated JavaScript, junk HTML, or invisible elements. They may also involve adversarial examples crafted to mislead classifiers, or delivery-stage evasions such as dynamic content loading (e.g., via AJAX), deferred execution (e.g., login forms revealed only after interaction), or cloaking (e.g., showing benign content to crawlers).
+
+Evaluation is modality-aware: methods are judged only against attacks observable within their input type and claimed scope. For example, URL-level obfuscation is irrelevant to screenshot-based methods, while defenses against dynamic evasions are expected only from systems that incorporate runtime interaction or dynamic analysis.
+
+## Fulfillment Criteria:
+
+- High: Demonstrates robustness against a diverse set of active attacks (e.g., visual spoofing, obfuscated JavaScript, junk HTML, invisible elements, deferred execution, cloaking, redirects, adversarial perturbations) observable within its input modality and scope.
+- Medium: Demonstrates robustness against only a subset of active attacks within its input modality. Evidence indicates partial robustness but not across the full attack surface.
+- Low: No evaluation against active attacks relevant to its input modality and scope. Benchmarks are limited to clean phishing vs. benign examples without adversarial or evasive manipulation.

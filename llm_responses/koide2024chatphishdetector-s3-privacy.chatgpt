@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "ChatPhishDetector transmits full, unfiltered URLs (including query strings), rendered HTML content and/or screenshot images off-device to external LLM inference servers (OpenAI Azure or Google Cloud) with no client-side or in-boundary privacy safeguards described.",
+    "evidence": "Section III.A (‘Given an input URL, the web crawler accesses the page and retrieves the URL of the reached web page … the HTML after JavaScript execution, and captures a screenshot image.’) and Section III.B (‘In Vision mode, the system sends screenshot images directly to LLMs … the system creates a prompt by substituting … HTML, and text extracted from a screenshot image … into this prompt template.’), plus Section V.A.1 (‘We used the Azure OpenAI API for accessing gpt-4, gpt-3.5, and gpt-4-vision-preview (GPT-4V) in vision mode.’)."
+}
+```

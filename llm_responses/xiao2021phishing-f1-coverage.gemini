@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper proposes a URL-based detection method that learns features automatically from the URL character sequence. While this approach could implicitly capture various lexical and structural phishing tactics, the paper completely ignores the concept of tactic diversity. The methodology does not discuss which specific tactics (e.g., subdomain spoofing, homograph attacks, IP-based URLs) the model is designed to detect. The evaluation dataset, sourced from PhishTank, is treated as a single, uniform class of 'phishing' with no characterization or breakdown of the attack types it contains. Consequently, the performance is only reported using aggregate metrics (Acc, FPR, Rec), with no analysis of how the model performs against a variety of phishing strategies. The research focus is on the neural network architecture and handling data imbalance, not on the diversity of real-world phishing threats.",
+    "evidence": "Page 8, Section 5.1, Datasets and metrics: \"We collect 68030 legitimate URLs from 5000 Best Websites homepage (2012) and 12003 phishing URLs from PhishTank homepage (2019)... GAN is adopted to generate phishing URLs in order to make the sum of phishing URLs as 64030 equal to the number of legitimate URLs.\" This section describes the data sources and quantities but provides no information on the types of phishing tactics represented in the PhishTank dataset. The entire evaluation in Section 5 is based on these aggregated datasets, without any per-tactic analysis."
+}
+```

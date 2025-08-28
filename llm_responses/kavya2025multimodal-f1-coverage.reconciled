@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper explicitly evaluates its methods against a variety of phishing tactics—URL obfuscation (homographs, dynamic redirects), visual obfuscations (image distortions, overlays), HTML/script injections, IP migrations, AI-generated scams and deepfake pages—and describes adversarial robustness testing on these. However, it does not provide a quantitative breakdown of its evaluation dataset by tactic nor report per-tactic performance metrics, so it meets the “Medium” rather than “High” criterion.",
+    "evidence": "• Section IV (Comparative Result Analysis), p. 12: “Visual obfuscations (image distortions, transparent overlays), URL cloaking (dynamic redirects, homographs), and HTML obfuscation (invisible form fields, script injections) represent common adversarial techniques in phishing.”\n• Section IV, p. 11: “Adversarial robustness was tested by using adversarial phishing samples and obfuscating URLs, morphing content, and injecting scripts. The models then received an F1-score of 0.92.”\n• Section IV, p. 13: “The framework’s generalization ability was tested on an expanded set, which included financial phishing attacks, AI generative scam websites, and deepfake-based phishing pages from alternative sources…”\n• Section IV, p. 13: “TGNN-Att effectively captures temporal changes like URL redirects, IP migrations, and dynamic webpage content using attention-enhanced temporal graph networks.”"
+}
+```

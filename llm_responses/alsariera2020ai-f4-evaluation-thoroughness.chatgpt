@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper reports some class-sensitive metrics (false positive rate, false negative rate, and F-measure) but does not provide explicit precision or recall values, nor does it include any summary metric such as AUC-PRC, AUC-ROC, or MCC. Thus, it lacks the full suite of metrics required for a high‐quality evaluation under class imbalance.",
+  "evidence": "Section III.D (Performance Evaluation Methods) and Tables 1–4: the authors state “The performances of the developed proposed models were evaluated using … Accuracy, False Positive (FP), False Negative (FN) and F-measure.” No precision, recall, or AUC/MCC metrics are reported."
+}
+```

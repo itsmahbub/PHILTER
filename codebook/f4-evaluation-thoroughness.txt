@@ -1,0 +1,32 @@
+## Evaluation Metric: Evaluation Quality
+
+## Description:
+
+This metric assesses whether a phishing detection method is evaluated using performance 
+metrics that meaningfully reflect real-world conditions - particularly in the presence 
+of class imbalance, where phishing sites are rare. Accuracy alone is misleading, as a 
+model that labels all pages as legitimate may achieve high accuracy while failing entirely 
+to detect phishing sites.
+
+A robust evaluation must report class-sensitive metrics, such as:
+
+Precision – how many predicted phishing sites are actually phishing (important for avoiding false alarms)
+Recall -  how many phishing pages are correctly detected (critical for minimizing missed threats)
+F1-score -  balances precision and recall, providing a single value that captures both types of error
+
+
+In addition, the evaluation must include at least one summary metric that meaningfully reflects overall classification quality, especially in the presence of class imbalance. Acceptable options include:
+
+Area Under the Precision-Recall Curve (AUC-PRC) - summarizes the tradeoff between precision and recall, and is especially appropriate for highly imbalanced settings like phishing detection.
+Area Under the Receiver Operating Characteristic Curve (AUC-ROC) - measures the model's ability to rank phishing sites higher than legitimate ones across all decision thresholds (less reliable under class imbalance).
+Matthews Correlation Coefficient (MCC) - evaluates classification quality by considering all confusion matrix components (TP, FP, TN, FN), and is suitable even for hard-label classifiers.
+
+Together, these metrics ensure that phishing detection performance is evaluated comprehensively, accounting for both class-specific behavior and overall quality—while explicitly measuring the impact of false positives (blocking legitimate sites) and false negatives (failing to detect phishing).
+
+## Fulfillment Criteria:
+
+- High: Reports class-specific metrics (precision, recall, F1-score) and at least one aggregate metric (AUC-PRC, AUC-ROC, or MCC), ensuring evaluation under class imbalance.
+
+- Medium: Reports some relevant metrics (e.g., precision, recall, or confusion matrix) but lacks full metric coverage.
+
+- Low: Omits all class-sensitive and summary metrics needed to evaluate under class imbalance.

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper's proposed method, VisualPhishNet, is designed to be inherently robust against concept drift by focusing on visual similarity. The authors argue that visual identity is a more stable feature compared to easily changeable heuristics based on URLs or HTML structure, which are subject to continuous evolution by attackers. Crucially, the evaluation protocol directly addresses the temporal aspect of concept drift. The authors explicitly test their trained model on new, unseen phishing pages that were crawled *after* the initial dataset was collected and the model was trained. This experiment simulates a real-world deployment scenario where the detector must handle future, zero-day attacks, thus fulfilling both the methodological design and temporal evaluation criteria for a high rating.",
+    "evidence": "Page 10, Section 6.8, \"Testing with New Crawled Data\": \"To provide additional evidence for the efficacy of VisualPhishNet in detecting zero-day phishing, we crawled a recent 955 PhishTank pages for our final test. [...] These are new pages that were created and captured after dataset collection, training and evaluating the model with all previous experiments, and therefore they are future data points with temporal separation with respect to the model.\""
+}
+```

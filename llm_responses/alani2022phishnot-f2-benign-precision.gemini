@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation of benign pages is limited to high-reputation domains and does not account for diversity. The primary source for benign URLs is explicitly stated as Alexa, which lists popular, top-ranked websites. This approach fails to test the model against 'long-tail' or low-reputation benign sites (e.g., personal domains, small businesses) which are often a source of false positives. Additionally, the method's design explicitly avoids analyzing webpage content, meaning it is not evaluated against benign pages that legitimately use third-party brand elements (like PayPal payment buttons or social media login widgets), another common challenge for phishing detectors. The evaluation therefore lacks both key forms of diversity required for a robust assessment of the false positive rate.",
+    "evidence": "Page 4, Section 4, \"The dataset chosen to train and test our models was the one in-troduced in [22]. The dataset was built by collecting data about well-known phishing URLs from PhishTank [23] and benign URLs from Alexa [24].\""
+}
+```

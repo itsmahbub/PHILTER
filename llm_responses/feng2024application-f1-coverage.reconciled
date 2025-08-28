@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method employs a rich, domain-independent feature set that captures a wide range of phishing tactics (e.g., IP-based URLs, SSL misuse, subdomain spoofing, lexical manipulations, HTML/JavaScript tricks, domain age and reputation). However, while it clearly addresses multiple tactics, the evaluation only reports aggregate performance metrics and does not provide a quantitative breakdown of detection results per tactic, falling short of the ‘High’ criterion.",
+    "evidence": "Page 8, Section 4.2: “These features are classified into four classes: address bar-based features (category 1), abnormal-based features (category 2), HTML and JavaScript-based features (category 3) and Domain-based features (category 4).”\n\nPage 9, Table 1: Lists 30 features including tactic-specific indicators such as \"having_IP_Address\", \"SSLfinal_State\", \"having_Sub_Domain\", \"Prefix_Suffix\".\n\nPage 13, Section 4.5: Evaluation (Table 6) reports only overall Accuracy, TPR, FPR, Precision, Recall, F-measure and MCC — no per-tactic performance breakdown is provided."
+}
+```

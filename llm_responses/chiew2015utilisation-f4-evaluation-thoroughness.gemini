@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's evaluation reports the components of the confusion matrix: True Positive Rate (which is equivalent to Recall), True Negative Rate, False Positive Rate, and False Negative Rate. It also calculates overall Accuracy. While providing the confusion matrix components is more informative than reporting accuracy alone, the evaluation lacks full metric coverage. It does not explicitly report Precision or F1-score. Crucially, it omits any of the required summary metrics (AUC-PRC, AUC-ROC, or MCC) that are better suited for evaluating classifiers, especially in scenarios with potential class imbalance.",
+    "evidence": "Page 23, Section 4: 'We abbreviate the performance metrics as TP_r, TN_r, FP_r, and FN_r, for the rate of true positive, true negative, false positive, and false negative, respectively.'\n\nPage 22, Figure 3: This figure presents the core experimental results using the metrics TPr (%), TNr (%), FNr (%), and FPr (%).\n\nPage 23, Section 4: 'In order to get a clearer and better understanding of the detection performance, we consider Accuracy as an additional performance metric... The proposed method achieved Accuracy of 93.4%, while GoldPhish achieved 78.8%.'"
+}
+```

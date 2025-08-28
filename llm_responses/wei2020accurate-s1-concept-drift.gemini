@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper proposes a clear adaptive strategy to handle concept drift by design. The system architecture includes a mechanism for periodic retraining, where it monitors the PhishTank repository daily for new phishing URLs and retrains the model with the updated dataset. This explicitly addresses the evolving nature of phishing attacks. However, the evaluation methodology does not validate this resilience over time. The experiments are performed on a static dataset collected at a single point in time, using a standard random 80/20 split and 5-fold cross-validation. There is no temporal separation between the training and testing sets (e.g., training on older data and testing on newer data) to empirically demonstrate the model's performance against future, evolved threats.",
+    "evidence": "Page 6, Section 5, Figure 7: The sequence diagram explicitly shows a daily loop for updating the model. The caption states: \"Every day the system monitors if there are new phishing addresses in the Phishtank repository and trains the model with a new, larger dataset. The training lasts about three minutes and the URL checking about two milliseconds.\" This demonstrates the proposed adaptive strategy. \n\nPage 6, Section 5: The evaluation protocol is described as: \"dataset described in Section 4.1 was divided into 80% training set and 20% testing set and 5-fold cross-validation was applied.\" This indicates a standard random split of a static dataset, not a temporal evaluation that would test for concept drift."
+}
+```

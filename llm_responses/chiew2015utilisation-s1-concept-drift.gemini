@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The method is designed to be resilient to concept drift by anchoring its detection mechanism in a stable, identity-based feature: the website logo. The authors argue that the relationship between a brand's logo and its official domain name is exclusive and persistent, unlike more volatile features (e.g., URL structure, textual content) that are subject to rapid evolution in phishing tactics. By using Google's reverse image search to verify this logo-domain relationship, the system leverages a core, semantic aspect of a website's identity that is difficult for attackers to subvert without undermining the visual deception itself. This reliance on a stable graphical feature fulfills one key criterion of the metric. However, the paper's evaluation protocol does not test this hypothesis against concept drift. The datasets are not separated by time (e.g., training on old samples and testing on new ones), so the method's long-term robustness is a plausible design benefit rather than an empirically validated claim.",
+    "evidence": [
+        {
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "We use a logo image to determine the identity consistency between the real and the portrayed identity of a website... Since the relationship between the logo and domain name is exclusive, it is reasonable to treat the domain name as the identity."
+        },
+        {
+            "page": 4,
+            "section": "3. Proposed methodology",
+            "quote": "Hence, we believe that using a graphical element, especially the logo, is important and complemental. This will compensate for the limitations faced in textual-based methods, and will make the detection more robust."
+        },
+        {
+            "page": 7,
+            "section": "3.3. Experimental results",
+            "quote": "We have constructed two non-overlapping datasets from a total of 1140 webpages. The webpages consist of phishing and legitimate webpages. Phishing webpages are downloaded from PhishTank and legitimate webpages are from Alexa within different categories (i.e., banking, social networking, news, e-commerce, forums and blogging)."
+        }
+    ]
+}
+```

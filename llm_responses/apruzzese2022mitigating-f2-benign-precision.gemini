@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper's evaluation uses a custom-built dataset, LNU-Phish, for which the benign samples were explicitly collected from a wide range of domain popularities, satisfying the criterion for including low-reputation or long-tail domains. The authors sampled from the top, middle, and bottom tiers of the Alexa Top 1 Million list, ensuring diversity beyond just popular, high-reputation websites. However, the paper provides no information or evidence to suggest that the dataset was curated to include the second required element for a 'High' rating: benign pages with legitimate use of third-party brand elements (e.g., PayPal/OAuth widgets, social media buttons). The dataset collection process is described as a general crawl of the Alexa list, without specific selection criteria for this type of content.",
+    "evidence": "Page 4, Section 3.3, Creation Workflow of LNU-Phish: \"To create a balanced corpus of benign websites, we divided the Alexa Top-1million list into three parts: the “top” partition includes websites from rank 1 to 10000; the “middle” partition includes websites ranked from 10001 to 100000; the “bottom” partition includes all websites ranked below 100001. We extract ~5000 websites from each partition.\""
+}
+```

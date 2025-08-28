@@ -1,0 +1,7 @@
+```json
+{
+  "value": "High",
+  "why": "VisualPhishNet is built on inherently stable visual‐similarity features rather than URL or HTML heuristics (avoiding drift‐prone signals), and the authors explicitly evaluate it on temporally separated “zero‐day” phishing pages collected after model training—meeting both the design and temporal evaluation criteria for a High rating.",
+  "evidence": "Page 1, Section 1: “Similarity‐based methods have the advantage of not relying on heuristics that are likely to evolve… This makes them less prone to an arms race between defenders and attackers.”; Page 10, Section 6.8: “These are new pages that were created and captured after dataset collection, training, and evaluating the model… we tested the trained model with this new set (without retraining), and 93.25% were correctly matched.”"
+}
+```

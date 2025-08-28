@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "DynaPhish relies on external services (search engines and Google Logo Detection) to validate both domain popularity and brand representations, transmitting extracted domains, page titles and logo images off‐device for inference. It does not perform detection entirely on the client nor employ any privacy‐preserving mechanisms such as hashing URLs or federated learning.",
+  "evidence": "Section 3.2.2: “W = search_engine.search(domain.tld, page_title, k)” – DynaPhish sends domain and page title to an external search engine. Section 3.2.3: “we adopt Google’s logo detection service … to predict the brand name given a logo” – DynaPhish transmits user page screenshots/logos off‐device for logo recognition."
+}
+```

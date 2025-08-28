@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The evaluation includes a specific test set designed to assess false positives caused by the legitimate use of brand elements (logos) on benign pages, such as in articles or on different login pages. This fulfills one of the two main diversity criteria outlined in the codebook. However, the benign dataset (both the 'trusted-list' for training and the legitimate pages for testing) is explicitly built from high-reputation, top-ranked domains from sources like Alexa and SimilarWeb. The evaluation does not include benign pages from low-reputation or long-tail domains. Since only one of the two criteria for a diverse benign set is met, the appropriate value is 'Medium'.",
+    "evidence": "For meeting the 'brand element usage' criterion:\n- Page 15, Appendix B, Figure 21 caption: \"Examples of the test set (consisting of 125 pages) used to evaluate the possible wrong matching to a trust-list’s website whose logo appears in other benign pages (such as articles and login pages).\"\n\nFor not meeting the 'low-reputation/long-tail' criterion:\n- Page 4, Section 4: \"Therefore, we built our trusted-list on the top 500 websites from Alexa, and the top 400 websites from SimilarWeb in categories prone to phishing.\"\n- Page 4, Section 4: \"In addition, we constructed a legitimate test set of 653 screenshots from the trusted-list, that are crawled with different user agents from the trusted-list websites...\""
+}
+```

@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method, PhishFencing, is explicitly designed to be resilient to concept drift by selecting features that are inherently more stable over time. The authors argue that visual identity (logos) and network identity (hosting features like IP prefix, AS number) are more robust and harder for attackers to manipulate compared to volatile features like URLs or HTML content. Furthermore, the system includes an adaptive mechanism to autonomously refresh its database of legitimate logos using search engines, which allows it to keep up with changes in branding. However, the experimental evaluation does not validate this long-term resilience. The dataset was collected over a short, continuous 7-day period, and the paper does not describe a temporal split (e.g., training on older data, testing on newer data) to demonstrate performance against evolving phishing tactics. Therefore, while the method's design addresses concept drift, its evaluation lacks the temporal rigor to fully prove it.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "3.1 Features",
+            "quote": "We aim to extract features which are easily obtained and difficult to manipulate by attackers. For example, URLs and content of webpages (HTML codes and resources) are not stable enough and easy to be bypassed by attackers."
+        },
+        {
+            "page": 5,
+            "section": "3.1 Features",
+            "quote": "To overcome this drawback, PhishFencing automatically collects and updates logo images using search engines."
+        },
+        {
+            "page": 5,
+            "section": "3.1 Features",
+            "quote": "Host features are considered as relatively reliable. It is difficult for attackers to compromise servers hosting legitimate websites, hence, the host distribution of phishing websites should be different from that of legitimate websites."
+        },
+        {
+            "page": 11,
+            "section": "5.1 Dataset",
+            "quote": "The groundtruth dataset has been collected for 7 days continuously with 77,539 phishing URLs verified by PhishTank, among which 13,902 were labelled with target brands."
+        }
+    ]
+}
+```

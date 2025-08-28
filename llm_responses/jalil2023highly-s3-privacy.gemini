@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The proposed method is designed to operate entirely locally or within a secure boundary without transmitting sensitive data externally. The paper explicitly states that the framework does not use any third-party services for feature extraction. All features are derived lexically from the URL string itself, without the need to visit the webpage or make external API calls during inference. This self-contained approach ensures that the full URL, which may contain sensitive parameters, is not sent to an external server for analysis, thus meeting the criteria for high privacy preservation.",
+    "evidence": "Page 4, Section 'Advantages of the proposed framework', bullet point 1: 'Not utilizing 3rd party based features The proposed framework does not extract features that are based on third party and not utilizing the internet to extract features.'\n\nPage 6, Section 3 'Methodology for phishing URL detection': 'The main focus of this paper is to detect phishing URLs instantly by using only URL characteristics. This can be done by using the URL string only, without visiting the website.'\n\nPage 4, Abstract: '...effective machine learning framework is proposed, which predicts phishing URLs without visiting the webpage nor utilizing any 3rd party services.'"
+}
+```

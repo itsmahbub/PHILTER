@@ -1,0 +1,1 @@
+{"value":"High","why":"The paper reports precision, recall (TPR), and F1-score for class-sensitive evaluation and also includes a summary metric (ROC) across all experiments, satisfying the high criterion.","evidence":"Page 14, Table 5: ‘Precision (%), F1-score (%), ROC (%)’ alongside TPR and FNR"}

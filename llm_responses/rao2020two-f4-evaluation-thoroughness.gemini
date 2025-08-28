@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper demonstrates a robust evaluation methodology by employing a comprehensive set of performance metrics that are well-suited for the class-imbalanced nature of phishing detection. The authors explicitly state and use class-sensitive metrics including Precision (Pre), Recall (reported as True Positive Rate, TPR), and F1-score (F). Furthermore, they include the Matthews Correlation Coefficient (MCC) as a summary metric, which is highly appropriate for imbalanced datasets. The inclusion of all these metrics meets the full criteria for a 'High' rating, as it allows for a thorough assessment of the model's performance on both phishing and legitimate classes.",
+    "evidence": "Page 13, Section 4.3, \"Evaluation and metrics\": \"We have used traditional metrics such as True Positive Rate (TPR), True Negative Rate (TNR), False Positive Rate (FPR) , False Negative Rate (FNR), Accuracy (Acc), Precision (Pre), F1 score (F) and Matthews Correlation Coefficient (MCC) to evaluate the performance of our model.\" This is followed by the explicit formulas for each metric (Equations 8-15). These metrics are consistently reported in the results tables throughout Section 4 (e.g., Tables 9, 10, 11, 12, 14)."
+}
+```

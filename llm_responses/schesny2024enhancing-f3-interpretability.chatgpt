@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed approach treats ChatGPT as a black-box and does not provide per-decision explanations or employ any XAI techniques to reveal feature contributions or decision paths. The authors themselves highlight the opacity of the phishing score and call for future XAI work, indicating that no interpretability mechanism is currently implemented.",
+  "evidence": "Page 1495, Section III “Results and Discussion”: “The analysis of the results of ChatGPT4 does not reveal which parameters have a strong influence on the phishing score and how the individual weightings of the examined threat patterns are incorporated into the model’s decision. This lack of transparency makes it difficult to analyze possible weaknesses in the model and places the focus on possible Explainable AI (XAI) [7] approaches to make such decisions interpretable for humans.”"
+}
+```

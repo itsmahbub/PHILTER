@@ -1,0 +1,23 @@
+```json
+{
+    "value": "High",
+    "why": "The method is designed with interpretability as a core principle. The overall phishing decision is based on two transparent factors: (1) an inconsistency between the detected brand and the page's domain, and (2) the presence of credential-taking intention. The paper explicitly states that the language model inherently provides explanations. Most significantly, for the credential-taking prediction (CRP) component, the system uses Chain-of-Thought (CoT) prompting, which forces the model to output a step-by-step textual justification for its classification. This justification identifies the specific sensitive keywords and login-related terms it found on the page, providing a clear, per-decision explanation of its reasoning path.",
+    "evidence": [
+        {
+            "page": 7,
+            "section": "3.2",
+            "quote": "Further, to make the decision explainable, we solve the Q&A problem with chain-of-thought (CoT) prompting."
+        },
+        {
+            "page": 7,
+            "section": "3.2.2",
+            "quote": "Our chain comprises two steps. First, we identify keywords indicative of sensitive data, for where to input credentials. Second, we search for keywords synonymous with actions like “login” or “proceed”... As a result, the responses are structured as follows: Sensitive keywords identified: ...... Additionally, login-related keywords: ...... have been detected. Based on this, the conclusion is A."
+        },
+        {
+            "page": 13,
+            "section": "5, Webpage Semantics (Vision and Language)",
+            "quote": "Additionally, the language model inherently provides explanations for its predictions, obviating the need for external post-hoc explanation methods [47, 49]."
+        }
+    ]
+}
+```

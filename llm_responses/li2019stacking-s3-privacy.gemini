@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper explicitly designs its method to be self-contained and avoid reliance on external services, which is a key principle for privacy preservation. The authors state that their features are lightweight and do not use third-party services, enabling real-time, local detection. This design means that sensitive data like the full URL or webpage content does not need to be transmitted from the user's device to an external server for analysis. The entire process of feature extraction and model inference can be performed locally (e.g., in a browser extension or on a gateway server), thus preserving user privacy.",
+    "evidence": "Page 11, Section 5.1, \"The features do not rely on the third-party services so that they can be used for developing real-time applications.\" This is reinforced on Page 2, Introduction, \"In particular, the artificially designed features adopted in our work are lightweight, which only deal with the current page information and do not rely on third-party services.\" and on Page 7, Section 4.4, \"Meanwhile, we do not use any third-party service.\""
+}
+```

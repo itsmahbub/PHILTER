@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed method employs a wide array of URL-based, domain-based, HTML/JavaScript-based and address-bar features—covering multiple phishing tactics such as IP-in-URL, HTTPS misuse, redirection patterns, abnormal domains, subdomain spoofing, etc.—but the evaluation reports only overall detection metrics and does not include any quantitative breakdown or per-tactic performance analysis.",
+  "evidence": "Page 5, Section III.A: “The 30 independent features … are broadly distributed and categorized in four divisions: HTML and JavaScript-based features; Abnormal-based features; Domain-based features; Address-Bar based features.”\nPage 8–9, Section IV.B (Tables 1–4): All performance metrics (Accuracy, FP, FN, F-Measure) are presented only in aggregate, with no per-tactic breakdown."
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper’s method is purely visual‐similarity based—combining full‐page and logo features—and does not consider or evaluate any of the diverse URL‐ or hosting‐based phishing tactics (e.g. subdomain spoofing, homograph attacks, IP‐address URLs, lexical manipulations, shared‐domain hosting, HTTPS misuse). The evaluation reports only overall precision, recall and F1 on brand‐targeted datasets, with no per‐tactic breakdown or discussion of coverage of multiple phishing tactics.",
+  "evidence": "Section 3 (Methodology) and Section 4.1 (Datasets and metrics) describe a framework and datasets focused solely on screenshot and logo similarity. There is no mention of URL‐based evasions or other phishing tactics in the evaluation, nor any per‐tactic performance metrics."
+}
+```

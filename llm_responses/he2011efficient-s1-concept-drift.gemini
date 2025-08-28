@@ -1,0 +1,23 @@
+```json
+{
+    "value": "High",
+    "why": "The paper meets both criteria for a 'High' rating. First, the method is designed to be resilient to concept drift by focusing on relatively stable, identity-based signals rather than easily changed syntactic features. The core idea is to detect inconsistencies between the claimed identity (from page content, using tf-idf) and the actual identity (from the domain name, URL structure, and search engine reputation). These identity-based features (e.g., F2, F4, F6, F12) are less volatile than simple URL patterns that attackers frequently modify. Second, the evaluation protocol explicitly addresses temporal dynamics. In the second experiment, the model is trained using a dataset that includes older, shutdown phishing pages (from CastleCops) and then tested against a dataset of 'new and live phishing pages' collected from PhishTank over four consecutive days. This train-on-older, test-on-newer methodology directly evaluates the model's ability to generalize to future attacks, which is a core requirement for assessing adaptation to concept drift.",
+    "evidence": [
+        {
+            "page": 8,
+            "section": "5.1. Experiment on the first dataset",
+            "quote": "Many of the phishing pages listed in CastleCops have long been shutdown but we still are able to collect the source code from CastleCops since they store it into their database."
+        },
+        {
+            "page": 9,
+            "section": "5.2. Experiment on the second dataset",
+            "quote": "Using the same training set from the first experiment, we test the proposed detector with a different testing set... and 100 phishing pages are taken from new and live phishing pages listed in PhishTank for continuously 4 days. All pages are still alive by the time of the testing..."
+        },
+        {
+            "page": 2,
+            "section": "1. Introduction",
+            "quote": "The basic idea of the proposed method is that every website claims a certain identity, and its behavior corresponds to the identity. If a website claims a fake identity then it would be abnormal, compared to a legitimate site. These abnormalities would be the basis to differentiate between the legitimate and phishing websites."
+        }
+    ]
+}
+```

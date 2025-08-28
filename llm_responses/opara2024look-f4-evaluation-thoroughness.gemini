@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper conducts a robust evaluation using metrics well-suited for the class imbalance inherent in phishing detection. The authors explicitly report class-sensitive metrics, including Precision, Recall, and F1-score, in multiple results tables (e.g., Table 3, Table 5, Table 7). Furthermore, they satisfy the summary metric requirement by providing visualizations of both the Receiver Operating Characteristic (ROC) curve and the Precision-Recall Curve (PRC) in several figures (e.g., Figure 3, Figure 4, Figure 5), which are directly related to AUC-ROC and AUC-PRC. This comprehensive set of metrics demonstrates a thorough assessment of the model's performance, accounting for both false positives and false negatives.",
+    "evidence": "Page 7, Section 4.4, Evaluation metrics: \"We evaluated the performance of WebPhish using... Precision... Recall... We also use the receiver operating characteristic (ROC) curve and the precision-recall curve in our evaluation... We also calculated the F1 score...\"\nPage 7, Table 3: The table titled \"Results of WebPhish and state-of-the-art baseline models\" contains columns for \"Accuracy\", \"Precision\", \"Recall\", and \"F1 score\".\nPage 8, Figure 3: This figure, titled \"ROC and precision-recall curves of WebPhish and its state-of-the-art baselines,\" explicitly plots both summary curves, demonstrating the model's performance across various thresholds."
+}
+```

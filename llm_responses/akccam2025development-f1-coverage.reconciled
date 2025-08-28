@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "Aside from a single experiment on shortened URLs, the evaluation treats all URLs in each dataset as a monolithic set and provides no quantitative breakdown or per-tactic performance for other common URL-based phishing tactics (e.g. subdomain spoofing, homograph attacks, IP-based URLs). Thus, the method ignores tactic diversity overall.",
+  "evidence": "Page 5, Section 3.2 Datasets: Table 1 lists only total counts of phishing vs. legitimate URLs with no tactic categories or diversity breakdown. \nPage 23, Section 5.3 URL shortening: Only shortened URLs are separately quantified and evaluated, with no analogous per-tactic analyses for other URL-based evasion strategies."
+}
+```

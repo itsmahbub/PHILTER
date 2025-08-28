@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper proposes a hybrid framework that combines predictions from three separate deep learning models (for URL, HTML content, and DOM tree), which are inherently black-box. The interpretability of the system is not at the feature level (like SHAP or LIME), but at the model level. The authors argue that the stacking function provides transparency by offering insights into how the individual models' predictions contribute to the final decision. This allows an analyst to see which modality (e.g., URL or HTML content) triggered the detection. Furthermore, the paper explicitly evaluates inherently interpretable models like Decision Trees and Logistic Regression as stacking functions, noting their value in providing transparency. This constitutes a form of limited, model-level insight rather than a pure black-box approach, aligning with the 'Medium' criteria.",
+    "evidence": [
+        {
+            "page": 7,
+            "section": "4.1. Framework",
+            "quote": "Moreover, the stacking function contributes to the framework’s transparency, providing insight into its decision-making process (Do et al. 2022)."
+        },
+        {
+            "page": 10,
+            "section": "5.2.2. Experiment 2: stacking function",
+            "quote": "Decision Tree: We include the Decision Tree classifier due to its usage in a related study by Venugopal et al. (2021). While Decision Trees are known for their interpretability and the ability to handle complex feature interactions, they can also be prone to overfitting."
+        },
+        {
+            "page": 11,
+            "section": "5.2.2. Experiment 2: stacking function",
+            "quote": "Logistic Regression: Logistic Regression is a well-established machine learning algorithm known for its effectiveness in binary outcome prediction. ... Its simplicity and interpretability make it an attractive choice for real-world applications where model transparency is essential."
+        },
+        {
+            "page": 5,
+            "section": "Table 1",
+            "quote": "Interpretability of Models | Positive | Combining different predictions give insights into the influence of the different models (Do et al. 2022)."
+        }
+    ]
+}
+```

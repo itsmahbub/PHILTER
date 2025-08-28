@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper proposes a high-accuracy static model trained and evaluated on a fixed Kaggle dataset, but does not include any adaptive mechanisms (e.g., continual learning, periodic retraining) nor any temporal evaluation protocol (e.g., training on earlier data and testing on newer samples). It assumes that phishing tactics remain static and does not address resilience to evolving attacker strategies over time.",
+  "evidence": "– Abstract (p. 8373): “Rigorously tested on real phishing attack datasets, our AI model consistently outperforms state-of-the-art algorithms…” (no mention of temporal splits or drift)  \n– Section III.A, Dataset Description (p. 8377): “In this study, our focus revolves around a meticulously curated dataset comprising 10,000 instances… The dataset, obtained from Kaggle [40], is specifically designed for the identification of phishing websites.”  \n– Section V, Evaluation (p. 8384): “Our proposed model underwent evaluation using three datasets related to phishing incidents. The outcomes of these evaluations are discussed below.” (evaluation on static datasets only, no time-forward or drift-aware testing)"
+}
+```

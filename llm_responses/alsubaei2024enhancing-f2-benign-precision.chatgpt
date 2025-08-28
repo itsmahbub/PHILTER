@@ -1,0 +1,5 @@
+{
+  "value": "Low",
+  "why": "The paper evaluates its detector on a single, generic Kaggle phishing dataset without any indication that the benign pages include low-reputation or long-tail domains, nor any subset of legitimate pages embedding brand elements. There is no discussion of sampling personal, regional, or recently registered domains, nor of legitimate use of OAuth widgets or embedded logos in the benign class. This limited scope risks underestimating false positives on harder, long-tail or brand-rich benign pages.",
+  "evidence": "Section III.A Dataset Description (page 6): “The dataset, obtained from Kaggle [40], is specifically designed for the identification of phishing websites… comprises 10,000 instances.” No further mention is made of including low-reputation domains or pages with legitimate brand element usage in the benign set."
+}

@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "Although the paper does not annotate or break down its evaluation by specific phishing tactics, its URL‐based Tiny-BERT feature extractor is a tactic-agnostic design that can capture a wide range of URL-level evasion strategies (e.g., subdomain spoofing, lexical manipulations, homograph attacks, misuse of characters) without relying on hand-crafted features. This meets the ‘Medium’ criterion of addressing multiple tactics but lacking a per-tactic performance breakdown.",
+  "evidence": "Page 1, Abstract: “The core concept is to use tiny-Bert to extract features from website URL strings, and learn the semantic features and long-range dependent features in URLs... This detection model can identify phishing websites without manual feature extraction.”\nPage 2, Section I: “Existing URL segmentation tools essentially only obtain word or character information in the URL, unable to analyze the order and semantic features of the URL, and have defects in obtaining long-range dependency information in the URL.”\nPage 5, Section IV.A.1: “Our data set is from Kaggle [28]… The data set contains a total of 549 346 URLs (72% legal, 28% phishing)… we divided the data set into training set and test set at a ratio of 8:2.”"
+}
+```

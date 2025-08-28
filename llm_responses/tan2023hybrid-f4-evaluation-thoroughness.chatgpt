@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The paper’s evaluation reports class‐sensitive metrics (true positive rate and true negative rate) and overall accuracy, but does not report precision or F1‐score, nor any summary metric such as AUC‐ROC, AUC‐PRC or MCC. Thus it includes some relevant metrics but lacks the full set required for robust assessment under class imbalance.",
+  "evidence": "Page 11, Section 4.2: “We evaluated the performance of the proposed technique using true positive rate (TPR), true negative rate (TNR), and accuracy….”\nPage 12, Tables 4–5: results only list TPR, TNR and Accuracy; no precision, F1‐score, AUC or MCC are presented."
+}
+```

@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The research explicitly addresses resistance to active attacks, but its focus is limited to a specific subset. The primary defense mechanism is a sophisticated data collector using WebDriver and human interaction simulation, designed to \"circumvent client-side or server-side disguises\" (i.e., cloaking). This is a direct attempt to counter a key evasion tactic at the data collection stage. The proposed model also includes a mask attention mechanism for robustness against missing data, which can result from failed access or crawler blocking. However, the evaluation does not extend to other prevalent active attacks like content obfuscation (e.g., junk HTML, obfuscated JavaScript) or adversarial perturbations crafted to mislead the classifier. The paper itself admits that its anti-disguise measures are not completely effective. Therefore, while it demonstrates partial robustness against a key attack type, it does not cover the full attack surface relevant to its modality.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "3.1. Analysis of Research Questions",
+            "quote": "Attacker's Disguise: When crawling data, attackers use server-based or client-based disguises, making it impossible to crawl the correct page."
+        },
+        {
+            "page": 4,
+            "section": "3.2. Data Acquisition",
+            "quote": "A collector was then built using SeleniumWire to circumvent client-side or server-side disguises and ensure accurate data. ... Subsequently, human interactions within the browser, such as scrolling and clicking actions, are simulated."
+        },
+        {
+            "page": 10,
+            "section": "4.4 Mask Attention Block",
+            "quote": "A mask attention block is introduced to dynamically adjust the feature focus during feature acquisition. ... For URLs with access status codes greater than 200, only the status code position is set to nonmasked."
+        },
+        {
+            "page": 15,
+            "section": "6.4 Limitation",
+            "quote": "Despite employing methods to mitigate client-side and server-side disguises, our analysis of the captured data revealed that a small portion still exhibited disguise."
+        }
+    ]
+}
+```

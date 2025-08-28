@@ -1,0 +1,28 @@
+```json
+{
+  "value": "Medium",
+  "why": "ChatPhishDetector is explicitly designed to counter a subset of active evasion techniques within its claimed modalities. The system’s web crawler retrieves browser-rendered HTML to defeat obfuscated JavaScript, follows redirects to the final URL, and avoids bot-detection cloaking. In Vision mode it ingests screenshots directly (instead of only OCR text) to handle text-as-image evasions. However, the paper does not evaluate resilience against the full spectrum of active attacks—such as deferred execution requiring user interaction, adversarial perturbations against the LLM, or dynamic content loading beyond initial crawl—so it meets the criteria for Medium rather than High.",
+  "evidence": [
+    {
+      "page": 4,
+      "section": "III-A. WEB CRAWLING",
+      "quote": "The reason for obtaining the HTML after JavaScript execution (Browser-rendered HTML) is that some phishing sites employ obfuscated JavaScript to generate DOM elements as a means to evade analysis."
+    },
+    {
+      "page": 4,
+      "section": "III-A. WEB CRAWLING",
+      "quote": "Given an input URL, the web crawler accesses the page and retrieves the URL of the reached web page (the final destination after any redirects), the HTML after JavaScript execution, and captures a screenshot image."
+    },
+    {
+      "page": 4,
+      "section": "III-A. WEB CRAWLING",
+      "quote": "This approach was chosen over popular tools like Selenium or Puppeteer to mitigate the risk of bot detection."
+    },
+    {
+      "page": 5,
+      "section": "III-B. PROMPT ENGINEERING",
+      "quote": "Some phishing sites evade HTML-based phishing site analysis by not including specific brand names or text in the HTML. For example, they display brand information (logos or headings) in image files or canvas elements. To incorporate such information into the prompt, we employ text extraction from screenshot images using OCR. In Vision mode, the system sends screenshot images directly to LLMs instead of OCR-extracted text."
+    }
+  ]
+}
+```

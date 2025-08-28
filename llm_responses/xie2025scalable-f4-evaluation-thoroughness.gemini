@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Medium",
+    "why": "The paper reports several essential class-sensitive metrics, including precision (PRE), recall (REC), and F1-score (F-1), alongside accuracy (ACC). This demonstrates a clear understanding of the need to evaluate performance beyond simple accuracy, which is critical in the class-imbalanced context of phishing detection. However, the evaluation lacks any of the required summary metrics, such as AUC-PRC, AUC-ROC, or MCC, which assess a model's overall classification quality across various decision thresholds or provide a single robust score for imbalanced data. By reporting class-sensitive metrics, the evaluation is more than minimal, but the absence of a comprehensive summary metric prevents it from meeting the criteria for a 'High' rating.",
+    "evidence": "page 10, section 5.1, supporting quote: 'To comprehensively evaluate the constructed model, four evaluation metrics are utilized: accuracy (ACC), recall (REC), precision (PRE), and F1 score (F-1).' This is confirmed in multiple results tables, such as Table VIII and Table IX, which consistently report performance using only these four metrics."
+}
+```

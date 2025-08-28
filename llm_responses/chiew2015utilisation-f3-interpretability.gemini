@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The method's final classification is based on an inherently interpretable and transparent rule: comparing the query website's domain name with the domain names returned by a Google Image Search of the website's logo. A mismatch directly leads to a phishing classification. This process provides a clear, traceable, per-decision explanation. An analyst can see the specific logo used for the query, the search results returned by Google, and the explicit domain name mismatch that triggered the classification, making the decision path fully transparent. Although a Support Vector Machine (a less interpretable model) is used for the preliminary step of logo extraction, the ultimate phishing detection decision itself is not a black box and its reasoning is directly exposed.",
+    "evidence": "Page 21, Section 3.2, \"Identity verification\": \"Consistent identity means that the real identity and the portrayed identity is identical. The real identity can be obtained from the domain name of the query website. Whereas the portrayed identity can be retrieved from a database which entry has logo matches to the extracted logo. Since the relationship between the logo and domain name of a website is exclusive, any mismatch is an indication to the phishing attack.\" and Page 22, Section 3.2, \"Identity verification\": \"If the comparisons return at least one match, our method will classify the query website as legitimate. Otherwise, it is classified as a phishing website.\""
+}
+```

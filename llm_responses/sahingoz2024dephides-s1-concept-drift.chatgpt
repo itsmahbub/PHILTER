@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed DEPHIDES method trains and evaluates on a large, temporally undifferentiated dataset using random splits. It does not employ any adaptive or continual‐learning strategy to handle evolving phishing tactics, nor does it perform a time‐forward evaluation (e.g., training on earlier data and testing on newer samples) to demonstrate robustness to concept drift.",
+  "evidence": "Section IV.A (Dataset Collection): “URLs in the Valid Phish class, which were shared by PhishTank until August 2018, were collected... The dataset is divided into three parts for making a comparable performance measurement. 70% is used for training, while 20% is for validation and 10% is used for testing.”"
+}
+```

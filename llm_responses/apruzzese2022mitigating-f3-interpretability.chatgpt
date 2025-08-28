@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The POC method focuses exclusively on adversarial robustness via randomized feature‐space transformations and then applies standard classifiers in the transformed space. The paper makes no mention of any built-in interpretability mechanisms, per-decision explanations, feature-importance outputs, or post-hoc XAI techniques (e.g., SHAP, LIME, attention/gradient heatmaps). As a result, POC behaves as a black-box detector with no accessible reasoning behind individual phishing/legitimate decisions.",
+  "evidence": "Section 5 describes the POC algorithm which randomly maps original features into operation chains and retrains black-box classifiers on this new space. Nowhere in the paper (Sections 4–7) do the authors propose or evaluate any explainability or interpretability technique alongside POC."
+}
+```

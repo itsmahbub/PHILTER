@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The methodology for collecting benign URLs explicitly targets high-reputation, popular websites. The authors used the Yandex Search API to retrieve \"the highest ranked web pages\" based on a list of query words. This approach is designed to gather well-established and popular domains, as the authors note that search engines tend not to rank malicious URLs highly. The paper makes no mention of including low-reputation or long-tail domains (like small businesses, personal blogs, or newly registered sites), nor does it describe any effort to include legitimate pages that use third-party brand elements (e.g., payment widgets, social media logins), which are common sources of false positives. The evaluation is therefore limited to high-reputation sites and lacks the diversity needed to robustly assess the false positive rate.",
+    "evidence": "Page 4, Section 4.1. Dataset, \"At the same time, there was a need to collect legitimate websites. To collect these pages, we got help from Yandex Search API (YandexXML Yandex Technologies, 2013). Firstly, specific query_word_list was constructed, and then these words are sent to Yandex Search API to get the highest ranked web pages, which had a very low possibility to be phishing web pages. It stems from the fact that; search engines do not give high ranking to the malicious URLs due to their short lifetime.\""
+}
+```

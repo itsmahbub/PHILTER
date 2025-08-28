@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method, ChatPhishDetector, is explicitly designed to be resilient against several common and important active attacks, demonstrating partial but not comprehensive robustness. The system's web crawler analyzes browser-rendered HTML specifically to counter JavaScript obfuscation. It also uses techniques to mitigate bot detection (a form of cloaking) and follows redirects to the final destination URL. Furthermore, the use of OCR and direct image analysis (in Vision mode) is a direct countermeasure against attacks where text is rendered as images to evade HTML-based detectors. These design choices show clear intent and capability to resist a subset of active attacks. However, the evaluation does not demonstrate resilience against the full spectrum of potential evasions. There is no evidence of testing against interaction-based evasions (e.g., dynamic content that appears only after a user action like a click) or adversarial examples crafted to mislead the Large Language Model classifier. Therefore, while the system is more robust than a simple static analyzer, it does not meet the criteria for 'High' resistance.",
+    "evidence": [
+        {
+            "page": 4,
+            "section": "III-A. WEB CRAWLING",
+            "quote": "The reason for obtaining the HTML after JavaScript execution (Browser-rendered HTML) is that some phishing sites employ obfuscated JavaScript to generate DOM elements as a means to evade analysis."
+        },
+        {
+            "page": 5,
+            "section": "III-B. PROMPT ENGINEERING",
+            "quote": "Some phishing sites evade HTML-based phishing site analysis by not including specific brand names or text in the HTML. For example, they display brand information (logos or headings) in image files or canvas elements. To incorporate such information into the prompt, we employ text extraction from screenshot images using OCR. In Vision mode, the system sends screenshot images directly to LLMS instead of OCR-extracted text."
+        },
+        {
+            "page": 4,
+            "section": "III-A. WEB CRAWLING",
+            "quote": "This approach was chosen over popular tools like Selenium or Puppeteer to mitigate the risk of bot detection."
+        },
+        {
+            "page": 4,
+            "section": "III-A. WEB CRAWLING",
+            "quote": "Given an input URL, the web crawler accesses the page and retrieves the URL of the reached web page (the final destination after any redirects), the HTML after JavaScript execution, and captures a screenshot image."
+        }
+    ]
+}
+```

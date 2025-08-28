@@ -1,0 +1,23 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method is designed to be inherently resilient to concept drift by leveraging the general, pre-trained knowledge of Large Language Models (LLMs). Instead of training on specific, time-bound features that can become obsolete, the system identifies high-level, stable concepts like brand impersonation, social engineering techniques, and semantic inconsistencies. This approach avoids the need for continuous retraining on new phishing examples. However, the paper's evaluation methodology does not explicitly validate this resilience over time. The dataset was collected over a narrow two-month window, and there is no temporal split between training and testing data to simulate real-world drift. Additionally, the authors acknowledge a limitation related to the LLM's knowledge cutoff date, which could affect detection of new brands. Because the method is designed to be robust to drift but is not evaluated in a manner that proves it, it earns a 'Medium' rating.",
+    "evidence": [
+        {
+            "page": 3,
+            "section": "III. CHATPHISHDETECTOR",
+            "quote": "By leveraging LLMs pre-trained on extensive data, our system has the potential to detect various phishing sites across the languages the model has been trained on, without requiring specific learning from collected phishing sites."
+        },
+        {
+            "page": 6,
+            "section": "IV.A. PHISHING SITES",
+            "quote": "From March to April 2023, we collected URLs from these three sources [OpenPhish, PhishTank, CrowdCanary] and used them as seed URLs to crawl."
+        },
+        {
+            "page": 17,
+            "section": "VI.A. LIMITATIONS",
+            "quote": "Since each LLM is trained on data up to a specific time period (e.g., the ChatGPT models used in this study were trained on data through September 2021), it may not be able to accurately classify phishing and non-phishing sites associated with services created after that date."
+        }
+    ]
+}
+```

@@ -1,0 +1,16 @@
+## Evaluation Metric: Adaptation to Concept Drift
+
+## Description:
+
+Phishing strategies evolve over time, adapting to changes in technology, defenses, and user behavior. This evolution leads to concept drift: a shift in the statistical properties of phishing websites, reflected in changes to URL structures, hosting patterns, page layouts, and other feature characteristics. As a result, detection models trained on historical data often degrade over time, limiting their practical utility.
+
+This metric evaluates whether a detection method anticipates and addresses drift using adaptive strategies such as continual learning, periodic retraining, or stable drift-resilient features that remain effective despite attacker adaptations (e.g., semantic or visual identity features). Methods that avoid drift-prone signals may offer long-term robustness without frequent retraining.
+
+To be meaningful, evaluation should be time-aware, for example by training on older data and testing on newer samples, or by validating models in live settings. Such protocols ensure that resilience claims extend to future phishing attacks.
+
+
+## Fulfillment Criteria:
+
+- High: Employs adaptive strategies or avoids volatile features by design; and evaluated on data drawn from different time periods than the training set (e.g., training on earlier data and testing on more recent data).
+- Medium: Employs adaptive strategies or avoids volatile features by design; or evaluated on data drawn from different time periods than the training set (e.g., training on earlier data and testing on more recent data).
+- Low: Assumes phishing tactics remain static and is not evaluated on data from different time periods.

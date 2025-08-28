@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's evaluation of benign pages is limited to high-reputation domains. The authors explicitly state that their benign dataset was created by collecting pages from the \"top-ranked Alexa list.\" This approach does not account for the diversity of the web, as it omits low-reputation or long-tail domains (like personal sites, small businesses, or newly registered domains) which are more likely to be misclassified as phishing. Furthermore, the paper makes no mention of specifically including benign pages that legitimately use third-party brand elements (e.g., social media login widgets, embedded payment buttons), which is another common cause of false positives.",
+    "evidence": "Page 6, Section 4.2. Dataset: \"Benign web page dataset. We collated 22,687 benign web pages from the top-ranked Alexa list for this experiment.\""
+}
+```

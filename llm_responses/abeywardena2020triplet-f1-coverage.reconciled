@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "The proposed screenshot‐based detection is tactic‐agnostic by design, since it relies solely on visual similarity and thus remains effective regardless of URL obfuscation, hosting environment, code‐obfuscation, subdomain spoofing, or other URL‐based evasion tactics. However, the paper does not provide any quantitative breakdown of the evaluation dataset by phishing tactic nor report per‐tactic performance, which is required for a “High” rating. Therefore, it meets the “Medium” criterion: it addresses multiple tactics implicitly through its generalizable design but lacks a per‐tactic evaluation.",
+  "evidence": "Page 1, Abstract: “Since our method does not rely on text and code features, it is resilient to code obfuscation.”\nPage 2, Section III (Phishing set): “We … obtain 113 phishing screenshots belonging to 22 domains.” (no breakdown by tactic)\nTable I (Page 4): Aggregated precision and recall across the entire test set, with no per‐tactic breakdown."
+}
+```

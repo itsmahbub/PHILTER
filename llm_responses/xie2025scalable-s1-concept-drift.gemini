@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method, SPWDM, is a static model that does not incorporate any mechanisms to adapt to concept drift. The features used are handcrafted from URLs, HTML, and response information, without any explicit design or argument for their long-term stability against evolving phishing tactics. The evaluation protocol further confirms the lack of consideration for temporal dynamics. The paper explicitly states that all datasets, including their own newly created Crawling2024 dataset, were evaluated using a random split. This methodology assumes that phishing tactics are static and does not test the model's ability to generalize to future, unseen attacks that may have different characteristics. The authors acknowledge this limitation, noting that continuous updates would be necessary for practical deployment, but do not propose or evaluate such a mechanism.",
+    "evidence": "Page 10, Section 5.2 Dataset Selection: \"All datasets were randomly sampled and divided into training, validation, and test sets at an 8:1:1 ratio.\"\n\nPage 15, Section 6.4 Limitation: \"Moreover, the captured data only reflects the characteristics of legitimate and phishing websites during the capture period. Therefore, continuous updating and expansion of this dataset would be necessary in practical applications to keep the model updated.\""
+}
+```

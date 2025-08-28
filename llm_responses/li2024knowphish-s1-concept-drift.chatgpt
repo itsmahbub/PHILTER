@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Medium",
+  "why": "KnowPhish and KPD avoid drift-prone signals by relying on stable brand invariants (logos and textual aliases) and propose an automated pipeline for periodic BKB reconstruction to handle emerging brands. However, their evaluation does not include a true time-forward train/test split to verify robustness against temporal concept drift.",
+  "evidence": "Section 1 (page 2): “Moreover, as this approach is based on an invariant that does not change over time, it is relatively robust to distribution shift [33, 34].”\nSection 4.4.2 (page 8): “Adapting to Evolving Phishing Targets. ... one can simply handle such information obsolescence by regularly re-constructing KnowPhish to search for new potential phishing targets outside B.”"
+}
+```

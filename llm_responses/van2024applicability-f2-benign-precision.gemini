@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper evaluates its method using a dataset where the benign websites are sourced from \"the top Google search results for simple keywords\" and the Ebbu2017 dataset. This collection method favors popular, high-reputation domains. The paper does not mention any specific effort to include more challenging benign cases, such as low-reputation/long-tail domains (e.g., personal blogs, small businesses, recently registered domains) or legitimate pages that use third-party brand elements (e.g., PayPal buttons, Google OAuth widgets). The evaluation is therefore limited to high-reputation sites, which are less likely to be misclassified, potentially underestimating the false positive rate in a real-world scenario.",
+    "evidence": "page: 9, section: 5.1. Dataset, supporting quote: The Phishing Website Dataset contains a recent collection of the URL and HTML of legitimate and phishing websites (Ariyadasa et al. 2021). [...] The dataset contains 80,000 website samples, divided into 50,000 legitimate and 30,000 phishing, scraped from December 2020 to November 2021. The legitimate websites originate from the Ebbu2017 phishing dataset and the top Google search results for simple keywords (Sahingoz et al. 2019)."
+}
+```

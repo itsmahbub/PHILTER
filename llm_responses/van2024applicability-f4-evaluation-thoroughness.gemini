@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper demonstrates a strong understanding of evaluation under class imbalance, which is critical for phishing detection. The authors explicitly state that accuracy is not an optimal metric for their use case and instead prioritize the F1-score. Their evaluation reports all three required class-sensitive metrics (Precision, Recall, F1-score) and one of the required summary metrics (ROC AUC). This comprehensive set of metrics allows for a robust assessment of the model's performance, fully meeting the criteria for a 'High' rating.",
+    "evidence": "Page 10, Section 5.2.1, Experiment 1: effectiveness, \"Accuracy is typically used for classification purposes. However, it is not optimal in our case because we are more interested in the detection of phishing pages than legitimate ones. Therefore, F1-score best fits our needs, as it balances Precision and Recall.\"\n\nPage 10, Section 5.2.1, Experiment 1: effectiveness, The paper lists the metrics it will use: \"• Accuracy... • Precision... • Recall... • F1-score... • ROC curve... • ROC AUC...\"\n\nPage 10, Table 6, \"Performance of each individual model implemented in the proof of concept.\", The table presents results under the columns: \"Accuracy\", \"Recall\", \"Precision\", \"F1-score\", and \"ROC AUC\", thereby reporting all required metrics."
+}
+```

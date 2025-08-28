@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The proposed method does not incorporate any adaptive strategies to address concept drift. The authors explicitly define 'Adaptation' as a key principle for real-world applicability but then state that it falls outside the scope of their proof-of-concept and is an area for future work. The evaluation methodology also fails to account for temporal dynamics. The dataset, collected over a one-year period, is split into training and testing subsets without any mention of a temporal ordering (e.g., training on older data and testing on newer data). This experimental design assumes phishing tactics are static and does not assess the model's performance on future, unseen attack patterns.",
+    "evidence": "page 7, section 4.2, \"We do not focus on the other factors of applicability for the proof of concept. These require a more extensive and qualitative-oriented analysis, which falls outside the scope of this study. This proof of concept aims to obtain initial findings regarding the applicability of a hybrid framework.\"\n\npage 15, section 8, \"Looking ahead, our findings pave the way for further research to explore other dimensions of applicability, such as flexibility, adaptability, and scalability of a system.\"\n\npage 9, section 5.1, \"For training, we split them into a training (70%), validation (20%) and testing (10%) subset.\" - This describes the data split without any reference to a temporal separation, implying a standard random split."
+}
+```

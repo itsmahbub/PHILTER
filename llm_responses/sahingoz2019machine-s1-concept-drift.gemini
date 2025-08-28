@@ -1,0 +1,7 @@
+```json
+{
+    "value": "Low",
+    "why": "The paper's methodology and evaluation do not account for concept drift. The proposed method relies on lexical and NLP-based features from URLs, which are susceptible to change as attacker tactics evolve. The paper does not describe any adaptive strategies, such as periodic retraining or online learning, to keep the model updated. Most importantly, the experimental evaluation uses 10-fold cross-validation on a dataset of unspecified temporality. This randomizes the training and testing sets, failing to simulate a real-world scenario where a model trained on older data must perform on newer, unseen attacks. This approach implicitly assumes that the statistical properties of phishing URLs are static over time.",
+    "evidence": "Page 9, Section 5.5, 'For testing the proposed system Weka was used with some pre-developed libraries. 10-fold Cross Validation and the default parameter values of all algorithms were used during the tests.'"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+    "value": "High",
+    "why": "The paper provides a robust evaluation of the proposed method using metrics suitable for a class-imbalanced problem like phishing detection. The authors report class-sensitive metrics, specifically Precision and Recall, to detail the model's performance on correctly identifying phishing pages while managing false alarms. Furthermore, they include a summary metric by plotting Receiver Operating Characteristic (ROC) curves, which effectively illustrates the trade-off between the true positive rate and false positive rate across various decision thresholds. This combination of detailed and summary metrics fulfills the requirements for a high-quality evaluation.",
+    "evidence": "Page 9, Section 5.2.3, Table 2: The primary results table, \"Best performance of Phishpedia and baselines\", explicitly includes a \"Detection Rate\" section with columns for both \"Precision\" and \"Recall\".\n\nPage 9, Section 5.2.3: The paper defines how these metrics are calculated: \"Precision is computed as Rep_tp / Rep^p, and Recall as Rep_tp / Num^p.\"\n\nPage 9, Section 5.2.3 and Figure 10: The paper includes a summary metric analysis via ROC curves. The text states: \"Furthermore, we plot the ROC (Receiver Operating Characteristic) curves for all the identification approaches in Figure 10.\" Figure 10 is explicitly titled \"ROC curves (with FPR in log scale) for the four phishing identification solutions.\""
+}
+```

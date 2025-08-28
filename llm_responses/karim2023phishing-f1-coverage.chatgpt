@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The proposed method relies on a generic URL‐based dataset with only two labels (phishing vs. legitimate) and does not distinguish among or report performance on different phishing tactics. There is no discussion of tactic diversity in the dataset or per‐tactic evaluation.",
+  "evidence": "Page 8, Section III.A (“URL BASED PHISHING DATASET”): “The dataset consisted of 11054 number of records and 33 attributes … The dataset consisted of two classes: phishing and legitimate.” No further breakdown by tactic is provided."
+}
+```

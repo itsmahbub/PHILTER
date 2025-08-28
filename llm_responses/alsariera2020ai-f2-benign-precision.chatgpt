@@ -1,0 +1,7 @@
+```json
+{
+  "value": "Low",
+  "why": "The paper’s evaluation relies solely on a public UCI phishing website dataset without any indication that the benign pages include low-reputation (long-tail or recently registered) domains or legitimately embedded brand elements. There is no discussion of sampling personal, small-business, or regional sites, nor any mention of PayPal/OAuth widgets, social media buttons, or embedded logos in legitimate pages. This narrow dataset use suggests the false positive rate may not reflect robustness against harder benign cases.",
+  "evidence": "Page 4, Section III.A (Data Source and Preparation): “The phishing website dataset is used in this study … developed by Mohammad et al. [15] and available on UCI and Kaggle databases. The phishing website dataset contains 11,055 instances, 30 independent features, and one class attribute.”\nPage 5, Section III.A: “The 30 independent features (see [15] for full details) are broadly distributed and categorized in four divisions: (i) HTML and JavaScript–based features; (ii) Abnormal–based features; (iii) Domain–based features; and (iv) Address–Bar based features.”  No mention is made of including low-reputation domains or legitimate brand element usage in the benign set."
+}
+```

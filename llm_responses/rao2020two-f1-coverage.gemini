@@ -1,0 +1,28 @@
+```json
+{
+    "value": "Medium",
+    "why": "The proposed method, BlackPhish, explicitly addresses multiple phishing tactics through its two-level architecture. The first level (blacklist filter) uses fuzzy hashing on content (Simhash) and screenshots (Perceptual hash) to detect replicas, near-duplicates, and phishing sites that replace text with images. The second level (heuristic filter) uses a comprehensive set of URL and source-code features to detect other tactics, including the use of IP addresses in URLs, subdomain spoofing (\"Presence of brandname in subdomain\"), and various lexical manipulations (e.g., number of dots, hyphens). \n\nHowever, the paper does not meet the criteria for a \"High\" rating. While the methodology is designed to be robust against tactic diversity, the evaluation section lacks a quantitative breakdown of the dataset by the types of phishing tactics present. The paper reports overall performance metrics (Accuracy, MCC, etc.) but does not analyze or report the detection performance for each specific tactic it is designed to counter. Therefore, it successfully addresses multiple tactics but does not provide the per-tactic evaluation breakdown required for the highest rating.",
+    "evidence": [
+        {
+            "page": 7,
+            "section": "3.1.1 Feature extraction",
+            "quote": "F5-Feature based on screenshot This feature captures the screenshot of the visited website to generate a fingerprint representing the website. This feature counters the phishing sites which replaces the textual content with an image as shown in Fig. 5."
+        },
+        {
+            "page": 4,
+            "section": "3 Proposed work",
+            "quote": "The main intention of the proposed work is to identify the near duplicate phishing sites which are variations of blacklisted phishing sites. Also, the missed non blacklisted phishing sites are filtered using heuristic based features."
+        },
+        {
+            "page": 10,
+            "section": "Table 3 Hand-crafted features",
+            "quote": "Sl. No. 1: Presence of PhishHinted words, HTTPS in base URL, IP address and Validate TLD\nSl. No. 2: Presence of brandname in subdomain\nSl. No. 3: Digits count in domain name, domain length, hostname length, average word length, longest word length, number of dots, number of hyphens, digits in hostname"
+        },
+        {
+            "page": 12,
+            "section": "4.1 Dataset",
+            "quote": "For the experimentation, we have collected dataset from two sources namely Phishtank and Google search results. Phishing sites are collected from Phishtank and for the legitimate sites, target legitimate brands are extracted from Phishtank and fed as search query to Google to return top 100 search results."
+        }
+    ]
+}
+```
