@@ -12,6 +12,7 @@ PHILTER is a transparent, scalable framework for assessing AI-based phishing web
 
 ## 📦 Repository layout
 
+```bash
 PHILTER/
 ├─ codebook/
 │  ├─ f1-coverage.txt
@@ -38,7 +39,7 @@ PHILTER/
 ├─ assessments.json # Contains LLM assessments and expert assessments
 ├─ README.md
 └─ requirements.txt
-
+```
 
 ## Quick start
 
