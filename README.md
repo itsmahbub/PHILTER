@@ -42,6 +42,8 @@ PHILTER/
 
 ## Quick start
 
+Put the research papers on phishing website detection inside `papers` directory.
+
 ```bash
 # 1) Create env (Python 3.10–3.12 recommended)
 python -m venv .venv && source .venv/bin/activate
@@ -54,6 +56,5 @@ export OPENAI_API_KEY=...
 export GOOGLE_API_KEY=...
 
 # 4) Run LLM-assisted prelimiary evaluation stage
-python llm_assessment_pipeline.py 
+python llm_assessment_pipeline.py -p . -m codebook/f1-coverage.txt -o assessments.json
 ```
-
