@@ -34,7 +34,7 @@ PHILTER/
 │  ├─ llm_vs_expert_agreement_rates.py
 │  └─ llm_vs_expert_assessments.py
 ├─ llm_assessment_pipeline.py
-├─ assessments.json
+├─ assessments.json # Contains LLM assessments and expert assessments
 ├─ README.md
 └─ requirements.txt
 

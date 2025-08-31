@@ -320,7 +320,7 @@ def main():
 
     args = parser.parse_args()
 
-    paper_directory = "/Users/mahbub/tamu-research/temp_papers/current/papers/"
+    paper_directory = "./papers"
     results_directory = "assessments_new/"
     os.makedirs(results_directory, exist_ok=True)
 
