@@ -22,6 +22,7 @@ PHILTER/
 │  ├─ s2-active-attack.txt
 │  └─ s3-privacy.txt
 ├─ llm_responses/
+├─ papers/
 ├─ scripts/
 │  ├─ assessments_table_expert.py
 │  ├─ fulfillment_by_accuracy.py

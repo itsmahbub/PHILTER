@@ -314,18 +314,18 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--pdf-path", help="PDF file or directory")
     parser.add_argument("-m", "--metric-path", help="Metric file or directory")
-    parser.add_argument("-o", "--output-json", default="verdicts.json", help="Verdict output JSON file")
+    parser.add_argument("-o", "--output-json", default="assessments.json", help="Assessment output JSON file")
     parser.add_argument("--override", action="store_true", help="Override previously processed results")
     parser.add_argument("--no-cache", action="store_true", help="Invokes LLMs to recalculate verdicts, ignoring cached results")
 
     args = parser.parse_args()
 
     paper_directory = "./papers"
-    results_directory = "assessments_new/"
+    results_directory = "./llm_responses"
     os.makedirs(results_directory, exist_ok=True)
 
     # Load verdicts
-    verdict_json_path = os.path.join(results_directory, args.output_json)
+    verdict_json_path = os.path.join("./", args.output_json)
     if os.path.exists(verdict_json_path):
         with open(verdict_json_path, "r", encoding="utf-8") as f:
             verdicts = json.load(f)
@@ -361,10 +361,10 @@ def main():
                 no_cache=args.no_cache
             )
 
-    # Save verdicts
+    # Save assessments
     with open(verdict_json_path, "w", encoding="utf-8") as f:
         json.dump(verdicts, f, indent=2)
-    print(f"Verdicts saved to {verdict_json_path}")
+    print(f"Assessments saved to {verdict_json_path}")
 
 if __name__ == "__main__":
     main()
