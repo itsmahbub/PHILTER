@@ -21,7 +21,7 @@ metrics = [
 sources = ["arbitrator", "manual"]
 
 # Load JSON data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 # Group papers by category

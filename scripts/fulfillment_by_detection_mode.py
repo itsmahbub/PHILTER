@@ -24,7 +24,7 @@ metric_to_latex = {
 latex_order = [metric_to_latex[m] for m in metric_keys]
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 target_key_values = set()
@@ -59,7 +59,7 @@ def tex_bar_highlight(x, y, z):
         return f"\\cellcolor{{gray!20}}{orig}" if val == max_val and max_val != 0 else orig
     return f"{maybe_color(vals[0], x)} & {maybe_color(vals[1], y)} & {maybe_color(vals[2], z)}"
 
-with open(f"z_{target_key}.txt", "w") as out_file:
+with open(f"{target_key}.txt", "w") as out_file:
     # Header
     out_file.write(f"{target_key} & Count & " + " & ".join(latex_order) + " \\\\\n")
     out_file.write("\\hline\n")

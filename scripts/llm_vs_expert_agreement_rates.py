@@ -56,7 +56,7 @@ def latex_line(metric, count, total, percentage):
     return f"{metric_map[metric]}  & {count}/{total} ({percentage:.2f}\\%) \\\\"
 
 def main():
-    data = load_data("assessments_new/assessments.json")
+    data = load_data("assessments.json")
 
   
     results_llm = compute_agreement(data, "arbitrator")

@@ -29,7 +29,7 @@ def tex_bar_highlight(x, y, z):
     return f"{maybe_color(vals[0], x)} & {maybe_color(vals[1], y)} & {maybe_color(vals[2], z)}"
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 # Assign all years to int, map <2019 to '<2019'
@@ -73,7 +73,7 @@ for paper, content in data.items():
             grand_metric_counts[metric_latex][verdict] += 1
 
 # ---- LaTeX output ----
-with open("z_year_table.txt", "w") as out_file:
+with open("year_table.txt", "w") as out_file:
     out_file.write("Year & Count & " + " & ".join(latex_order) + " & Total \\\\\n")
     out_file.write("\\hline\n")
     for year in year_list:

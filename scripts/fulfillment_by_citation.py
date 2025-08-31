@@ -59,7 +59,7 @@ def get_citation_bucket(citation_str):
         return "\\textgreater 200"
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 bucket_metric_counts = defaultdict(lambda: defaultdict(Counter))
@@ -181,5 +181,5 @@ for bucket in sorted_buckets + ["Grand total"]:
             "metrics": per_metric
         }
 
-with open("z_citation_table.json", "w") as jf:
+with open("citation_table.json", "w") as jf:
     json.dump(json_dump, jf, indent=2)

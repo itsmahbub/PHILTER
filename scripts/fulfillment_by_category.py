@@ -33,7 +33,7 @@ category_mapping = {
 }
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 category_metric_counts = defaultdict(lambda: defaultdict(Counter))
@@ -167,5 +167,5 @@ for category in list(category_mapping.values()) + ["Total"]:
             "metrics": per_metric
         }
 
-with open("z_category_table.json", "w") as jf:
+with open("category_table.json", "w") as jf:
     json.dump(json_dump, jf, indent=2)

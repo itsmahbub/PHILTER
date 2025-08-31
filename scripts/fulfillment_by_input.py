@@ -40,7 +40,7 @@ def tex_bar_highlight(x, y, z):
     return f"{maybe_color(vals[0], x)} & {maybe_color(vals[1], y)} & {maybe_color(vals[2], z)}"
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 input_metric_counts = defaultdict(lambda: defaultdict(Counter))
@@ -67,7 +67,7 @@ sorted_inputs = sorted([i for i in inputs_present if i != "unknown"])
 if "unknown" in inputs_present:
     sorted_inputs.append("unknown")
 
-with open("z_input_table.txt", "w") as out_file:
+with open("input_table.txt", "w") as out_file:
     out_file.write("Input & " + " & ".join(latex_order) + " \\\\\n")
     out_file.write("\\hline\n")
     for input_type in sorted_inputs:

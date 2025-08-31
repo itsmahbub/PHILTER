@@ -63,7 +63,7 @@ def get_accuracy_bin(acc_str):
         return "N/A"
 
 # Load data
-with open("assessments_new/assessments.json", "r") as f:
+with open("assessments.json", "r") as f:
     data = json.load(f)
 
 # Gather stats per accuracy bin
@@ -178,5 +178,5 @@ for bin_label in ordered_bins + ["Grand total"]:
             "metrics": per_metric
         }
 
-with open("z_accuracy_table.json", "w") as jf:
+with open("accuracy_table.json", "w") as jf:
     json.dump(json_dump, jf, indent=2)
