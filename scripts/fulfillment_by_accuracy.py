@@ -88,7 +88,7 @@ for paper, content in data.items():
 ordered_bins = bin_labels  # as defined above
 
 # ---- LaTeX output ----
-with open("z_accuracy_table.txt", "w") as out_file:
+with open("accuracy_table.txt", "w") as out_file:
     out_file.write("Accuracy & " + " & ".join(latex_order) + " \\\\\n")
     out_file.write("\\hline\n")
     for bin_label in ordered_bins:

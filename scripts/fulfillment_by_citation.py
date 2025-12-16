@@ -86,7 +86,7 @@ sorted_buckets = [b for b in bucket_order if b in buckets_present]
 if "unknown" in buckets_present:
     sorted_buckets.append("unknown")
 
-with open("z_citation_table.txt", "w") as out_file:
+with open("citation_table.txt", "w") as out_file:
     out_file.write("Citations & Count & " + " & ".join(latex_order) + " \\\\\n")
     out_file.write("\\hline\n")
     for bucket in sorted_buckets:

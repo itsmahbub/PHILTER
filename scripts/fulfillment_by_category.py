@@ -67,7 +67,7 @@ def tex_bar(x, y, z, total):
             out.append(str(n))
     return " & ".join(out)
 
-with open("z_category.txt", "w") as out_file:
+with open("category.txt", "w") as out_file:
     # Header
     out_file.write("Category & Count & " + " & ".join(latex_order) + "\\\\\n")
     out_file.write("\\hline\n")

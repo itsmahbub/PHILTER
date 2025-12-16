@@ -73,7 +73,7 @@ for paper, content in data.items():
             grand_metric_counts[metric_latex][verdict] += 1
 
 # ---- LaTeX output ----
-with open("year_table.txt", "w") as out_file:
+with open("publication_year_table.txt", "w") as out_file:
     out_file.write("Year & Count & " + " & ".join(latex_order) + " & Total \\\\\n")
     out_file.write("\\hline\n")
     for year in year_list:
@@ -163,5 +163,5 @@ for year in year_list + ["Grand total"]:
             "metrics": per_metric
         }
 
-with open("z_year_table.json", "w") as jf:
+with open("publication_year_table.json", "w") as jf:
     json.dump(json_dump, jf, indent=2)

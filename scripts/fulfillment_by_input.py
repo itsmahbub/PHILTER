@@ -156,5 +156,5 @@ for input_type in sorted_inputs + ["Total"]:
             "metrics": per_metric
         }
 
-with open("z_input_table.json", "w") as jf:
+with open("input_table.json", "w") as jf:
     json.dump(json_dump, jf, indent=2)
