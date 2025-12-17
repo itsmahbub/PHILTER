@@ -48,7 +48,7 @@ PHILTER/
 └─ requirements.txt
 ```
 
-## LLM Assessment Pipline Script
+## LLM Assessment Pipeline Script
 
 ```bash
 python llm_assessment_pipeline.py --help                                              
