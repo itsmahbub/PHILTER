@@ -122,17 +122,13 @@ We provide following analysis scripts (`scripts` directory) to generate the summ
 
   `python scripts/assessments_table_expert.py`
 
-- Generate rows for Table 8 (Metric fulfilment vs. accuracy)
-
-  `python scripts/fulfillment_by_accuracy.py`
-
 - Generate rows for Table 4 (Metric fulfillment vs. detection strategy)
 
   `python scripts/fulfillment_by_category.py`
 
-- Generate rows for Table 10 (Metric fulfillment vs. citation count)
+- Generate rows for Table 5 (Metric fulfillment vs. input source)
 
-  `python scripts/fulfillment_by_citation.py`
+  `python scripts/fulfillment_by_input.py`
 
 - Generate rows for Table 6 (Metric fulfillment vs. deployment mode)
   
@@ -142,19 +138,37 @@ We provide following analysis scripts (`scripts` directory) to generate the summ
 
   `python scripts/fulfillment_by_detection_mode.py`
 
-- Generate rows for Table 5 (Metric fulfillment vs. input source)
+- Generate rows for Table 8 (Metric fulfilment vs. accuracy)
 
-  `python scripts/fulfillment_by_input.py`
+  `python scripts/fulfillment_by_accuracy.py`
 
 - Generate rows for Table 9 (Metric fulfillment vs. publication year)
 
   `python scripts/fulfillment_by_publication_year.py`
 
+
+- Generate rows for Table 10 (Metric fulfillment vs. citation count)
+
+  `python scripts/fulfillment_by_citation.py`
+
 - Generate rows for Table 12 (LLM vs Expert agreement on PHILTER metrics)
 
   `python scripts/llm_vs_expert_agreement_rates.py`
 
-- Generate rows for Table 12 ( Per-paper agreement between LLM-generated labels and expert-validated labels)
+- Generate rows for Table 13 ( Per-paper agreement between LLM-generated labels and expert-validated labels)
 
   `python scripts/llm_vs_expert_assessments.py`
 
+- Generate chi-square tests for detection strategy
+
+  `python scripts/fulfillment_by_category.py`
+  
+  `python scripts/chi_square_tests_for_category.py`
+
+- Generate chi-square tests for deployment mode
+
+  `python scripts/chi_square_tests_for_deployment_mode.py`
+
+- Generate chi-square tests for detection mode
+
+  `python scripts/chi_square_tests_for_detection_mode.py`
