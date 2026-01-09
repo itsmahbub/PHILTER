@@ -320,7 +320,6 @@ def main():
 
     args = parser.parse_args()
 
-    paper_directory = "./papers"
     results_directory = "./llm_responses"
     os.makedirs(results_directory, exist_ok=True)
 
@@ -334,9 +333,9 @@ def main():
 
     # Get paper(s)
     if args.pdf_path.endswith(".pdf"):
-        paper_paths = [os.path.join(paper_directory, args.pdf_path)]
+        paper_paths = [args.pdf_path]
     else:
-        paper_paths = [os.path.join(paper_directory, f) for f in os.listdir(paper_directory) if f.endswith(".pdf")]
+        paper_paths = [f for f in os.listdir(args.pdf_path) if f.endswith(".pdf")]
 
     # Get metric(s)
     if args.metric_path.endswith(".txt"):

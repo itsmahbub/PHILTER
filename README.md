@@ -83,11 +83,11 @@ export OPENAI_API_KEY=...
 export GEMINI_API_KEY=...
 
 # 5) Run LLM-assisted prelimiary evaluation stage
-python llm_assessment_pipeline.py -p . -m codebook/f1-coverage.txt -o assessments.json
+python llm_assessment_pipeline.py -p ./papers -m codebook/f1-coverage.txt -o assessments.json
 
 # 6) To run the assessment pipeline for all metrics, provide the directory containing the codebooks for all metrics in argument `-m`.
 
-python llm_assessment_pipeline.py -p . -m codebook -o assessments.json
+python llm_assessment_pipeline.py -p ./papers -m codebook -o assessments.json
 
 ```
 
